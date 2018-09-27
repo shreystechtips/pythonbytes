@@ -1,65 +1,13 @@
-# Dyson creates a spherical shell
-
-clearTheAir = False
-clearIncludesPlatform = False
-buildPlatform = False
-buildMote = False
-buildTowers = False
-buildTurrets = False
-buildBoxes = False
-airInside = False
-roof = False
-seashell = False
-groundzero = True
+# geometry_helper contains simple or primitive geometric builders
+#
+# pos = mc.player.getPos() # to set type (inelegant)
 
 from mcpi.minecraft import Minecraft
 import numpy as np
-import random as r
-import time
-
 pi = np.pi
 def d2r(d): return pi*d/180.0
 def r2d(r): return 180.0*r/pi
 
-mc = Minecraft.create()
-
-# block types:
-#   0      air
-# 155      quartz
-# 152      redstone
-#  12      sand
-#  46      TNT
-#  10      flowing lava
-#  35      wool
-#      2   magenta qualifier on wool
-
-quartz = 155
-air = 0
-redstone = 152
-TNT = 46
-still_water = 9
-flowing_water = 8
-diamond = 57
-flowing_lava = 10
-wool = 35
-magenta_for_wool = 2
-gold = 41
-bricks = 45
-glass = 95
-
-
-def SphereShell(mc,pos,radius,blockType):
-    minrad = radius - 1
-    maxrad = radius
-    xc = pos.x
-    yc = pos.y
-    zc = pos.z
-    for x in range(int(xc-radius-1), int(xc+radius+2)):
-        for y in range(int(yc-radius-1), int(yc+radius+2)):
-            for z in range(int(zc-radius-1), int(zc+radius+2)):
-                distance = np.sqrt((x-xc)*(x-xc)+(y-yc)*(y-yc)+(z-zc)*(z-zc))
-                if distance > minrad and distance < maxrad:
-                    mc.setBlock(x,y,z,blockType)
 
 def SparseSphereShell(mc,pos,radius,step,blockType):
     minrad = radius - 1
@@ -377,15 +325,7 @@ def LineSegmentBTList(mc, a, b, blockType):
 
 
      
-##############
-##
-## Program: Castle
-##
-##   You thought McMansions were bad...
-##
-##############
 
-c=mc.player.getPos() # to set type (inelegant)
 
 ## important control parameters
 a=121
@@ -598,7 +538,11 @@ def Seashell(mc, pos, nWhorls, isSinistral, startScale, endScale, axialRate, inc
             LineSegmentBTList(mc, bb, cc, btShell[r30_C0:r30_CN])
     return
 
-# Seashell args: mc, position, whorls, is-sinistral, start-axial, end-axial, axial-rate-per-whorl, include-axial, apex-angle, distal-angle, block type
+# Seashell args: 
+#   mc, position, 
+#   whorls, is-sinistral, 
+#   start-axial, end-axial, axial-rate-per-whorl, include-axial, apex-angle, distal-angle, 
+#   block type
 if seashell:
     # Seashell(mc, c, 3, True, 30.0, 300.0, 10.0, False, 60.0, 30.0, diamond)
     # Seashell(mc, c, 3, True, 30.0, 300.0, 10.0, False, 55.0, 35.0, diamond)
@@ -606,39 +550,6 @@ if seashell:
     # Seashell(mc, c, 3, True, 10.0, 160.0, 6.0, False, 65.0, 25.0, diamond)
     Seashell(mc, c, 2, False, 40., 200., 30.0, False, 55.0, 25.0, diamond)
 
-
-if groundzero:
-    # mc is the minecraft object
-    # c is the position with c.x, c.y, c.z
-    for k in range(c.z-30, c.z+30):
-        for i in range(c.x-30, c.x+30):
-            for j in range (c.y, -1, -1):
-                mc.setBlock(i, j, k, air)
-
-
-if clearTheAir:
-    clearyoffset = 0
-    if clearIncludesPlatform: clearyoffset = ynegoffset
-    for i in range(a):
-        for j in range(yrange):
-            for k in range(a):
-                mc.setBlock(c.x+i-a2,c.y+j-clearyoffset,c.z+k-a2,air)
-                            
-if buildPlatform:
-    material = quartz
-    for i in range(a):
-        for k in range(a):
-            mc.setBlock(c.x+i-a2, c.y - 1, c.z+k-a2, platformMaterial)
-
-# This is not quite right: Using c.y makes the mote 1 block high and water flows away from this
-#   in both directions... rather than being embedded in the floor at c.y-1
-if buildMote:
-    for i in range(b2+2,a2-2):
-        for k in range(a):
-            mc.setBlock(c.x+i, c.y-1, c.z+k-a2, moteMaterial)
-            mc.setBlock(c.x-i, c.y-1, c.z+k-a2, moteMaterial)
-            mc.setBlock(c.x+k-a2, c.y-1, c.z+i, moteMaterial)
-            mc.setBlock(c.x+k-a2, c.y-1, c.z-i, moteMaterial)
 
 if buildTowers:
     print ("towers")
@@ -681,77 +592,19 @@ if buildTowers:
                     zp = tower_latz_center + np.sin(theta)*fradius
                     mc.setBlock(xp,yp,zp,towerMaterial)
 
-if buildTurrets:
-    print("turrets")
-    if airInside:
-        print("with air")
-    if roof:
-        print("with roof")
+def createPlatform(mc, pos, x0, y0, z0, xSize, zSize, block, blockQ = 0):
+    for i in range(xSize):
+        for k in range(zSize):
+            mc.setBlock(pos.x + i, pos.y, pos.z + k, block, blockQ)
 
-if buildBoxes:
-    print("boxes")
-    if airInside:
-        print("with air")
-    if roof:
-        print("with roof")
-
-
-##def ErrorSeashell(mc, pos, nWhorls, isSinistral, startScale, endScale, axialRate, includeAxis, apicalAngleDeg, distalAngleDeg, blockType):
-##    if not isSinistral: return
-##    drawAxial = False
-##    tpw = 100              # integer ticks per whorl
-##    origin = mc.player.getPos() # makes origin have type pos, initially at point aa
-##    origin.x = pos.x
-##    origin.y = pos.y
-##    origin.z = pos.z            # makes origin be at the passed location
-##    aa = mc.player.getPos() # point of connection sides A and B
-##    aa.x = pos.x
-##    aa.y = pos.y
-##    aa.z = pos.z
-##    bb = mc.player.getPos() # sides B and C
-##    cc = mc.player.getPos() # sides C and A
-##    cc.x = aa.x + startScale
-##    cc.y = aa.y
-##    cc.z = aa.z
-##    dtr = np.arccos(-1.0)/180.0
-##    geomScale = (endScale - startScale)/(float(tpw*nWhorls))
-##    dualTanDenom = 1.0/np.tan(apicalAngleDeg*dtr) + 1.0/np.tan(distalAngleDeg*dtr)
-##    alphaTanDenom = np.tan(apicalAngleDeg*dtr)
-##    for i in range(nWhorls*tpw):          # 1 revolution every tpw ticks
-##        thetaDeg = float(i)*360.0/float(tpw)
-##        while thetaDeg > 360.0: thetaDeg -= 360.0     # keep thetaDeg small
-##        aa.x = origin.x + float(i)*axialRate/float(tpw)
-##        sideA = geomScale * float(i) + startScale        
-##        cc.x = aa.x + sideA
-##        triangleAlt = sideA/dualTanDenom
-##        bb.x = aa.x + triangleAlt/alphaTanDenom
-##        bb.y = triangleAlt * np.cos(thetaDeg*dtr)
-##        bb.z = triangleAlt * np.sin(thetaDeg*dtr)
-##        if drawAxial:
-##            LineSegment(mc, aa, cc, blockType)
-##        LineSegment(mc, aa, bb, blockType)
-##        LineSegment(mc, bb, cc, blockType) 
-##    deltaTheta = 1.0 / (endScale * 2 * pi)
-##    return
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Shell is a spherical shell centered at pos with radius r
+# This is inefficient: It scans 3D space for shell locations
+#   ...however it is inefficient in the API sense of only printing blocks that belong to the shell
+def Shell(mc, pos, r, block, blockQ = 0):
+    minR = r - 1
+    maxR = r
+    for x in range(int(pos.x-r-1), int(pos.x+r+2)):
+        for y in range(int(pos.y-r-1), int(pos.y+r+2)):
+            for z in range(int(pos.z-r-1), int(pos.z+r+2)):
+                distance = np.sqrt((x-pos.x)*(x-pos.x)+(y-pos.y)*(y-pos.y)+(z-pos.z)*(z-pos.z))
+                if distance > minR and distance < maxR: mc.setBlock(x, y, z, block, blockQ)

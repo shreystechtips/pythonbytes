@@ -1,52 +1,9 @@
-# Dyson creates a spherical shell
+# geometry_helper contains simple or primitive geometric builders
 
-clearTheAir = False
-clearIncludesPlatform = False
-buildPlatform = False
-buildMote = False
-buildTowers = False
-buildTurrets = False
-buildBoxes = False
-airInside = False
-roof = False
-seashell = False
-groundzero = True
-
-from mcpi.minecraft import Minecraft
 import numpy as np
-import random as r
-import time
-
 pi = np.pi
 def d2r(d): return pi*d/180.0
 def r2d(r): return 180.0*r/pi
-
-mc = Minecraft.create()
-
-# block types:
-#   0      air
-# 155      quartz
-# 152      redstone
-#  12      sand
-#  46      TNT
-#  10      flowing lava
-#  35      wool
-#      2   magenta qualifier on wool
-
-quartz = 155
-air = 0
-redstone = 152
-TNT = 46
-still_water = 9
-flowing_water = 8
-diamond = 57
-flowing_lava = 10
-wool = 35
-magenta_for_wool = 2
-gold = 41
-bricks = 45
-glass = 95
-
 
 def SphereShell(mc,pos,radius,blockType):
     minrad = radius - 1
