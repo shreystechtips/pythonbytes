@@ -13,32 +13,26 @@ def FracJump(a, b, frac): return (a.x + frac*(b[0]-a.x), a.y + frac*(b[1]-a.y), 
 #   frac is the distance we move along pq: And this might be more than 1 or negative
 #   nSteps is the number of hops we will take
 #   block and blockQ specify the artifact at p
-def ChaosGame3D(mc, v, frac, nSteps, block, blockQ):   
-    n = len(v)
-    a = mc.player.getPos()                           # 
-    a.x, a.y, a.z = a.x + 20, 0, a.z + 20            # an origin offset from player
-    p = mc.player.getPos()                           # a working position
-    print(a)
-
-    verts = []    # vertex locations as triples
+def ChaosGame3D(mc, v, frac, nSteps, block, blockQ): 
+    n, a = len(v), mc.player.getPos()
+    a.x, a.y, a.z = a.x + 20, 20, a.z + 20            # an origin offset from player
+    p = mc.player.getPos()      
+    verts = []                      # vertex locations as triples
     for i in range(n):
-        p.x, p.y, p.z = v[i][0] + a.x, v[i][1] + a.y, v[i][2] + a.z
+        (p.x, p.y, p.z)= (v[i][0] + a.x, v[i][1] + a.y, v[i][2] + a.z)
         verts.append((p.x, p.y, p.z))
-        print(verts)
-
-    p.x, p.y, p.z = a.x + 40, a.y + 60, a.z + 80     # p is now the chaos point: arbitrary starting location
-            
     for i in range(nSteps):
         p.x, p.y, p.z = FracJump(p, verts[randint(0, n-1)], frac)
-        mc.setBlock(p.x, p.y, p.z, block, blockQ)
-        if i < 10:
-            print(p.x, p.y, p.z)
+        mc.setBlock(p.x, p.y, p.z, randint(1,255), randint(0,10))
 
 mc = Minecraft.create()
-mc.player.setPos(2600, 50, 2200)      # Put the player at this location
-
-n = 7
+mc.player.setPos(3100, 60, 1730)      # Put the player at this location
+n = 4
 v = []
-for i in range(n): v.append((randint(0,511),randint(0,255),randint(0,511)))
-print(v)
-ChaosGame3D(mc, v, frac = 0.5, nSteps = 20000, block = 41, blockQ = 0)
+# for i in range(n): v.append((randint(0,511),randint(0,255),0))
+v.append((0, 0, 0))
+v.append((180, 0, 180))
+v.append((180, 0, -180))
+v.append((120, 235, 0))
+
+ChaosGame3D(mc, v, frac = 0.5, nSteps = 20000, block = 42, blockQ = 0)
