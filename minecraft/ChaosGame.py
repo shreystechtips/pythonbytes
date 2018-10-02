@@ -23,16 +23,16 @@ def ChaosGame3D(mc, v, frac, nSteps, block, blockQ):
         verts.append((p.x, p.y, p.z))
     for i in range(nSteps):
         p.x, p.y, p.z = FracJump(p, verts[randint(0, n-1)], frac)
-        mc.setBlock(p.x, p.y, p.z, randint(1,255), randint(0,10))
+        mc.setBlock(p.x, p.y, p.z, randint(1,60), 0)
 
 mc = Minecraft.create()
-mc.player.setPos(3100, 60, 1730)      # Put the player at this location
-n = 4
+mc.player.setPos(2560, 60, 2190)      # Put the player at this location
+n = 5
 v = []
-# for i in range(n): v.append((randint(0,511),randint(0,255),0))
-v.append((0, 0, 0))
-v.append((180, 0, 180))
-v.append((180, 0, -180))
-v.append((120, 235, 0))
+for i in range(n): v.append((randint(0,511),randint(0,255),randint(0,511)))
+# v.append((0, 0, 0))
+# v.append((180, 0, 180))
+# v.append((180, 0, -180))
+# v.append((120, 235, 0))
 
 ChaosGame3D(mc, v, frac = 0.5, nSteps = 20000, block = 42, blockQ = 0)
