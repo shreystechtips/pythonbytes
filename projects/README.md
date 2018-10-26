@@ -1,6 +1,6 @@
 # PythonBytes Project Ideas
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/blob/master/projects/README.md]
+[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects)
 
 
 $\pi$roject ideas for the 2018--2019 Tyee Middle School Python programming club
