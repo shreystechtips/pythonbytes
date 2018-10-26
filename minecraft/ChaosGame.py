@@ -2,6 +2,9 @@ from mcpi.minecraft import Minecraft
 import numpy as np
 from random import randint
 
+x0 = 1000
+z0 = 1900
+
 # This is poor form: It treats a as a minecraft position and b as a tuple of 3 coordinates
 def FracJump(a, b, frac): return (a.x + frac*(b[0]-a.x), a.y + frac*(b[1]-a.y), a.z + frac*(b[2]-a.z))
 
@@ -13,7 +16,7 @@ def FracJump(a, b, frac): return (a.x + frac*(b[0]-a.x), a.y + frac*(b[1]-a.y), 
 #   frac is the distance we move along pq: And this might be more than 1 or negative
 #   nSteps is the number of hops we will take
 #   block and blockQ specify the artifact at p
-def ChaosGame3D(mc, v, frac, nSteps, block, blockQ): 
+def ChaosGame3D(mc, v, frac, nHops, block, blockQ): 
     n, a = len(v), mc.player.getPos()
     a.x, a.y, a.z = a.x + 20, 20, a.z + 20            # an origin offset from player
     p = mc.player.getPos()      
@@ -21,18 +24,19 @@ def ChaosGame3D(mc, v, frac, nSteps, block, blockQ):
     for i in range(n):
         (p.x, p.y, p.z)= (v[i][0] + a.x, v[i][1] + a.y, v[i][2] + a.z)
         verts.append((p.x, p.y, p.z))
-    for i in range(nSteps):
+    for i in range(nHops):
         p.x, p.y, p.z = FracJump(p, verts[randint(0, n-1)], frac)
-        mc.setBlock(p.x, p.y, p.z, randint(1,60), 0)
+        # mc.setBlock(p.x, p.y, p.z, randint(1,60), 0)
+        mc.setBlock(p.x, p.y, p.z, block)
 
 mc = Minecraft.create()
-mc.player.setPos(2560, 60, 2190)      # Put the player at this location
-n = 5
-v = []
-for i in range(n): v.append((randint(0,511),randint(0,255),randint(0,511)))
-# v.append((0, 0, 0))
-# v.append((180, 0, 180))
-# v.append((180, 0, -180))
-# v.append((120, 235, 0))
+mc.player.setPos(x0, 100, z0)      # Put the player at this location
 
-ChaosGame3D(mc, v, frac = 0.5, nSteps = 20000, block = 42, blockQ = 0)
+v = []
+# for i in range(n): v.append((randint(0,511),randint(0,255),randint(0,511)))
+v.append((0, 0, 0))
+v.append((180, 0, 300))
+v.append((-180, 0, 300))
+v.append((0, 255, 180))
+
+ChaosGame3D(mc, v, frac = 0.5, nHops = 5000, block = 41, blockQ = 0)
