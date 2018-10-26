@@ -3,7 +3,7 @@
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects)
 
 
-$\pi$roject ideas for the 2018--2019 Tyee Middle School Python programming club
+<math>\pi<\math>roject ideas for the 2018--2019 Tyee Middle School Python programming club
 Each idea given below is something you can do precisely; or you can make up your
 own variation on the idea. At the top of each section you will see a short summary.
 
@@ -58,3 +58,45 @@ The challenge of this project is to think about the logic for locating the bee h
 losing drones you could just send the drone out four million times to every possible location in the orchard. 
 However since the drones will eventually all wind up stuck in the baobab trees it behooves you to come up with 
 a more efficient strategy.
+
+### Converging Bugs
+
+
+**You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this.**
+
+
+There is a famous math problem that can be solved using some logic. The idea here is to verify that the logical
+solution is also what you would measure if you used a computer program to simulate how the bugs move. 
+
+
+### Knight's Tour
+
+
+**You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
+
+
+### Room Escape 
+
+
+**Create a text adventure where a player must determine the right series of steps to escape from a locked room.**
+
+
+### Game Player
+
+
+**Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
+
+
+### Fortune Teller
+
+
+**Create an interactive program that asks the player some questions and based on the answers tells them something interesting.**
+
+
+### Maze Solver
+
+
+**Create a program that is able to find its way out of a maze.**
+
+
+### More ideas to follow!
