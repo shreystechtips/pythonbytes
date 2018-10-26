@@ -17,7 +17,7 @@ own variations on these ideas.
 - **You study whales and their calls and you would like to try and talk to them.**
 
 
-[](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram.png)
+[spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram.png)
 
 
 ### Project: Bees and Drones

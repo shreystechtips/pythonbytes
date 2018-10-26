@@ -16,8 +16,17 @@ own variations on these ideas.
 - **Create a program that is able to find its way out of a maze.**
 - **You study whales and their calls and you would like to try and talk to them.**
 
+### this...
 
-[spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram.png)
+
+![simple](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram.png "hb")
+
+
+### or...
+
+
+![five seconds of whale talk](https://github.com/robfatland/markdown-here/raw/master/projects/humpback_spectrogram.png "humpback")
+
 
 
 ### Project: Bees and Drones
