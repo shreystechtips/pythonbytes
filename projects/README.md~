@@ -7,16 +7,21 @@ These are some project ideas for the 2018--2019 Tyee Middle School Python progra
 Each idea given below is something you can do precisely; or you can make up your
 own variations on these ideas. 
 
-- **A farmer wishes to use drones to locate some beehives on her orchard so she can cultivate them and have a better harvest.**
+- **A farmer uses drones to locate beehives in her orchard so she can cultivate them and have a better harvest.**
 - **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this.**
 - **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
 - **Create a text adventure where a player must determine the right series of steps to escape from a locked room.**
 - **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
 - **Create an interactive program: Ask the player some questions; then tell them something interesting.**
 - **Create a program that is able to find its way out of a maze.**
+- **You study whales and their calls and you would like to try and talk to them.**
+
+
+[](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram.png)
 
 
 ### Project: Bees and Drones
+
 
 **A farmer wishes to use drones to locate some beehives on her orchard so she can cultivate them and have a better harvest.**
 
@@ -109,6 +114,12 @@ solution is also what you would measure if you used a computer program to simula
 
 
 **Create a program that is able to find its way out of a maze.**
+
+
+### Project: Whale calls
+
+
+**You study whales and their calls and you would like to try and talk to them.**
 
 
 ### More ideas to follow!
