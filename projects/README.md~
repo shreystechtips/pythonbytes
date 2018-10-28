@@ -16,10 +16,6 @@ own variations on these ideas.
 - **Create a program that is able to find its way out of a maze.**
 - **You study whales and their calls and you would like to try and talk to them.**
 
-### this...
-
-
-![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram1.png "whale call")
 
 
 
@@ -123,6 +119,9 @@ solution is also what you would measure if you used a computer program to simula
 
 
 **You study whales and their calls and you would like to try and talk to them.**
+
+
+![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram1.png "whale call")
 
 
 ### More ideas to follow!

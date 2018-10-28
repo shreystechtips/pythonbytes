@@ -67,13 +67,21 @@ You can try this without using Python by clicking on
 [this link](https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=10&y=17&z=4).
 
 
-I ran this just now and it told me there are four bees at that location.
+I ran this just now and it told me there are four bees at that location. If the bees() function gives 
+'drone lost' then you the farmer have one less drone to work with. You start with ten drones and you can't buy more
+so you want to be careful about how many times you send your drones out for data. 
 
 
 The challenge of this project is to think about the logic for locating the bee hives. If there was no danger of
 losing drones you could just send the drone out four million times to every possible location in the orchard. 
 However since the drones will eventually all wind up stuck in the baobab trees it behooves you to come up with 
 a more efficient strategy.
+
+
+Notice that you can augment your Python program with an incredibly powerful computer: You can use your own brain
+to make suggestions by means of an input statement. 
+
+
 
 ### Converging Bugs
 
@@ -89,6 +97,24 @@ solution is also what you would measure if you used a computer program to simula
 
 
 **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
+
+
+This is another famous problem that can be solved with a good choice of algorithm. It also usually takes the 
+form of a recursion problem; so here is a note on recursion. Suppose you want to add 2 + 2 + 2 + 2 + 2 + 2 + 2.
+One way to do this is to write a Python function that can call itself. This is an advanced topic so you will 
+want to talk to the Python Bytes coaches if you are not already familiar with it. 
+
+
+Now to consider whether you want to try this project: First make sure you know how knights move across the board 
+in the game of chess. Then think about how you would keep track of where the knight has visited (which squares) 
+on its tour. For each move you must determine where the knight *could* possibly go next and which of those *possible*
+squares have already been visisted. If the knight has no possible moves from a given square then your program must 
+back up the knight up to where it can choose a different path. It is very much like walking through a maze that you
+build as you go through it. When the knight backs up it should not try the same path as you already know that won't
+work; so you must keep track of what you have already tried in some way. So there is quite a lot of logic involved 
+in this problem and it is definitely a difficult programming challenge. But it is also very fun. 
+
+
 
 
 ### Room Escape 
