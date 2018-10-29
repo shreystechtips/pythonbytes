@@ -159,7 +159,7 @@ of games but there are dozens more.
 ### Project: Fractals I
 
 
-** Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
+**Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
 
 
 The Chaos Game uses a geometric plane with three (or *n*) points and a random number generator. You begin anywhere
