@@ -1,11 +1,19 @@
 # PythonBytes Project Ideas
 
+
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects)
+
+
+The most important thing to remember as you read through here is: You don't have to figure out 
+how to do these projects on your own. You can talk to us at club meetings or by email about how
+to make your project be interesting and fun (not confusing and impossible!) 
 
 
 These are some project ideas for the 2018--2019 Tyee Middle School Python programming club.
 Each idea given below is something you can do precisely; or you can make up your
-own variations on these ideas. 
+own variations on these ideas.  
+
+
 
 - **You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
 - **A farmer uses drones to locate beehives in her orchard so she can cultivate them and have a better harvest.**
@@ -37,7 +45,8 @@ Here is an image of a painting by Dutch painter Piet Mondrian.
 
 It is abstract and very minimal in its construction elements. The idea of this project is to research different themes and 
 artists with the idea of creating similar graphical elements using Python. You might begin with Turtle graphics but there 
-are many other ways you can proceed. 
+are many other ways you can proceed.  There is even an [entire book](https://www.makeartwithpython.com/book/) devoted to
+making art using Python that we can explore. 
 
 
 ### Project: Bees and Drones
