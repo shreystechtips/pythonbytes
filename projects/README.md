@@ -7,6 +7,7 @@ These are some project ideas for the 2018--2019 Tyee Middle School Python progra
 Each idea given below is something you can do precisely; or you can make up your
 own variations on these ideas. 
 
+- **You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
 - **A farmer uses drones to locate beehives in her orchard so she can cultivate them and have a better harvest.**
 - **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this.**
 - **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
@@ -15,8 +16,26 @@ own variations on these ideas.
 - **Create an interactive program: Ask the player some questions; then tell them something interesting.**
 - **Create a program that is able to find its way out of a maze.**
 - **You study whales and their calls and you would like to try and talk to them.**
+- **Ditch Day Stack: An advanced project for those who complete some other project and wish to do more.**
 
 
+
+
+### Project: Art Concepts
+
+
+**You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
+
+
+Here is an image of a painting by Dutch painter Piet Mondrian. 
+
+
+![image of a painting by Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/mondrian.png "Tableau I, 1921")
+
+
+It is abstract and very minimal in its construction elements. The idea of this project is to research different themes and 
+artists with the idea of creating similar graphical elements using Python. You might begin with Turtle graphics but there 
+are many other ways you can proceed. 
 
 
 ### Project: Bees and Drones
@@ -83,7 +102,7 @@ to make suggestions by means of an input statement.
 
 
 
-### Converging Bugs
+### Project: Converging Bugs
 
 
 **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this.**
@@ -93,7 +112,7 @@ There is a famous math problem that can be solved using some logic. The idea her
 solution is also what you would measure if you used a computer program to simulate how the bugs move. 
 
 
-### Knight's Tour
+### Project: Knight's Tour
 
 
 **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
@@ -117,25 +136,25 @@ in this problem and it is definitely a difficult programming challenge. But it i
 
 
 
-### Room Escape 
+### Project: Room Escape 
 
 
 **Create a text adventure where a player must determine the right series of steps to escape from a locked room.**
 
 
-### Game Player
+### Project: Game Player
 
 
 **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
 
 
-### Fortune Teller
+### Project: Fortune Teller
 
 
 **Create an interactive program: Ask the player some questions; then tell them something interesting.**
 
 
-### Maze Solver
+### Project: Maze Solver
 
 
 **Create a program that is able to find its way out of a maze.**
@@ -150,4 +169,11 @@ in this problem and it is definitely a difficult programming challenge. But it i
 ![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram1.png "whale call")
 
 
-### More ideas to follow!
+### Project: Ditch Day Stack
+
+
+**Ditch Day Stack: An advanced project for those who complete some other project and have time to do more.**
+
+
+This is an advanced project for students who complete a project and have time to do more. The key idea to this project
+is you have no idea what it is about to start with except for the three words 'ditch day stack'. 
