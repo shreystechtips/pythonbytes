@@ -4,29 +4,32 @@
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects)
 
 
-The most important thing to remember as you read through here is: You don't have to figure out 
-how to do these projects on your own. You can talk to us at club meetings or by email about how
-to make your project be interesting and fun (not confusing and impossible!) 
-
-
-These are some project ideas for the 2018--2019 Tyee Middle School Python programming club.
-Each idea given below is something you can do precisely; or you can make up your
-own variations on these ideas.  
-
+### On selecting a project
+Below is a short list of project ideas. You are free to choose one, modify it if you care to, or
+do something completely not listed here.  The most important thing to remember as you read and think
+is: You will have help from us in making sure your project is not too difficult and not too easy.
+Once you have an idea of what you'd like to do: Talk to us at the club meeting and/or email us to
+check in. To keep your project from being a confusing, impossible, discouraging rotten experience
+it might help to look for something 'too easy' first and see how it goes. Often a simple-sounding
+project can be surprisingly fun and interesting even if the end result is not a cool new video game;
+but rather a humble tic-tac-toe player or a pi calculator.
 
 
 - **You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
-- **A farmer uses drones to locate beehives in her orchard so she can cultivate them and have a better harvest.**
-- **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this.**
-- **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
-- **Create a text adventure where a player must determine the right series of steps to escape from a locked room.**
-- **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
+- **A farmer uses drones to locate beehives in her orchard so she can cultivate them and have a better harvest**
+- **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this**
+- **There are many ways to calculate pi using a computer; so learn to build and compare them**
+- **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once**
+- **Create a text adventure where a player must determine the right series of steps to escape from a locked room**
+- **Create a program that plays a simple game like tic-tac-toe or Nim against a human**
+- **Create an interactive video game using a Python package like [pygame](http://pygame.org)**
 - **Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
-- **Create an interactive program: Ask the player some questions; then tell them something interesting.**
-- **Create a program that is able to find its way out of a maze.**
-- **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals.**
-- **You study whales and their calls and you would like to try and talk to them.**
-- **Ditch Day Stack: An advanced project for those who complete some other project and wish to do more.**
+- **Create an interactive program: Ask the player some questions; then tell them something interesting**
+- **Create a program that is able to find its way out of a maze**
+- **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals**
+- **You study whales and their calls and you would like to try and talk to them**
+- **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
+- **Ditch Day Stack: An advanced project for those who complete some other project and wish to do more**
 
 
 
@@ -123,6 +126,24 @@ There is a famous math problem that can be solved using some logic. The idea her
 solution is also what you would measure if you used a computer program to simulate how the bugs move. 
 
 
+### Project: Pi from Py
+
+
+**There are many ways to calculate pi using a computer; so learn to build and compare them**
+
+
+One of the most fundamental ideas in computer programming is the loop: Doing a task over and over again (each
+time in a different way) until a much larger task is completed. Humans rapidly tire of such tasks since we are
+busy with other tasks at the same time... like eating lunch and singing songs. So imagine if you will that some
+mathematician has invented a sequence of fractions which is infinitely long. When added together these fractions
+are equal to pi... which consists of an infinite number of digits. Using a computer you can calculate pi 
+*approximately* by adding up tens of thousands of these fractions. How accurate is the result? 
+
+
+The interesting thing is that there are dozens and even hundreds of ways to calculate pi in this way; suggesting
+a comparison of a few of them using your Python programming skills. This is an excellent starter project if you 
+are concerned about doing something fairly simple to build up your confidence. 
+
 ### Project: Knight's Tour
 
 
@@ -145,8 +166,6 @@ work; so you must keep track of what you have already tried in some way. So ther
 in this problem and it is definitely a difficult programming challenge. But it is also very fun. 
 
 
-
-
 ### Project: Room Escape 
 
 
@@ -163,6 +182,12 @@ Creating simple computer games where the computer takes one side is a time-teste
 skills. First you must create code that properly conducts the game; and then you must add some form of intelligence
 so it plays well enough for the game to be interesting to the human player. Tic-tac-toe and Nim are two examples
 of games but there are dozens more.
+
+
+### Project: Video game
+
+
+**Create an interactive video game using a Python package like [pygame](http://pygame.org)**
 
 
 ### Project: Fractals I
@@ -203,6 +228,12 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 
 
 ![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram.png "whale call")
+
+
+### Project: Minecraft landscapes
+
+
+**Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
 
 
 ### Project: Ditch Day Stack
