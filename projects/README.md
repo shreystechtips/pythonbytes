@@ -166,7 +166,7 @@ in this problem and it is definitely a difficult programming challenge. But it i
 **You study whales and their calls and you would like to try and talk to them.**
 
 
-![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram1.png "whale call")
+![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram.png "whale call")
 
 
 ### Project: Ditch Day Stack
