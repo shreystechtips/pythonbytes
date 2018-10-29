@@ -13,8 +13,10 @@ own variations on these ideas.
 - **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
 - **Create a text adventure where a player must determine the right series of steps to escape from a locked room.**
 - **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
+- **Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
 - **Create an interactive program: Ask the player some questions; then tell them something interesting.**
 - **Create a program that is able to find its way out of a maze.**
+- **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals.**
 - **You study whales and their calls and you would like to try and talk to them.**
 - **Ditch Day Stack: An advanced project for those who complete some other project and wish to do more.**
 
@@ -148,6 +150,24 @@ in this problem and it is definitely a difficult programming challenge. But it i
 **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
 
 
+Creating simple computer games where the computer takes one side is a time-tested way of improving your programming 
+skills. First you must create code that properly conducts the game; and then you must add some form of intelligence
+so it plays well enough for the game to be interesting to the human player. Tic-tac-toe and Nim are two examples
+of games but there are dozens more.
+
+
+### Project: Fractals I
+
+
+** Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
+
+
+The Chaos Game uses a geometric plane with three (or *n*) points and a random number generator. You begin anywhere
+and follow a simple rule to determine which of the points is your target. You move half-way to that target and draw
+a small dot. Then you repeat the procedure a large number of times until a pattern emerges. Advanced programmers 
+may choose to play the Chaos Game in three dimensions, for example in the world of Minecraft. 
+
+
 ### Project: Fortune Teller
 
 
@@ -158,6 +178,13 @@ in this problem and it is definitely a difficult programming challenge. But it i
 
 
 **Create a program that is able to find its way out of a maze.**
+
+
+
+### Project: Fractals II
+
+
+**Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals.**
 
 
 ### Project: Whale calls
