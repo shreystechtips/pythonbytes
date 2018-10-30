@@ -126,6 +126,22 @@ There is a famous math problem that can be solved using some logic. The idea her
 solution is also what you would measure if you used a computer program to simulate how the bugs move. 
 
 
+Pursuit is really easy to do using turtle graphics. There are a number of methods built into turtles that 
+enable you to send one turtle towards another. (If you are looking for 'pursuit' notes this is the place. 
+(There is a club coil about this.))  The first method of interest is called **towards** and it gives you
+a heading as an angle: From one location to another. In our case you can get a heading from one turtle to
+another. The second idea is then simply to set the heading of a turtle. You do this using the setheading
+method. Here are three lines of code that orient a turtle named bravo towards another turtle named alpha
+and then move it in that direction 1 pixel:
+
+
+```
+    heading_from_bravo_towards_alpha = bravo.towards(alpha)
+    bravo.setheading(heading_from_bravo_towards_alpha)
+    bravo.forward(1)
+```
+
+
 ### Project: Pi from Py
 
 

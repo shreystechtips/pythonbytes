@@ -125,6 +125,13 @@ to make suggestions by means of an input statement.
 There is a famous math problem that can be solved using some logic. The idea here is to verify that the logical
 solution is also what you would measure if you used a computer program to simulate how the bugs move. 
 
+If you are looking for 'pursuit' notes this is the place. (There is a club coil about this.) 
+
+
+```
+bravo.setheading(bravo.towards(alpha))
+```
+
 
 ### Project: Pi from Py
 
