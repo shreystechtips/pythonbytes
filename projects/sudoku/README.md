@@ -168,17 +168,164 @@ the case with another one of our projects, the knight's tour.
 ##### Logical Guess Number Two
 
 
-Given the guessing approach described in part 1: I need a strategy for backing up and 
-trying a different guess when I get stuck. In order to describe an approach to this
-problem I am going to imagine a very long room with a very long table and a stack of
-identical pieces of paper, each one with a copy of the original puzzle written on it. 
-Let's say I have 100 copies of the puzzle although I will not need them all. And I 
-also have a pencil with an eraser. Now we are going to solve the Sudoku problem using
-Logical Guess Number One but we will do it by observing how the process works so that
-we can produce Logical Guess Number Two. 
+Given the guessing approach described in part 1: I need a strategy for what happens
+when I have no legal guesses. That is I need a way of backing up and trying a different 
+path when I get stuck. 
 
 
-Left off here!
+I imagine a very long room with a very long table. I have a stack of paper where on 
+each sheet is printed (very large) the Sudoku puzzle I am trying to solve. And I have 
+a pencil with an eraser.  I am going to solve the Sudoku puzzle by starting out at one end
+of the long table and taking the top sheet of paper, my first copy of the puzzle. 
+By observing how my solution process works I will arrive at my second logical guess. 
+
+
+I look at my first copy of the Sudoku puzzle and say 'Here is a new Sudoku puzzle for me 
+to solve.' 
+
+
+On this piece of paper I write (fairly small) up at the top of each empty cell every possible 
+guess for that cell. For example (using the puzzle we have above) in cell 8 at the upper 
+right corner I write '4, 6' since those are the only two possibilities. In cell 7, just to 
+the left of cell 8, I write '3, 4, 6'. In cell 6 I also write '3, 4, 6'. Notice that these
+are possible guesses. The possible guesses in once cell do not affect the possible guesses
+in another cell.  I do not do possible guesses for cells that have big numbers written in
+them: Those are assumed to be 'done'. I only do possible guesses for empty cells. 
+
+
+Now that I have filled out possible guesses for all of the cells I will pick an empty
+cell, let's say cell 12 which has coordinates (1, 3) and has possible guesses 3, 4,
+6, 7, 8, 9. I choose the first of these, '3' and I write that as a full-sized number
+in the center of the cell. This is a guess; but I am pretending it is correct as we 
+described doing above. 
+
+
+I now get a new copy of the puzzle from my stack of copies. I carefully copy the '3'
+in cell 12 onto this new copy so it is slightly more solved than the previous copy.
+And now I say to myself 'Here is a new Sudoku puzzle for me to solve.'  
+
+
+This phrase should look familiar.
+
+
+On this (new) copy I write (small) at the top of each empty cell every possible guess for
+that cell. Just as I did before; but now taking into account my additional '3' in cell 12. 
+
+
+Now that I have filled out possible guesses for all of the cells I pick an empty 
+cell, let's say cell 43. I pick the first number in the list of possible guesses 
+for cell 43 and I write it very large in the center of cell 43. This is a guess that I
+am pretending is correct. 
+
+
+I now get a new copy of the puzzle from my stack of copies. I carefully copy my
+two guesses onto this new copy so it is slightly more solved than the previous copy.
+And now I say to myself 'Here is a new Sudoku puzzle for me to solve.' 
+
+
+This phrase should look familiar.
+
+
+On this (new) copy I write small at the top of each empty cell every possible guess 
+for that cell.  Now I pick an empty cell and I pick the first number in the list of 
+possible guesses for that cell.  I write this guess as a large number in the center of that 
+cell: A guess that I am pretending is correct.  Now I get a new copy of the puzzle from 
+my stack of copies.  I carefully copy my guesses onto this new copy so it is slightly 
+more solved than the previous copy.  
+
+
+And now I say to myself 'Here is a new Sudoku puzzle for me to solve.' 
+
+
+This phrase should look familiar.
+
+
+On this new copy I write small at the top of each empty cell every possible guess 
+for that cell.  Now I pick an empty cell and I pick the first number in the list of 
+possible guesses for that cell.  I write this guess as a large number in the center of that 
+cell: A guess that I am pretending is correct.  Now I get a new copy of the puzzle from 
+my stack of copies.  I carefully copy my guesses onto this new copy so it is slightly 
+more solved than the previous copy.  
+
+
+And now I say to myself 'Here is a new Sudoku puzzle for me to solve.' 
+
+
+This phrase should look familiar.
+
+
+On this new copy I write small at the top of each empty cell every possible guess 
+for that cell.  Now I pick an empty cell and I pick the first number in the list of 
+possible guesses for that cell.  I write this guess as a large number in the center of that 
+cell: A guess that I am pretending is correct.  Now I get a new copy of the puzzle from 
+my stack of copies.  I carefully copy my guesses onto this new copy so it is slightly 
+more solved than the previous copy.  
+
+
+And now I say to myself 'Here is a new Sudoku puzzle for me to solve.' 
+
+
+This phrase should look familiar.
+
+
+You might be tired of reading all of this over and over again... but I am trying to 
+make the point that this is why we invented computers: They never get bored of doing
+repetitive jobs. Anyway now let's suppose we have done this procedure 65 times 
+so that there are 65 pieces of paper laid out on the long table. Each piece of paper
+is a record of the next guess. Since we began with 7 cells filled and we made 65
+guesses we now have 72 cells filled and there remain 9 empty cells. We are pretty 
+happy because we are almost done with the Sudoku puzzle. 
+
+
+This time as we work from our latest copy of the puzzle with all the guesses filled
+in we find that one of the cells has zero possible guesses. There is simply no number
+that can be placed in that cell that does not violate the three rules of Sudoku. 
+What does this mean? 
+
+
+What it means is that our previous guess, sheet number 65, was a bad guess. It has
+produced an unsolvable Sudoku puzzle. So we can not go any further; we must back up. 
+We take our current piece of paper and we ball it up and throw it in the recycling. 
+We go back to the previous piece of paper where we wrote down our latest guess and
+we erase that guess. At the top of that cell is the list of possible guesses. Since
+we chose the first one of those -- and it proved to be a bad guess -- we erase it
+from our list of possible guesses. Now we choose the next guess in that list and 
+we carry on as before. 
+
+
+So here you can imagine: What if there was only one possible guess? Then the list 
+of possible guesses is down to zero. What do we do? We ball up that piece of paper 
+and move backwards to piece of paper number 64. There we erase that last guess 
+and choose instead the next possible guess. If there is no next possible guess we 
+ball up that piece of paper and move backwards once more. In fact we keep going 
+backwards until we reach a point where we can go forwards again. 
+
+
+It may take some thought to see how this procedure works to solve the Sudoku
+puzzle; but see if the Second Logical Guess now makes sense to you: 
+
+
+Here is the second logical guess: Because I am doing the same procedure over
+and over again I will create one and only one function that *calls itself*. 
+Every time the function calls itself it is working with a new slightly 
+improved copy of the puzzle. If the function gets stuck (there are no possible
+choices for one of the cells) the function will simply *not* call itself:
+Because we can't go any further. Rather that function will **return** 
+back to the previous version of that function. This is *balling up the piece of
+paper and backing up to the previous guess*. 
+
+
+So to summarize our two logical guesses: 
+
+
+- Once we know all possible guesses for the empty cells we can choose any cell and
+choose any guess and pretend it is correct, creating a slightly more solved version 
+of the puzzle. 
+- By making this solver function call itself it will move closer and closer to a
+complete solution but it must also be able to quit (return) when it gets stuck
+in such a way that it can try a new guess.
+
+
 
 
 
