@@ -5,14 +5,11 @@
 
 
 ### On selecting a project
-Below is a short list of project ideas. You are free to choose one, modify it if you care to, or
-do something completely not listed here.  The most important thing to remember as you read and think
-is: You will have help from us in making sure your project is not too difficult and not too easy.
-Once you have an idea of what you'd like to do: Talk to us at the club meeting and/or email us to
-check in. To keep your project from being a confusing, impossible, discouraging rotten experience
-it might help to look for something 'too easy' first and see how it goes. Often a simple-sounding
-project can be surprisingly fun and interesting even if the end result is not a cool new video game;
-but rather a humble tic-tac-toe player or a pi calculator.
+Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
+The most important thing to remember as you read and think is: Check in with us so we can help make sure 
+you are successful with your project.  To keep your project work from being confusing, impossible and/or 
+discouraging you might look for something 'very easy' first. Often a simple-sounding project can be 
+surprisingly fun and interesting. 
 
 
 - **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
@@ -52,6 +49,14 @@ Here is an extended quote from their main page:
 >
 > The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring 
 > mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.
+
+
+Here is a good example of a Project Euler problem (number 63): 
+
+> The 5-digit number 16807 is also a fifth power: Seven raised to the fifth power. 
+> Similarly, the 9-digit number 134217728 is also eight raised to the ninth power.
+>
+> How many n-digit positive integers exist which are also an n-th power?
 
 
 ### Project: Art Concepts
