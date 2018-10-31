@@ -15,6 +15,7 @@ project can be surprisingly fun and interesting even if the end result is not a 
 but rather a humble tic-tac-toe player or a pi calculator.
 
 
+- **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
 - **You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
 - **A farmer uses drones to locate beehives in her orchard so she can cultivate them and have a better harvest**
 - **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this**
@@ -22,6 +23,7 @@ but rather a humble tic-tac-toe player or a pi calculator.
 - **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once**
 - **Create a text adventure where a player must determine the right series of steps to escape from a locked room**
 - **Create a program that plays a simple game like tic-tac-toe or Nim against a human**
+- **Create a program that solves a Sudoku puzzle**
 - **Create an interactive video game using a Python package like [pygame](http://pygame.org)**
 - **Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
 - **Create an interactive program: Ask the player some questions; then tell them something interesting**
@@ -32,6 +34,24 @@ but rather a humble tic-tac-toe player or a pi calculator.
 - **Ditch Day Stack: An advanced project for those who complete some other project and wish to do more**
 
 
+
+
+### Project: Project Euler! 
+
+
+**Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
+
+
+This is a website containing dozens and dozens of interesting programming challenges with mathematical themes. 
+Here is an extended quote from their main page: 
+
+
+> Project Euler is a series of challenging mathematical/computer programming problems that will require more 
+> than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient 
+> methods, the use of a computer and programming skills will be required to solve most problems.
+>
+> The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring 
+> mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.
 
 
 ### Project: Art Concepts
@@ -198,6 +218,108 @@ Creating simple computer games where the computer takes one side is a time-teste
 skills. First you must create code that properly conducts the game; and then you must add some form of intelligence
 so it plays well enough for the game to be interesting to the human player. Tic-tac-toe and Nim are two examples
 of games but there are dozens more.
+
+
+### Project: Solve a Sudoku puzzle
+
+
+**Create a program that solves a Sudoku puzzle**
+
+
+This project will help you develop your arithmetical-Python skills. If you are unfamiliar with Sudoku you
+should learn about it and try some simple examples before reading further. The rest of this section describes
+some ideas for one way to do this project in terms of 'questions' that come up when we break down the problem.
+
+
+The first question is how to represent the puzzle in Python code. Since a Sudoku puzzle is 9 x 9 
+cells we can use a string of 81 characters. Each of these 81 characters corresponds to a different
+cell. The characters 1, 2, 3, 4, 5, 6, 7, 8, 9 represent those 
+numbers; and we are usually given some of them as the starting point of the puzzle. We can use a 
+space character ' ' to represent an un-solved or empty cell. If we write a good solver we could test 
+it by giving it a string of 81 spaces representing a completely empty Sudoko puzzle to solve and 
+it will find a solution. 
+
+
+The rules of Sudoku require us to precisely satisfy three conditions on the number in each cell..
+
+- The number must not duplicate any other cell in its row
+- The number must not duplicate any other cell in its column
+- The number must not duplicate any other cell in its 3 x 3 cell block
+
+This suggests that cell locations are important for the purpose of comparison with other cells. 
+The next question is therefore how to convert a puzzle location or index in the string p into a 
+cell address that can be used for comparisons. Here is an example Sudoku puzzle for reference 
+where only the first six cells are filled, the rest are empty except the last cell:
+
+
+```
+p = '798512                                                                          3'
+```
+
+That is: p is a string of 81 characters corresponding to the 81 Sudoku cells; and values
+are provided for only 7 of those cells. The rest are empty. 
+
+
+We can index each cell location. For example p[0] = '7', p[1] = '9', p[2] = '8' and so 
+on. Those indexes are 0, 1 and 2. Most of the cells are empty so for example p[43] = ' '. 
+The very last cell (since we begin numbering at 0) has cell index 80, where p[80] = '3'. 
+
+Here is the corresponding Sudoku puzzle in its proper format:
+
+```
+ 7 | 9 | 8 | 5 | 1 | 2 |   |   |   |
+ -----------------------------------
+   |   |   |   |   |   |   |   |   |
+ -----------------------------------
+   |   |   |   |   |   |   |   |   |
+ -----------------------------------
+   |   |   |   |   |   |   |   |   |
+ -----------------------------------
+   |   |   |   |   |   |   |   |   |
+ -----------------------------------
+   |   |   |   |   |   |   |   |   |
+ -----------------------------------
+   |   |   |   |   |   |   |   |   |
+ -----------------------------------
+   |   |   |   |   |   |   |   |   |
+ -----------------------------------
+   |   |   |   |   |   |   |   | 3 |
+```
+
+If we number the rows from the top down as 0, 1, 2, 3, 4, 5, 6, 7, 8 and the columns from 
+left to right as 0, 1, 2, 3, 4, 5, 6, 7, 8 then each cell has an address given by two 
+numbers. For example the upper left cell containing the '7' is at location (0, 0) and 
+the 2 is at address (0,5). The '3' in the lower right corner is at address (8, 8).  Notice
+that by starting the numbering at 0 instead of 1 we are being *Pythonic*: We are thinking
+like Python programmers.
+
+
+We now have two ways to refer to cell values: In string p using a single index from 0 to 81
+and in our puzzle using a two number address like (7,3). How do we convert from one to the
+other and back again?  We could imagine two functions that accomplish these two tasks:
+
+```
+def CellToAddress(c):
+    row = 3
+    col = 4
+    return (row, col)
+
+def AddressToCell(row, col)
+    cell = row*9 + col
+    return cell
+```
+
+
+One of those two functions is correct and the other one is incorrect. (Which is which?) Notice
+that I am using the Python **tuple** in the first function to return an address (row, col). This 
+part is correct... but sadly this function will always return row 3 column 4 regardless of what 
+cell index it is given. So that needs some work. 
+
+
+Once we can convert from cell number to address and back again we reach our third question:
+How can we implement the rules of Sudoku? Here is where the fun (challenge!) begins so
+rather than spoil that this introduction will stop here. Please contact the coaching
+staff for the club if you decide to try this project so they can help you make progress.
 
 
 ### Project: Video game

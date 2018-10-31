@@ -226,100 +226,13 @@ of games but there are dozens more.
 **Create a program that solves a Sudoku puzzle**
 
 
-This project will help you develop your arithmetical-Python skills. If you are unfamiliar with Sudoku you
-should learn about it and try some simple examples before reading further. The rest of this section describes
-some ideas for one way to do this project in terms of 'questions' that come up when we break down the problem.
+This project develops arithmetic and logic (Python) skills. If you are unfamiliar with Sudoku you
+should learn about it and try some easy example puzzles first. Let's assume you have done so; now
+how would you go about building a program that solves a Sudoku (instantly!). We describe one approach
+here following the ideas of the great Jake VanderPlas. You can dive into the sudoku folder and read
+the guidelines there... or you can begin right away without any hints and see how far you get. 
 
 
-The first question is how to represent the puzzle in Python code. Since a Sudoku puzzle is 9 x 9 
-cells we can use a string of 81 characters. Each of these 81 characters corresponds to a different
-cell. The characters 1, 2, 3, 4, 5, 6, 7, 8, 9 represent those 
-numbers; and we are usually given some of them as the starting point of the puzzle. We can use a 
-space character ' ' to represent an un-solved or empty cell. If we write a good solver we could test 
-it by giving it a string of 81 spaces representing a completely empty Sudoko puzzle to solve and 
-it will find a solution. 
-
-
-The rules of Sudoku require us to precisely satisfy three conditions on the number in each cell..
-
-- The number must not duplicate any other cell in its row
-- The number must not duplicate any other cell in its column
-- The number must not duplicate any other cell in its 3 x 3 cell block
-
-This suggests that cell locations are important for the purpose of comparison with other cells. 
-The next question is therefore how to convert a puzzle location or index in the string p into a 
-cell address that can be used for comparisons. Here is an example Sudoku puzzle for reference 
-where only the first six cells are filled, the rest are empty except the last cell:
-
-
-```
-p = '798512                                                                          3'
-```
-
-That is: p is a string of 81 characters corresponding to the 81 Sudoku cells; and values
-are provided for only 7 of those cells. The rest are empty. 
-
-
-We can index each cell location. For example p[0] = '7', p[1] = '9', p[2] = '8' and so 
-on. Those indexes are 0, 1 and 2. Most of the cells are empty so for example p[43] = ' '. 
-The very last cell (since we begin numbering at 0) has cell index 80, where p[80] = '3'. 
-
-Here is the corresponding Sudoku puzzle in its proper format:
-
-```
- 7 | 9 | 8 | 5 | 1 | 2 |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   | 3 |
-```
-
-If we number the rows from the top down as 0, 1, 2, 3, 4, 5, 6, 7, 8 and the columns from 
-left to right as 0, 1, 2, 3, 4, 5, 6, 7, 8 then each cell has an address given by two 
-numbers. For example the upper left cell containing the '7' is at location (0, 0) and 
-the 2 is at address (0,5). The '3' in the lower right corner is at address (8, 8).  Notice
-that by starting the numbering at 0 instead of 1 we are being *Pythonic*: We are thinking
-like Python programmers.
-
-
-We now have two ways to refer to cell values: In string p using a single index from 0 to 81
-and in our puzzle using a two number address like (7,3). How do we convert from one to the
-other and back again?  We could imagine two functions that accomplish these two tasks:
-
-```
-def CellToAddress(c):
-    row = 3
-    col = 4
-    return (row, col)
-
-def AddressToCell(row, col)
-    cell = row*9 + col
-    return cell
-```
-
-
-One of those two functions is correct and the other one is incorrect. (Which is which?) Notice
-that I am using the Python **tuple** in the first function to return an address (row, col). This 
-part is correct... but sadly this function will always return row 3 column 4 regardless of what 
-cell index it is given. So that needs some work. 
-
-
-Once we can convert from cell number to address and back again we reach our third question:
-How can we implement the rules of Sudoku? Here is where the fun (challenge!) begins so
-rather than spoil that this introduction will stop here. Please contact the coaching
-staff for the club if you decide to try this project so they can help you make progress.
 
 
 ### Project: Video game
