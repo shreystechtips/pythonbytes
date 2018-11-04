@@ -82,10 +82,11 @@ making art using Python that we can explore.
 
 **A farmer wishes to use drones to locate some beehives on her orchard so she can cultivate them and have a better harvest.**
 
+
 You are a farmer. You have an orchard 2000 meters x 2000 meters. Notice that locations in your orchard can be
-represented using (x, y) coordinates. Your trees (they are baobab trees) go up quite high, as high as 30 meters; 
-so we can think of the height above the ground as a third (z) coordinate. Hence a location in your orchard can
-be written as (x, y, z). For example (16, 12, 5) would be a point 20 meters from the corner of the orchard and 
+represented using *(x, y)* coordinates. Your trees (they are baobab trees) go up quite high, as high as 30 meters; 
+so we can think of the height above the ground as a third coordinate *z*. Hence a location in your orchard can
+be written **(x, y, z)**. For example **(16, 12, 5)** would be a point 20 meters from the corner of the orchard and 
 5 meters above the ground.  
 
 
@@ -101,43 +102,8 @@ you send it out to count bees. (Perhaps the bees recover the lost drones and use
 If you understand this joke please explain it to your parents.) 
 
 
-You want to locate the bee hives so that you can transfer the summer swarms to Dadant box hives. Then those 
-bees will have a nice home and they can help you by pollinating your trees. This will result in more fruit to
-sell at the market. So the project is to write a program that locates the hives before you run out of drones.  
+To learn more about this project: Click up above on the folder *bees* and read on. 
 
-
-To do this project you will take advantage of a service that Rob put on the internet. It is like a website 
-that you go to; and when you go there (using Python) you tell it the (x, y, z) coordinates you send your 
-drone to and the website responds back with how many bees were found. This requires about four lines of 
-code that we will interpret: Should you decide to take on this project. The lines of code are given below.
-
-
-```
-import requests
-def bees(x, y, z): return int(requests.get('https://52t7suregg.' + \
-        'execute-api.us-east-1.amazonaws.com/default/dronebees?' + \
-        'x=' + str(x) + '&y=' + str(y) + '&z=' + str(z)).text)
-    
-print(bees(10, 17, 4))
-```
-
-You can try this without using Python by clicking on 
-[this link](https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=10&y=17&z=4).
-
-
-I ran this just now and it told me there are four bees at that location. If the bees() function gives 
-'drone lost' then you the farmer have one less drone to work with. You start with ten drones and you can't buy more
-so you want to be careful about how many times you send your drones out for data. 
-
-
-The challenge of this project is to think about the logic for locating the bee hives. If there was no danger of
-losing drones you could just send the drone out four million times to every possible location in the orchard. 
-However since the drones will eventually all wind up stuck in the baobab trees it behooves you to come up with 
-a more efficient strategy.
-
-
-Notice that you can augment your Python program with an incredibly powerful computer: You can use your own brain
-to make suggestions by means of an input statement. 
 
 
 
