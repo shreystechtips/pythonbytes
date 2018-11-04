@@ -1,8 +1,7 @@
 # PythonBytes Project Ideas
 
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects)
-
+[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects#pythonbytes-project-ideas)
 
 ### On selecting a project
 Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
