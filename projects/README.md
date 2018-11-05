@@ -38,24 +38,19 @@ surprisingly fun and interesting.
 **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
 
 
-This is a website containing dozens and dozens of interesting programming challenges with mathematical themes. 
-Here is an extended quote from their main page: 
-
-
-> Project Euler is a series of challenging mathematical/computer programming problems that will require more 
-> than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient 
-> methods, the use of a computer and programming skills will be required to solve most problems.
->
-> The motivation for starting Project Euler, and its continuation, is to provide a platform for the inquiring 
-> mind to delve into unfamiliar areas and learn new concepts in a fun and recreational context.
-
-
-Here is a good example of a Project Euler problem (number 63): 
+The **Project Euler** website has dozens of interesting programming challenges with mathematical themes. 
+For example (Problem number 63): 
 
 > The 5-digit number 16807 is also a fifth power: Seven raised to the fifth power. 
 > Similarly, the 9-digit number 134217728 is also eight raised to the ninth power.
 >
 > How many n-digit positive integers exist which are also an n-th power?
+
+
+Project Euler brings together your mathematical thinking (to help understand and evaluate the challenges) 
+with your growing programming skills. Each project has a user-rating that you can see once you create an
+account and begin to explore. A great feature is that you can submit your answers for evaluation.
+
 
 
 ### Project: Art Concepts
@@ -64,16 +59,15 @@ Here is a good example of a Project Euler problem (number 63):
 **You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
 
 
-Here is an image of a painting by Dutch painter Piet Mondrian. 
+This is an abstract painting by Dutch painter Piet Mondrian. 
 
 
 ![image of a painting by Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/mondrian.png "Tableau I, 1921")
 
 
-It is abstract and very minimal in its construction elements. The idea of this project is to research different themes and 
-artists with the idea of creating similar graphical elements using Python. You might begin with Turtle graphics but there 
-are many other ways you can proceed.  There is even an [entire book](https://www.makeartwithpython.com/book/) devoted to
-making art using Python that we can explore. 
+The idea of this project is to research artists and artistic themes with the idea of creating similar graphical elements 
+using Python. You might begin with Turtle graphics but there are many other ways you can proceed.  There are even 
+[books](https://www.makeartwithpython.com/book/) devoted to making art using Python.
 
 
 ### Project: Bees and Drones
@@ -104,6 +98,8 @@ If you understand this joke please explain it to your parents.)
 To learn more about this project: Click up above on the folder *bees* and read on. 
 
 
+[More on the bees project here](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
+
 
 
 ### Project: Converging Bugs
@@ -113,23 +109,9 @@ To learn more about this project: Click up above on the folder *bees* and read o
 
 
 There is a famous math problem that can be solved using some logic. The idea here is to verify that the logical
-solution is also what you would measure if you used a computer program to simulate how the bugs move. 
-
-
-Pursuit is really easy to do using turtle graphics. There are a number of methods built into turtles that 
-enable you to send one turtle towards another. (If you are looking for 'pursuit' notes this is the place. 
-(There is a club coil about this.))  The first method of interest is called **towards** and it gives you
-a heading as an angle: From one location to another. In our case you can get a heading from one turtle to
-another. The second idea is then simply to set the heading of a turtle. You do this using the setheading
-method. Here are three lines of code that orient a turtle named bravo towards another turtle named alpha
-and then move it in that direction 1 pixel:
-
-
-```
-    heading_from_bravo_towards_alpha = bravo.towards(alpha)
-    bravo.setheading(heading_from_bravo_towards_alpha)
-    bravo.forward(1)
-```
+solution is also what you would measure if you used a computer program to simulate how the bugs move. Because
+this project is a lot of fun we encourage you to 
+[read more about it here!](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 
 
 ### Project: Pi from Py
@@ -146,9 +128,9 @@ are equal to pi... which consists of an infinite number of digits. Using a compu
 *approximately* by adding up tens of thousands of these fractions. How accurate is the result? 
 
 
-The interesting thing is that there are dozens and even hundreds of ways to calculate pi in this way; suggesting
-a comparison of a few of them using your Python programming skills. This is an excellent starter project if you 
-are concerned about doing something fairly simple to build up your confidence. 
+This is an excellent starter project. You can 
+[read more about Pi from Py here.](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
+
 
 ### Project: Knight's Tour
 
@@ -201,6 +183,10 @@ should learn about it and try some easy example puzzles first. Let's assume you 
 how would you go about building a program that solves a Sudoku (instantly!). We describe one approach
 here following the ideas of the great Jake VanderPlas. You can dive into the sudoku folder and read
 the guidelines there... or you can begin right away without any hints and see how far you get. 
+
+
+This is a fairly advanced project. You can 
+[read more about Sudoku solvers here.](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 
 
 
