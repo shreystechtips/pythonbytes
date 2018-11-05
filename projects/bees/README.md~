@@ -73,13 +73,13 @@ which is just about the center of the orchard? Here is the URL to use for this:
 https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=1000&y=1000&z=30
 ```
 
+What I got back after a few refreshes was **6**, **4**, **5**, and **drone lost**. So my drone got stuck in a tree. 
+That's ok; I have 9 left. 
 
 
-
-
-It is just a website where you can embed your coordinates in the address.  you go to; and when you go there (using Python) you tell it the (x, y, z) coordinates you send your 
-drone to and the website responds back with how many bees were found. This requires about four lines of 
-code that we will interpret: Should you decide to take on this project. The lines of code are given below.
+Now this is going to be very tedious; but tedious tasks are what computers are good at. So your job is to build 
+a Python program that talks to the internet; in fact that talks to this service.  Here is what the code looks like.
+(This will not work at cswonders.com in code pad by the way; you will need a different Python environment.)
 
 
 ```
@@ -91,13 +91,8 @@ def bees(x, y, z): return int(requests.get('https://52t7suregg.' + \
 print(bees(10, 17, 4))
 ```
 
-You can try this without using Python by clicking on 
-[this link](https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=10&y=17&z=4).
 
-
-I ran this just now and it told me there are four bees at that location. If the bees() function gives 
-'drone lost' then you the farmer have one less drone to work with. You start with ten drones and you can't buy more
-so you want to be careful about how many times you send your drones out for data. 
+When this runs properly it will either return a number of bees or it will return 'drone lost'. 
 
 
 The challenge of this project is to think about the logic for locating the bee hives. If there was no danger of
