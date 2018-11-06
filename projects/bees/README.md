@@ -56,7 +56,7 @@ and pasting this:
 
 
 ```
-https://drone.robfatland.net?x=12&y=16&z=4
+https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=12&y=16&z=4
 ```
 
 I just did this and what I got back looked like a blank web page... until I noticed the number **8** in the upper left corner. 
@@ -84,7 +84,7 @@ a Python program that talks to the internet; in fact that talks to this service.
 
 ```
 import requests
-def bees(x, y, z): return requests.get('https://drone.robfatland.club?' + \
+def bees(x, y, z): return requests.get('https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?' + \
         'x=' + str(x) + '&y=' + str(y) + '&z=' + str(z)).text
     
 print(bees(10, 17, 4))
