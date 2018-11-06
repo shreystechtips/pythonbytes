@@ -70,7 +70,7 @@ which is just about the center of the orchard? Here is the URL to use for this:
 
 
 ```
-https://drone.robfatland.club?x=1000&y=1000&z=30
+https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=1000&y=1000&z=30
 ```
 
 What I got back after a few refreshes was **6**, **4**, **5**, and **drone lost**. So my drone got stuck in a tree. 
