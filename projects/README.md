@@ -26,7 +26,8 @@ surprisingly fun and interesting.
 - **Create a program that is able to find its way out of a maze**
 - **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals**
 - **You study whales and their calls and you would like to try and talk to them**
-- **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
+- **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft**
+- **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system**
 - **Ditch Day Stack: An advanced project for those who complete some other project and wish to do more**
 
 
@@ -241,6 +242,21 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 
 
 **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
+
+
+### Project: Stargirl
+
+
+**Stargirl: You pilot a Tesla Roadster to escape the Jupiter system.**
+
+You might say 'Python is a bit tricky but it's not Rocket Science!' but indeed how wrong you would be. This project 
+creates a game putting the Player at the controls of a Tesla Roadster that still has some gas in its rocket engines. 
+You are approaching the planet Jupiter and must use some controlled burns to slingshot yourself away using the
+Jupiter itself and the four moons: Callisto, Europa, Io and Ganymede. 
+
+
+By the way Rob has no idea how difficult this project will be but his attitude is 'How difficult could it be??'
+He doesn't seem to worried; anyways you would have to talk to him about this one. 
 
 
 ### Project: Ditch Day Stack
