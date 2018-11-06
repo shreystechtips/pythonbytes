@@ -56,7 +56,7 @@ and pasting this:
 
 
 ```
-https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=12&y=16&z=4
+https://drone.robfatland.net?x=12&y=16&z=4
 ```
 
 I just did this and what I got back looked like a blank web page... until I noticed the number **8** in the upper left corner. 
@@ -70,7 +70,7 @@ which is just about the center of the orchard? Here is the URL to use for this:
 
 
 ```
-https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=1000&y=1000&z=30
+https://drone.robfatland.club?x=1000&y=1000&z=30
 ```
 
 What I got back after a few refreshes was **6**, **4**, **5**, and **drone lost**. So my drone got stuck in a tree. 
@@ -84,8 +84,7 @@ a Python program that talks to the internet; in fact that talks to this service.
 
 ```
 import requests
-def bees(x, y, z): return requests.get('https://52t7suregg.' + \
-        'execute-api.us-east-1.amazonaws.com/default/dronebees?' + \
+def bees(x, y, z): return requests.get('https://drone.robfatland.club?' + \
         'x=' + str(x) + '&y=' + str(y) + '&z=' + str(z)).text
     
 print(bees(10, 17, 4))
