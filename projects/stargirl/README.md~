@@ -23,14 +23,11 @@ possible; and as always it may help to consult with us, your Python Bytes coache
 
 The sketch of ideas goes like this...
 
-- Work in only two dimensions plus time. 
-- We will try to use Turtle graphics but we will need two separate displays
-  - First display is the entire Jupiter system
-  - Second display is the close approach to either Jupiter or one of its four moons
-- We will need to be very good at calculating and drawing (with turtles) the sum of two vectors
-  - There is a Python Bites worksheet Coil about this
-- We will take the position of Jupiter as fixed. Jupiter will be the reference that does not move.
-- We create four moons that revolve around Jupiter -- in orbit -- based on some simple rules
-  - The moons must move properly 
+- Work in only two dimensions 
+- Establish the location, mass and radius of Jupiter
+- Establish the locations, masses and radii of Io, Europa, Callisto and Ganymede
+- Establish a series of starting locations with velocities (possible entry points of your spaceship)
+- Use simple physics of gravity to travel forward in time
 
 
+[trajectories](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl/trajectories.png)
