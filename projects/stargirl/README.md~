@@ -30,4 +30,4 @@ The sketch of ideas goes like this...
 - Use simple physics of gravity to travel forward in time
 
 
-[trajectories](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl/trajectories.png)
+![trajectories](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl/trajectories.png "trajectories for Stargirl")
