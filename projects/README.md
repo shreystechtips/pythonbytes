@@ -154,11 +154,16 @@ build as you go through it. When the knight backs up it should not try the same 
 work; so you must keep track of what you have already tried in some way. So there is quite a lot of logic involved 
 in this problem and it is definitely a difficult programming challenge. But it is also very fun. 
 
+[More on the knight's tour here...](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
+
 
 ### Project: Room Escape 
 
 
 **Create a text adventure where a player must determine the right series of steps to escape from a locked room.**
+
+
+[More on adventure here...](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
 
 
 ### Project: Game Player
@@ -171,6 +176,10 @@ Creating simple computer games where the computer takes one side is a time-teste
 skills. First you must create code that properly conducts the game; and then you must add some form of intelligence
 so it plays well enough for the game to be interesting to the human player. Tic-tac-toe and Nim are two examples
 of games but there are dozens more.
+
+
+[More on simple games here...](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
+
 
 
 ### Project: Solve a Sudoku puzzle
@@ -198,6 +207,9 @@ This is a fairly advanced project. You can
 **Create an interactive video game using a Python package like [pygame](http://pygame.org)**
 
 
+[More on video games here](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
+
+
 ### Project: Fractals I
 
 
@@ -210,10 +222,16 @@ a small dot. Then you repeat the procedure a large number of times until a patte
 may choose to play the Chaos Game in three dimensions, for example in the world of Minecraft. 
 
 
+[More on these fractals here](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
+
+
 ### Project: Fortune Teller
 
 
 **Create an interactive program: Ask the player some questions; then tell them something interesting.**
+
+
+[More on fortune programs here](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
 
 
 ### Project: Maze Solver
@@ -222,20 +240,36 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 **Create a program that is able to find its way out of a maze.**
 
 
+[More on maze solvers here](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)
+
+
 
 ### Project: Fractals II
+
 
 
 **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals.**
 
 
+
+[More on these fractals here](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
+
+
+
 ### Project: Whale calls
+
 
 
 **You study whales and their calls and you would like to try and talk to them.**
 
 
+
 ![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram.png "whale call")
+
+
+
+[More on whale calls here](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
+
 
 
 ### Project: Minecraft landscapes
@@ -244,10 +278,14 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
 
 
+[More on minecraft here](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
+
+
 ### Project: Stargirl
 
 
 **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system.**
+
 
 You might say 'Python is a bit tricky but it's not Rocket Science!' but indeed how wrong you would be. This project 
 creates a game putting the Player at the controls of a Tesla Roadster that still has some gas in its rocket engines. 
@@ -255,8 +293,11 @@ You are approaching the planet Jupiter and must use some controlled burns to sli
 Jupiter itself and the four moons: Callisto, Europa, Io and Ganymede. 
 
 
-By the way Rob has no idea how difficult this project will be but his attitude is 'How difficult could it be??'
-He doesn't seem to worried; anyways you would have to talk to him about this one. 
+[More on Stargirl here...](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
+
+
+This project would be quite challenging if you are new to gravity. If you have a lot of experience with
+gravity you will have some helpful intuition; and we can always give you some further help; come see us!
 
 
 ### Project: Ditch Day Stack
