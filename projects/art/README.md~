@@ -20,7 +20,11 @@ century. You might for example use a search engine to find sources of **abstract
 
 What about other Python Bytes projects? Take a look at the 
 [image on the Stargirl project page](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth).
-The fractals-I and fractals-II projects will also produce some interesting images for you to enjoy.
+The 
+[fractals-I](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
+and 
+[fractals-II](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
+projects will also produce some interesting images for you to enjoy.
 
 
 ### Details
