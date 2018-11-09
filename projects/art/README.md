@@ -1,7 +1,7 @@
 # PythonBytes Project In-Depth
 
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/art#python-project-in-depth)
+[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
 
 
 ### Overview
@@ -19,7 +19,7 @@ century. You might for example use a search engine to find sources of **abstract
 
 
 What about other Python Bytes projects? Take a look at the 
-[image on the Stargirl project page](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#python-project-in-depth).
+[image on the Stargirl project page](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth).
 The fractals-I and fractals-II projects will also produce some interesting images for you to enjoy.
 
 

@@ -1,7 +1,7 @@
 # PythonBytes Project In-Depth
 
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#python-project-in-depth)
+[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 
 
 ### Overview
