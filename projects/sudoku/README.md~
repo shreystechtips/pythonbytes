@@ -6,7 +6,16 @@
 
 ### Overview
 
-Text
+
+These project notes are currently under development. You are welcome to read through here but 
+not everything is complete and tested! 
+
+
+You might also look into other types of puzzles (camping, gardens, spirals) that are similar in
+nature to Sudoku.
+
+
+
 
 ### Details
 
