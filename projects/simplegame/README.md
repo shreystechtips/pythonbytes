@@ -4,7 +4,7 @@
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
 
 
-![Simple game of tic tac toe](https://github.com/robfatland/pythonbytes/blob/master/projects/tictactoe.png "tic tac toe game in progress")
+![Simple game of tic tac toe](https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png "tic tac toe game in progress")
 
 
 ### Overview
