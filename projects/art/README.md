@@ -30,6 +30,8 @@ projects will also produce some interesting images for you to enjoy.
 ### Details
 
 
-Let's take a moment to recreate the Mondrian piece shown above using turtle graphics. 
+Let's take a moment to recreate the Mondrian piece shown above using the pygame package.
+If it is not here yet please remind me to write the code. If it is done it will be 
+called 'example.py'.
 
 
