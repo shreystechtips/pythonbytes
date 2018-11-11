@@ -13,7 +13,7 @@ See the PythonBytes coaches for help with this.
 
 
 Once you have that in place: Create a program that shows the board for the game you have in mind and
-allows the player to make moves. In my example program (Example.py) the game is tic tac toe.
+allows the player to make moves. In my example program (example.py) the game is tic tac toe.
 
 
 ### Details
