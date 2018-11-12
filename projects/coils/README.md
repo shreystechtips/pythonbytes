@@ -11,9 +11,8 @@ suggesting projects.
 
 ### Starter Challenges
 
-* Write a program that prints Lonna’s dog said “whuff!!”
+* Write a program that prints *Lonna’s dog said “whuff!!”*
 * Write a program to print out the first 10 fibonacci numbers
-* Know turtle graphics? Write a program that draws your name in some impressive way.
 * Determine what this program does by running it many times
 
 ```
@@ -37,11 +36,15 @@ print(randint(1,6)+randint(1,6))
 
 ### Turtle Graphics
 
+
 Know turtle graphics? These are for you!
 
+
+* Write a program that draws your name in some impressive way.
 * Can you create two turtles that each follow their own path?
 * Draw a boat on the ocean. Draw some famous droodles; or invent your own.
 * What will the following program do? Check your answer by copying this into CodePad at cswonders.
+
 
 ```
 import turtle
