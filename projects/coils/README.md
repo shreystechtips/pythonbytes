@@ -1,106 +1,86 @@
 # PythonBytes Project In-Depth
 
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/bees)
+[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
 
 
-### Overview
+### Coils
 
-Farmers like to see bees (particularly honey bees) in their fields and orchards because the bees help pollinate the plants. 
-In this project we imagine that you are such a farmer and you happen to own ten drones that you can send to locations in 
-your orchard. By measuring the local buzzing your drones are able to tell you how many bees there are at that location. 
-You goal is to determine places where the bees are clustering (these are called hives) so that you can visit those locations
-in early summer and hopefully capture a swarm. 
+Here we have all of the **Coils** from the PythonBytes worksheets. They are rephrased a little bit with the idea of 
+suggesting projects.
 
+### Starter Challenges
 
-Now what is a swarm? And why do bees do this behavior? And why would a farmer wish to *capture* it? (It sounds rather
-dangerous!) And once they do is that good or bad for the bees? So who wins and who loses in this situation. We leave it
-to you to do the research. For now we will concentrate on the programming challenge: Use Python to send your drones out 
-into your orchard to observe the bee density. Use your intelligence to program a search pattern... but be warned: 
-The further out you send your drones the more likely it is that they will become entangled in the branches of your
-orchard trees and lost. 
-
-
-
-### Details
-
-
-Somewhere on the internet is a service that listens for requests ('How many bees are at (x, y, z) coordinates?') When it
-gets such a request it returns the number of bees; but of course the answer will be somewhat at random, bees being what
-they are. This is how we are simulating your drone observing the bees. However if your drone gets tangled in the orchard
-branches the service will return the string 'drone lost'. 
-
-
-You want to locate the bee hives so that you can transfer the summer swarms to Dadant hives. 
-The project is to write a program that intelligently locates the hives before you run out of drones.  
-
-
-What is a 'service'? First let's come up with a name for 'what you type in your browser window'. For example if you
-type in 'google.com' your browser gives you a search window from Google. So let's call that thing you type in a URL.
-You can read about what URL stands for on Wikipedia if you like. Suppose you want to go to Google to look up what
-Dadant hives are. You can type in the URL http://google.com and then type in 'Dadant' in the search box. OR you can
-use a different URL that does the search immediately. Try typing this into your browser: 
-
+* Write a program that prints Lonna’s dog said “whuff!!”
+* Write a program to print out the first 10 fibonacci numbers
+* Know turtle graphics? Write a program that draws your name in some impressive way.
+* Determine what this program does by running it many times
 
 ```
-http://google.com/search?query=Dadant
+from random import randint
+print(randint(1,6)+randint(1,6))
 ```
 
-What you did was tell Google some additional things by making the URL longer. Google interpreted what you put in
-to mean 'Dear Google: Please do a search for me using the word *Dadant*'. And that is what Google did for you; and
-that is what we mean by a *service*. 
+* Write a program: Input a number n, then calculate and print n fibonacci numbers
+* Write code to print ten rows of the Pascal triangle in a pretty and readable fashion
+  * At the end of each row print a colon followed by the sum of all the numbers in that row
+* If you roll 3 dice and add the results the lowest possible sum is 3 and the highest is 18. If you roll n dice the lowest is n and the highest is 6n. Write a program that rolls *n* dice 10,000 times and keeps track of the results in a list. Plot the results using a turtle. You can set the value of *n* at the top of the program or you can have this be an input. Compare your results for n = 1, 2, 3, 4, and 5. (Getting the turtle to draw your results is a very challenging and worthy project in itself!)
+* You have a set of n objects, all different, placed in a row before you. You decide to count how many subsets of this set there are by placing either a black or a white pawn next to each object. A black pawn means the object is in the subset and a white pawn means that the object is not in the subset. Now two questions:
+  * Does this suggest an easy way of calculating the total number of subsets?
+  * What if anything does this have to do with previous challenges? 
+* Write a computer program that guesses a number that you choose between 1 and 100
+* Write a computer program that plays Nim. (You may have to look up Nim!)
+* Add up all the integers from 1 to 9,472
+* What is the difference between range(20), range(4,20), and range(4,20,7)? 
 
 
-Now here is a way of trying out the service that tells you how many bees are at ```(x, y, z)```. Try copying 
-and pasting this: 
 
+### Turtle Graphics
 
-```
-https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=12&y=16&z=4
-```
+Know turtle graphics? These are for you!
 
-I just did this and what I got back looked like a blank web page... until I noticed the number **8** in the upper left corner. 
-So apparently there are 8 bees at the coordinates ```(x, y, z) = (12, 16, 4)```. So that's cool. What happens if I hit refresh?
-The answer is that this time I got 5 bees. So it changes. As long as my searches are really close to the corner ```(0, 0, 0)```
-like this it is unlikely I will lose my drone. So you can practice a bit, safely. 
-
-
-Now what happens when I send the drone out into the orchard? Let's make a URL that sends a drone to location ```(1000, 1000, 30)```
-which is just about the center of the orchard? Here is the URL to use for this: 
-
-
-```
-https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?x=1000&y=1000&z=30
-```
-
-What I got back after a few refreshes was **6**, **4**, **5**, and **drone lost**. So my drone got stuck in a tree. 
-That's ok; I have 9 left. 
-
-
-Now this is going to be very tedious; but tedious tasks are what computers are good at. So your job is to build 
-a Python program that talks to the internet; in fact that talks to this service.  Here is what the code looks like.
-(This will not work at cswonders.com in code pad by the way; you will need a different Python environment.)
-
+* Can you create two turtles that each follow their own path?
+* Draw a boat on the ocean. Draw some famous droodles; or invent your own.
+* What will the following program do? Check your answer by copying this into CodePad at cswonders.
 
 ```
-import requests
-def bees(x, y, z): return requests.get('https://52t7suregg.execute-api.us-east-1.amazonaws.com/default/dronebees?' + \
-        'x=' + str(x) + '&y=' + str(y) + '&z=' + str(z)).text
-    
-print(bees(10, 17, 4))
+import turtle
+from random import randint
+t0 = turtle.Turtle(); t0.color('blue'); t0.speed(0); 
+t1 = turtle.Turtle(); t1.color('red'); t1.speed(0)
+for i in range(100): 
+    t0.forward(randint(20, 40)); t0.left(randint(0,359))
+    t1.forward(randint(20, 40)); t1.left(randint(0,359))
 ```
 
+* Create two turtles--one blue, one red--and have them start out facing one another, some distance apart. Make them walk towards one another. What happens?
+* Write a program showing a pencil drawing another pencil. Look up Escher's *Drawing Hands*...
+* This one involves pursuit. Create two turtles named Alpha and Bravo. Place Alpha at (-150, -150). Place Bravo at (150, -150). Create a time for-loop that counts through 400 time ticks. Each tick: Alpha moves one pixel up and to the right. In the same tick: Bravo moves forward one pixel towards Alpha. Notice that as Alpha moves Bravo will have to keep adjusting the direction that she travels. To get an idea of how to do this I will give you two options. Either explore this web page: https://docs.python.org/2/library/turtle.html or visit the [project ideas page for bugs](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth). 
+* Enter two pairs of numbers (x, y) and (u, v) and draw three arrows: An arrow from (0, 0) to (x, y), an arrow from (0, 0) to (u, v), and an arrow from (0, 0) to (x + u, y + v). This is a basic building block for creating a spacecraft trajectory planning program. Once you are good at this try changing those coordinates x, y, u, and v inside of for-loops in some interesting way.
 
-When this runs properly it will either return a number of bees or it will return 'drone lost'. 
+### Prime Race
+
+These challenges have to do with prime numbers... *the building blocks of reality!*... so tread carefully.
 
 
-The challenge of this project is to think about the logic for locating the bee hives. If there was no danger of
-losing drones you could just send the drone out four million times to every possible location in the orchard. 
-However since the drones will eventually all wind up stuck in the baobab trees it behooves you to come up with 
-a more efficient strategy.
+Write a program that asks for an input number like 7 and then returns the 7th prime number (which is 17) as fast as it can. 
+The program should take an input as big as 78,498. We will time all contestant programs to determine which is the fastest. 
 
 
-Notice that you can augment your Python program with an incredibly powerful computer: You can use your own brain
-to make suggestions by means of an input statement. 
+Now that you are good at prime numbers: Generate the Ulam spiral! This can be done with turtle graphics as you can print in color; or use regular print statements but only print the primes. The Ulam spiral begins at some (input!) number and counts upwards, printing the numbers so at to emphasize those that are primes.  It is common to begin at 41. Here is an example that goes from 1 to 25; the numbers follow a spiral path. It is not very interesting until you figure out how to emphasize the prime numbers.
 
+```
+                        17 16 15 14 13
+                        18  5  4  3 12
+                        19  6  1  2 11
+                        20  7  8  9 10
+                        21 22 23 24 25 etcetera
+```
+
+### Data Science
+
+These are more involved challenges that start to investigate the idea of data. For our purposes *data* means some form of 
+information that we can look at using Python. If you want to explore any of these further: Maybe check in with the coaches.
+
+* You are given a variable n that contains a very very long string of letters. Only four letters were used: A, C, G and T. They are in any order; for example the string begins n = ‘ACGGTATACCATGCT…’ and it continues for 10,000 letters. You also have a variable s = ‘ACAGTATAGTTT’, a shorter string of 12 letters. The question is “Where can this little string s be found in the big string n? 
 
