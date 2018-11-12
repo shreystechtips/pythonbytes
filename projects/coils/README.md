@@ -31,7 +31,10 @@ print(randint(1,6)+randint(1,6))
 * Write a computer program that plays Nim. (You may have to look up Nim!)
 * Add up all the integers from 1 to 9,472
 * What is the difference between range(20), range(4,20), and range(4,20,7)? 
-
+* Here is a more complex challenge in three parts...
+  * **Chooser** picks a number from 1 to 100; and **Guesser** tries to guess it by saying a number. **Chooser** reponds by saying 'Higher!' or 'Lower!' or 'Got it!' and if you wish to keep score you count how many guesses were needed. The two players take turns being **Chooser** and **Guesser**. So the first challenge is to write a program that acts as **Chooser**.
+  * You guessed it: Write a program that plays the game as **Guesser**. Try and make it as skillful as you are. 
+  * Now take both programs and combine them into a larger program. The human player first decides whether they want to be **Chooser** or **Guesser** and the program continues from there. 
 
 
 ### Turtle Graphics
@@ -61,7 +64,9 @@ for i in range(100):
 * This one involves pursuit. Create two turtles named Alpha and Bravo. Place Alpha at (-150, -150). Place Bravo at (150, -150). Create a time for-loop that counts through 400 time ticks. Each tick: Alpha moves one pixel up and to the right. In the same tick: Bravo moves forward one pixel towards Alpha. Notice that as Alpha moves Bravo will have to keep adjusting the direction that she travels. To get an idea of how to do this I will give you two options. Either explore this web page: https://docs.python.org/2/library/turtle.html or visit the [project ideas page for bugs](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth). 
 * Enter two pairs of numbers (x, y) and (u, v) and draw three arrows: An arrow from (0, 0) to (x, y), an arrow from (0, 0) to (u, v), and an arrow from (0, 0) to (x + u, y + v). This is a basic building block for creating a spacecraft trajectory planning program. Once you are good at this try changing those coordinates x, y, u, and v inside of for-loops in some interesting way.
 
+
 ### Prime Race
+
 
 These challenges have to do with prime numbers... *the building blocks of reality!*... so tread carefully.
 
@@ -79,6 +84,30 @@ Now that you are good at prime numbers: Generate the Ulam spiral! This can be do
                         20  7  8  9 10
                         21 22 23 24 25 etcetera
 ```
+
+Here is the same thing but only printing prime numbers...
+
+```
+                        17          13
+                            5     3   
+                        19        2 11
+                            7         
+                              23       etcetera
+```
+
+Does a pattern emerge if you make the spiral much bigger? How about if you begin at 41 rather than 1?
+
+### Probability
+
+* What does this program do?
+
+```
+from random import choice
+for i in range(10): print choice(['heads', 'tails'])
+```
+
+* Suppose you only have a fair coin that has a 0.5 probability of coming up heads and a 0.5 probability of coming up tails. That is: It comes up heads 50% of the time. How would you use this coin to accurately create an unfair coin that came up heads 37.2% of the time? Check your conclusion by writing and using a Python program.
+
 
 ### Data Science
 
