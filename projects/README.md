@@ -305,11 +305,10 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 ### Project: Fractals II
 
 
-![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
-
-
 **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals.**
 
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png" alt="drawing" width="280"/>
 
 
 [More on these fractals here](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
@@ -367,9 +366,6 @@ gravity you will have some helpful intuition; and we can always give you some fu
 
 
 ### Project: Ditch Day Stack
-
-
-![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
 
 
 **Ditch Day Stack: An advanced project for those who complete some other project and have time to do more.**
