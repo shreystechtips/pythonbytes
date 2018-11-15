@@ -105,10 +105,10 @@ account and begin to explore. A great feature is that you can submit your answer
 **You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png" alt="drawing" width="280"/>
+
+
 This is an abstract painting by Dutch painter Piet Mondrian. 
-
-
-![image of a painting by Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png "Tableau I, 1921")
 
 
 The idea of this project is to research artists and artistic themes with the idea of creating similar graphical elements 
@@ -119,10 +119,10 @@ using Python. You might begin with Turtle graphics but there are many other ways
 ### Project: Bees and Drones
 
 
-![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
-
-
 **A farmer wishes to use drones to locate some beehives on her orchard so she can cultivate them and have a better harvest.**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png" alt="drawing" width="280"/>
 
 
 You are a farmer. You have an orchard 2000 meters x 2000 meters. Notice that locations in your orchard can be
@@ -144,32 +144,28 @@ you send it out to count bees. (Perhaps the bees recover the lost drones and use
 If you understand this joke please explain it to your parents.) 
 
 
-To learn more about this project: Click up above on the folder *bees* and read on. 
-
-
 [More on the bees project here](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-
 
 
 ### Project: Converging Bugs
 
 
-![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
-
-
 **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this.**
 
 
-There is a famous math problem that can be solved using some logic. The idea here is to verify that the logical
-solution is also what you would measure if you used a computer program to simulate how the bugs move. Because
-this project is a lot of fun we encourage you to 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bugs/bug.png" alt="drawing" width="280"/>
+
+
+Ok maybe they are Volkswagon bugs in a gigantic soccer stadium... doesn't matter; same problem! 
+
+
+What problem? Well it is a famous math problem that can be solved using some logic. 
+Whether you solve it or not you can certainly explore the problem using a Python program. 
+Because this project is a lot of fun we encourage you to 
 [read more about it here!](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 
 
 ### Project: Pi from Py
-
-
-![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
 
 
 **There are many ways to calculate pi using a computer; so learn to build and compare them**
@@ -190,10 +186,10 @@ This is an excellent starter project. You can
 ### Project: Knight's Tour
 
 
-![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
-
-
 **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/knight/knight.png" alt="drawing" width="280"/>
 
 
 This is another famous problem that can be solved with a good choice of algorithm. It also usually takes the 
@@ -229,7 +225,7 @@ in this problem and it is definitely a difficult programming challenge. But it i
 **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
 
 
-![tictactoe board](https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png =250x "tic tac toe")
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png" alt="drawing" width="280"/>
 
 
 Creating simple computer games where the computer takes one side is a time-tested way of improving your programming 
@@ -241,14 +237,13 @@ of games but there are dozens more.
 [More on simple games here...](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
 
 
-
 ### Project: Solve a Sudoku puzzle
 
 
-![sudoku](https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png "sudoku")
-
-
 **Create a program that solves a Sudoku puzzle**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png" alt="drawing" width="280"/>
 
 
 This project develops arithmetic and logic (Python) skills. If you are unfamiliar with Sudoku you

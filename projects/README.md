@@ -105,10 +105,10 @@ account and begin to explore. A great feature is that you can submit your answer
 **You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png" alt="drawing" width="280"/>
+
+
 This is an abstract painting by Dutch painter Piet Mondrian. 
-
-
-![image of a painting by Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png "Tableau I, 1921")
 
 
 The idea of this project is to research artists and artistic themes with the idea of creating similar graphical elements 
@@ -119,10 +119,10 @@ using Python. You might begin with Turtle graphics but there are many other ways
 ### Project: Bees and Drones
 
 
-![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
-
-
 **A farmer wishes to use drones to locate some beehives on her orchard so she can cultivate them and have a better harvest.**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png" alt="drawing" width="280"/>
 
 
 You are a farmer. You have an orchard 2000 meters x 2000 meters. Notice that locations in your orchard can be
@@ -144,32 +144,28 @@ you send it out to count bees. (Perhaps the bees recover the lost drones and use
 If you understand this joke please explain it to your parents.) 
 
 
-To learn more about this project: Click up above on the folder *bees* and read on. 
-
-
 [More on the bees project here](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-
 
 
 ### Project: Converging Bugs
 
 
-![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
-
-
 **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this.**
 
 
-There is a famous math problem that can be solved using some logic. The idea here is to verify that the logical
-solution is also what you would measure if you used a computer program to simulate how the bugs move. Because
-this project is a lot of fun we encourage you to 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bugs/bug.png" alt="drawing" width="280"/>
+
+
+Ok maybe they are Volkswagon bugs in a gigantic soccer stadium... doesn't matter; same problem! 
+
+
+What problem? Well it is a famous math problem that can be solved using some logic. 
+Whether you solve it or not you can certainly explore the problem using a Python program. 
+Because this project is a lot of fun we encourage you to 
 [read more about it here!](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 
 
 ### Project: Pi from Py
-
-
-![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
 
 
 **There are many ways to calculate pi using a computer; so learn to build and compare them**
@@ -190,26 +186,26 @@ This is an excellent starter project. You can
 ### Project: Knight's Tour
 
 
-![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
-
-
 **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/knight/knight.png" alt="drawing" width="280"/>
 
 
 This is another famous problem that can be solved with a good choice of algorithm. It also usually takes the 
 form of a recursion problem; so here is a note on recursion. Suppose you want to add 2 + 2 + 2 + 2 + 2 + 2 + 2.
-One way to do this is to write a Python function that can call itself. This is an advanced topic so you will 
-want to talk to the Python Bytes coaches if you are not already familiar with it. 
+One way to do this is to write a Python function that can call itself. This is a topic you will definitely
+want to talk to Python Bytes coaches about.
 
 
-Now to consider whether you want to try this project: First make sure you know how knights move across the board 
-in the game of chess. Then think about how you would keep track of where the knight has visited (which squares) 
-on its tour. For each move you must determine where the knight *could* possibly go next and which of those *possible*
-squares have already been visisted. If the knight has no possible moves from a given square then your program must 
-back up the knight up to where it can choose a different path. It is very much like walking through a maze that you
-build as you go through it. When the knight backs up it should not try the same path as you already know that won't
-work; so you must keep track of what you have already tried in some way. So there is quite a lot of logic involved 
-in this problem and it is definitely a difficult programming challenge. But it is also very fun. 
+You can play this game with a pencil and paper if you like. Simply draw an 8 x 8 chess board and write the number
+1 in a corner square. Then proceed to write 2, 3, 4, ... on squares as you move about in the manner of a chess 
+knight. If you get to the last empty square and write 64 you have solved the problem. 
+
+
+Writing a Python program to solve this problem requires some careful thought and code-writing. It is much like
+solving a maze which is one of our other project ideas.
+
 
 [More on the knight's tour here...](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
 
@@ -229,10 +225,7 @@ in this problem and it is definitely a difficult programming challenge. But it i
 **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
 
 
-![tictactoe board](https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png =250x "tic tac toe")
-
-
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png" alt="drawing" width="200"/>
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png" alt="drawing" width="280"/>
 
 
 Creating simple computer games where the computer takes one side is a time-tested way of improving your programming 
@@ -244,14 +237,13 @@ of games but there are dozens more.
 [More on simple games here...](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
 
 
-
 ### Project: Solve a Sudoku puzzle
 
 
-![sudoku](https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png "sudoku")
-
-
 **Create a program that solves a Sudoku puzzle**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png" alt="drawing" width="280"/>
 
 
 This project develops arithmetic and logic (Python) skills. If you are unfamiliar with Sudoku you
@@ -279,9 +271,6 @@ This is a fairly advanced project. You can
 ### Project: Fractals I
 
 
-![sudoku](https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png "sudoku")
-
-
 **Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
 
 
@@ -295,9 +284,6 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 
 
 ### Project: Fortune Teller
-
-
-![sudoku](https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png "sudoku")
 
 
 **Create an interactive program: Ask the player some questions; then tell them something interesting.**
@@ -333,9 +319,6 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 ### Project: Whale calls
 
 
-![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
-
-
 
 **You study whales and their calls and you would like to try and talk to them.**
 
@@ -350,9 +333,6 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 
 
 ### Project: Minecraft landscapes
-
-
-![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
 
 
 **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
@@ -370,13 +350,16 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system.**
 
 
-![trajectories](https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/trajectories.png "trajectories")
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/trajectories.png" alt="drawing" width="280"/>
 
 
 You might say 'Python is a bit tricky but it's not Rocket Science!' but indeed how wrong you would be. This project 
 creates a game putting the Player at the controls of a Tesla Roadster that still has some gas in its rocket engines. 
 You are approaching the planet Jupiter and must use some controlled burns to slingshot yourself away using the
 Jupiter itself and the four moons: Callisto, Europa, Io and Ganymede. 
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/stargirl.png" alt="drawing" width="340"/>
 
 
 [More on Stargirl here...](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
