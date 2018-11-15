@@ -4,7 +4,6 @@
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects#pythonbytes-project-ideas)
 
 ### On selecting a project
-
 Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
 The most important thing to remember as you read and think is: Check in with us so we can help make sure 
 you are successful with your project.  To keep your project work from being confusing, impossible and/or 
@@ -12,21 +11,9 @@ discouraging you might look for something 'very easy' first. Often a simple-soun
 surprisingly fun and interesting. 
 
 
-Each project idea has a folder with more information and often some example Python code. Look for a file
-called ```example.py```. If you are wondering 'Where are the easy projects?' you should start off with
-the [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
-
-
 - **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
-- **The worksheets from the PythonBytes club contain challenges, all collected in the
-[**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
-folder.**
-- **You are an 
-[artist](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
- who uses computer graphics to produce graphical themes and patterns: Existing and new**
-- **A farmer uses drones to locate 
-[beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-in her orchard so she can cultivate them and have a better harvest**
+- **You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
+- **A farmer uses drones to locate beehives in her orchard so she can cultivate them and have a better harvest**
 - **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this**
 - **There are many ways to calculate pi using a computer; so learn to build and compare them**
 - **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once**
