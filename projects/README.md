@@ -27,22 +27,54 @@ folder.**
 - **A farmer uses drones to locate 
 [beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 in her orchard so she can cultivate them and have a better harvest**
-- **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this**
-- **There are many ways to calculate pi using a computer; so learn to build and compare them**
-- **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once**
-- **Create a text adventure where a player must determine the right series of steps to escape from a locked room**
-- **Create a program that plays a simple game like tic-tac-toe or Nim against a human**
-- **Create a program that solves a Sudoku puzzle**
-- **Create an interactive video game using a Python package like [pygame](http://pygame.org)**
-- **Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
-- **Create an interactive program: Ask the player some questions; then tell them something interesting**
-- **Create a program that is able to find its way out of a maze**
-- **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals**
-- **You study whales and their calls and you would like to try and talk to them**
-- **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft**
-- **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system**
-- **Ditch Day Stack: An advanced project for those who complete some other project and wish to do more**
+- **You are observing some 
+[bugs](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
+placed on a table. They follow some rules for motion and your task is to simulate this**
+- **There are many ways to calculate 
+[pi](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
+using a computer; so learn to build and compare them**
+- **You have a chessboard and a 
+[knight](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
+placed upon it. Find a path of legal knight moves that visits every square once**
+- **Create a text 
+[adventure](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
+where a player must determine the right series of steps to escape from a locked room**
+- **Create a program that plays a 
+[simple game](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
+like tic-tac-toe or Nim against a human**
+- **Create a program that solves a 
+[Sudoku](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
+puzzle**
+- **Create an interactive 
+[video game](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
+using a Python package like [pygame](http://pygame.org)**
+- **Use a simple procedure called the 
+[*Chaos Game*](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
+to create a fractal structure with infinite permiter and zero area**
+- **Create an interactive 
+[fortune](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
+program: Ask the player some questions; then tell them something interesting**
+- **Create a program that is able to find its way out of a 
+[maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)
+**
+- **Use the rules of complex arithmetic to create one of an infinite number of Julia Set 
+[fractals](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
+**
+- **You study 
+[whales](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
+and their calls and you would like to try and talk to them**
+- **Minecraft landscapes: You use four simple functions to build anything you can imagine in 
+[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
+**
+- **
+[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
+: You pilot a Tesla Roadster to escape the Jupiter system**
+- **
+[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
+Stack: An advanced project for those who complete some other projects and wish to do more**
 
+
+***Click on the links above to learn more in-depth; or scroll down to read a bit more...***
 
 
 
