@@ -367,6 +367,9 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system.**
 
 
+![trajectories](https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/trajectories.png "trajectories")
+
+
 You might say 'Python is a bit tricky but it's not Rocket Science!' but indeed how wrong you would be. This project 
 creates a game putting the Player at the controls of a Tesla Roadster that still has some gas in its rocket engines. 
 You are approaching the planet Jupiter and must use some controlled burns to slingshot yourself away using the
