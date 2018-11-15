@@ -50,7 +50,7 @@ puzzle**
 using a Python package like [pygame](http://pygame.org)**
 - **Use a simple procedure called the 
 [*Chaos Game*](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
-to create a fractal structure with infinite permiter and zero area**
+to create a fractal structure with infinite perimeter and zero area**
 - **Create an interactive 
 [fortune](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
 program: Ask the player some questions; then tell them something interesting**
@@ -342,9 +342,6 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 
 
 ### Project: Stargirl
-
-
-![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
 
 
 **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system.**
