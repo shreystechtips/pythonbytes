@@ -232,6 +232,9 @@ in this problem and it is definitely a difficult programming challenge. But it i
 ![tictactoe board](https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png =250x "tic tac toe")
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png" alt="drawing" width="200"/>
+
+
 Creating simple computer games where the computer takes one side is a time-tested way of improving your programming 
 skills. First you must create code that properly conducts the game; and then you must add some form of intelligence
 so it plays well enough for the game to be interesting to the human player. Tic-tac-toe and Nim are two examples

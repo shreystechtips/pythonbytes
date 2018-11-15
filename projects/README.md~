@@ -226,10 +226,10 @@ in this problem and it is definitely a difficult programming challenge. But it i
 ### Project: Game Player
 
 
-![tictactoe board](https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png "tic tac toe")
-
-
 **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
+
+
+![tictactoe board](https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png =250x "tic tac toe")
 
 
 Creating simple computer games where the computer takes one side is a time-tested way of improving your programming 
