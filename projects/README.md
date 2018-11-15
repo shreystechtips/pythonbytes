@@ -108,7 +108,7 @@ account and begin to explore. A great feature is that you can submit your answer
 This is an abstract painting by Dutch painter Piet Mondrian. 
 
 
-![image of a painting by Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/mondrian.png "Tableau I, 1921")
+![image of a painting by Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png "Tableau I, 1921")
 
 
 The idea of this project is to research artists and artistic themes with the idea of creating similar graphical elements 
@@ -117,6 +117,9 @@ using Python. You might begin with Turtle graphics but there are many other ways
 
 
 ### Project: Bees and Drones
+
+
+![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
 
 
 **A farmer wishes to use drones to locate some beehives on her orchard so she can cultivate them and have a better harvest.**
@@ -151,6 +154,9 @@ To learn more about this project: Click up above on the folder *bees* and read o
 ### Project: Converging Bugs
 
 
+![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
+
+
 **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this.**
 
 
@@ -161,6 +167,9 @@ this project is a lot of fun we encourage you to
 
 
 ### Project: Pi from Py
+
+
+![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
 
 
 **There are many ways to calculate pi using a computer; so learn to build and compare them**
@@ -179,6 +188,9 @@ This is an excellent starter project. You can
 
 
 ### Project: Knight's Tour
+
+
+![baobab tree](https://github.com/robfatland/pythonbytes/blob/master/projects/bees/baobab.png "Baobab tree")
 
 
 **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
@@ -214,6 +226,9 @@ in this problem and it is definitely a difficult programming challenge. But it i
 ### Project: Game Player
 
 
+![tictactoe board](https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png "tic tac toe")
+
+
 **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
 
 
@@ -228,6 +243,9 @@ of games but there are dozens more.
 
 
 ### Project: Solve a Sudoku puzzle
+
+
+![sudoku](https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png "sudoku")
 
 
 **Create a program that solves a Sudoku puzzle**
@@ -258,6 +276,9 @@ This is a fairly advanced project. You can
 ### Project: Fractals I
 
 
+![sudoku](https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png "sudoku")
+
+
 **Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
 
 
@@ -271,6 +292,9 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 
 
 ### Project: Fortune Teller
+
+
+![sudoku](https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png "sudoku")
 
 
 **Create an interactive program: Ask the player some questions; then tell them something interesting.**
@@ -292,6 +316,8 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 ### Project: Fractals II
 
 
+![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
+
 
 **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals.**
 
@@ -304,12 +330,15 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 ### Project: Whale calls
 
 
+![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
+
+
 
 **You study whales and their calls and you would like to try and talk to them.**
 
 
 
-![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/humpback_spectrogram.png "whale call")
+![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/whales/humpback_spectrogram.png "whale call")
 
 
 
@@ -318,6 +347,9 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 
 
 ### Project: Minecraft landscapes
+
+
+![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
 
 
 **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
@@ -329,7 +361,13 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 ### Project: Stargirl
 
 
+![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
+
+
 **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system.**
+
+
+![trajectories](https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/trajectories.png "trajectories")
 
 
 You might say 'Python is a bit tricky but it's not Rocket Science!' but indeed how wrong you would be. This project 
@@ -346,6 +384,9 @@ gravity you will have some helpful intuition; and we can always give you some fu
 
 
 ### Project: Ditch Day Stack
+
+
+![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
 
 
 **Ditch Day Stack: An advanced project for those who complete some other project and have time to do more.**
