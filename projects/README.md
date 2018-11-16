@@ -54,9 +54,8 @@ to create a fractal structure with infinite perimeter and zero area**
 - **Create an interactive 
 [fortune](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
 program: Ask the player some questions; then tell them something interesting**
-- **Create a program that is able to find its way out of a 
-[maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)
-**
+- **Create a program able to escape from a 
+[maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)!**
 - **Use the rules of complex arithmetic to create one of an infinite number of Julia Set 
 [fractals](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
 **
