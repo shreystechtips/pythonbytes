@@ -62,15 +62,12 @@ fractals**
 - **You study 
 [whale](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
 calls and you hope to understand and even talk to them**
-- **Minecraft landscapes: You use four simple functions to build anything you can imagine in 
-[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
-**
-- **
-[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
+- **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
+landscapes: Four simple functions to build anything you can imagine**
+- **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 : You pilot a Tesla Roadster to escape the Jupiter system**
-- **
-[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-Stack: An advanced project for those who complete some other projects and wish to do more**
+- **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
+Stack: An advanced project**
 
 
 ***Click on the links above to learn more in-depth; or scroll down to read a bit more...***
