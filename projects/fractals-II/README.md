@@ -7,6 +7,8 @@
 ### Overview
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png" alt="drawing" width="300"/>
+
 Please see the remarks on fractals and chaos at the other
 ([fractals-I](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)) 
 page. 
