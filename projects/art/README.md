@@ -17,6 +17,10 @@ century. You might for example use a search engine to find sources of **abstract
 
 ![Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png "Tableau I, 1921")
 
+and here is another but who was the artist? 
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/abstract.png" alt="drawing" width="350"/>
+
 
 What about other Python Bytes projects? Take a look at the 
 [image on the Stargirl project page](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth).
