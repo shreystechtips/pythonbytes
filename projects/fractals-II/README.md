@@ -9,13 +9,32 @@
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png" alt="drawing" width="300"/>
 
-Please see the remarks on fractals and chaos at the other
-([fractals-I](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)) 
-page. 
+Here is the 
+[link to the simpler fractal project](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth). 
 
 
-To make progress on this project we will need to extend the idea of a number from what you
-may be used to to something new. 
+This project begins with defining a new kind of number and some associated arithmetic rules. In particular we need both 
+addition and multiplication. You are accustomed to real numbers like 4.3 and -19.83838383831111. So let's create a new
+number that is simply two real numbers in a row like this: (4.3, -19.8383838383838381111). This -- you might say -- is not 
+a number! It is two numbers in parentheses separated by a comma! This is true. But if we can come up with some good rules
+for arithmetic then we can also say it is a new kind of number, a complicated number, even sometimes called a **complex** 
+number. 
+
+A complex number we write abstractly as **(a, b)**. Another one might be **(c, d)**. Let's define adding them in the 
+most obvious possible way: 
+
+
+**(a, b) + (c, d) = (a + c, b + d)**
+
+
+Now we need a rule for multiplication. This will be a bit more *complex*:
+
+
+**(a, b) * (c, d) = (a*c - b*d, a*d + b*c)**
+
+
+With this we are ready to build some fractal... almost. 
+
 
 
 ### Details
