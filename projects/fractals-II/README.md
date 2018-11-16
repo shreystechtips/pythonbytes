@@ -24,16 +24,25 @@ A complex number we write abstractly as **(a, b)**. Another one might be **(c, d
 most obvious possible way: 
 
 
-**(a, b) + (c, d) = (a + c, b + d)**
+(**a**, **b**) + (**c**, **d**) = (**a** + **c**, **b** + **d**)
 
 
 Now we need a rule for multiplication. This will be a bit more *complex*:
 
 
-**(a, b) * (c, d) = (a*c - b*d, a*d + b*c)**
+(**a**, **b**) * (**c**, **d**) = (**a** * **c** - **b** * **d**, **a** * **d** + **b** * **c**)
 
 
-With this we are ready to build some fractal... almost. 
+With this we are ready to build some fractals2... almost. We also need the idea of the absolute value of a complex
+number. The absolute value of 7 is 7. The absolute value of -4  is 4. The absolute value of a complex number is the
+length of the hypotenuse of a right triangle whose legs are **a** and **b**. Let's call that **S** for *Size*:
+
+
+**S** = square root (**a** * **a** + **b** * **b**)
+
+
+Now we have everything we need. Notice that a complex number (**a**, **b**) can be drawn on a graph using the x-axis for 
+the first number **a** and the y-axis for **b**. 
 
 
 
