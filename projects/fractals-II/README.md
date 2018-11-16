@@ -33,7 +33,7 @@ Now we need a rule for multiplication. This will be a bit more *complex*:
 (**a**, **b**) * (**c**, **d**) = (**a** * **c** - **b** * **d**, **a** * **d** + **b** * **c**)
 
 
-With this we are ready to build some fractals2... almost. We also need the idea of the absolute value of a complex
+With this we are ready to build some fractals... almost. We also need the idea of the absolute value of a complex
 number. The absolute value of 7 is 7. The absolute value of -4  is 4. The absolute value of a complex number is the
 length of the hypotenuse of a right triangle whose legs are **a** and **b**. Let's call that **S** for *Size*:
 
@@ -42,8 +42,13 @@ length of the hypotenuse of a right triangle whose legs are **a** and **b**. Let
 
 
 Now we have everything we need. Notice that a complex number (**a**, **b**) can be drawn on a graph using the x-axis for 
-the first number **a** and the y-axis for **b**. 
+the first number **a** and the y-axis for **b**. Here is our plan: We will use two ```for-loops``` (nested) across x and y to
+select one a whole lot of complex numbers one at a time. For each one we are going to draw a dot with some color. The color
+of a dot will be red, orange, yellow, green, blue or black. We will decide which color using some calculations and a big ```if```
+statement. 
 
+The details are below. The main idea of this introduction is that you will be making a painting from colored dots that
+chooses the colors using some arithmetic. 
 
 
 ### Details
