@@ -53,6 +53,54 @@ chooses the colors using some arithmetic.
 
 ### Details
 
+First here is a description of what a Julia set program does; and we follow that with a recipe that you may consult.
+You may also look at the program here called ```example.py``` if you would like some help.
 
+#### Description
+
+- Loop over coordinates: x should run -1.5 to 1.5, y should run -1.5 to 1.5. Go in small steps like 0.01
+- Convert (x, y) coordinates to Turtle coordinates (i, j) which is on the turtle screen
+  - The i coordinate will be -200 when x is -1.5; and it will be +200 when x is +1.5
+  - The same rule applies to the j coordinate in relation to the y coordinate
+- For each location z = (x, y) iterate the function z^2 + c some number of times (like 10) to arrive at a new number z'
+  - c is some constant-valued number such as (0.3, -0.4). Notice c is a complex number.
+- Calulate the ratio of the magnitude of z (mz) to the magnitude of z' (mz'): **r** = **mz** / **mz'**
+  - If this ratio is less than 0.2 do nothing
+  - If this ratio is greater than 2.0 make the pixel at (i, j) white
+  - If this ratio is somewhere between 0.2 and 2.0 make the pixel some other color according to your preference
+  
+#### Recipe
+  
+Follow each step and test it to be sure it works. 
+  
+1. include the line ```from turtle import Turtle``` and declare a turtle ```t``` with speed 1000 and its pen ```up()```.
+  
+  
+2. Include the line ```import math``` so that you can use the square root function
+  
+  
+3. Define a tuple called ```c``` as the number ```(0.3, -0.4)```
+  
+  
+4. Define a function that adds two complex numbers ```a``` and ```b``` according to the rule
+  
+```
+result = (a[0] + b[0], a[1] + b[1])
+```
+  
+Notice that ```a[0]``` is the first of the two real numbers in the complex number (tuple) ```a```. ```a[1]``` is the second.
+  
+  
+5. Define a function that returns the square of a complex number z according to the rule
+
+```
+    return = (z[0]*z[0] - z[1]*z[1], 2.0*z[0]*z[1])
+```
+
+#### What next???
+
+
+This is an advanced project. If you got this far on: Congratulations! You are truly an awesome and inspiring
+Python programmer. To see the rest of the recipe please contact the Python Bytes club facilitators, particularly Rob.
 
 
