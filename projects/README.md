@@ -56,12 +56,12 @@ to create a fractal structure with infinite perimeter and zero area**
 program: Ask the player some questions; then tell them something interesting**
 - **Create a program able to escape from a 
 [maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)!**
-- **Use the rules of complex arithmetic to create one of an infinite number of Julia Set 
-[fractals](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
-**
+- **Use complex arithmetic to create an infinite variety of 
+[Julia Set](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
+fractals**
 - **You study 
-[whales](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
-and their calls and you would like to try and talk to them**
+[whale](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
+calls and you hope to understand and even talk to them**
 - **Minecraft landscapes: You use four simple functions to build anything you can imagine in 
 [Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 **
