@@ -31,6 +31,9 @@ and
 projects will also produce some interesting images for you to enjoy.
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/julia.png" alt="drawing" width="300"/>
+
+
 ### Details
 
 
