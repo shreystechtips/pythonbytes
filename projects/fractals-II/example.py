@@ -26,7 +26,7 @@ def dotcolor(z, c, n):
     elif rat < 0.8: return 'yellow'
     elif rat < 1.0: return 'orange'
     elif rat < 1.2: return 'red'
-    else return 'white'
+    else: return 'white'
 
 
 i0, iN, di = -200, 201, 1     # used in the coordinate loop
@@ -36,7 +36,6 @@ yF = 1.2/math.fabs(j0)
 
 c = (0.3, -0.4) # The constant added to z-squared
 
-print 'starting...'
 for i in range(i0, iN, di):
     x = i * yF
     for j in range(j0, jN, dj):
