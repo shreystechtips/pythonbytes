@@ -12,6 +12,8 @@ you can use your last few ounces of rocket fuel to fine-tune your arrival. Use y
 predict the proper entry path that will put you on a gravity-assist slingshot escape trajectory back towards the 
 earth. 
 
+![stargirl](https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/stargirl.png "Stargirl far above the moon")
+
 
 This project is not for the faint of heart; I would say it is advanced. One way to approach the programming
 challenge is outlined below. As always it will be more rewarding if you use as little of these hints as 
