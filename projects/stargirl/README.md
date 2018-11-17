@@ -16,8 +16,7 @@ earth.
 
 
 This project is not for the faint of heart; I would say it is advanced. One way to approach the programming
-challenge is outlined below. As always it will be more rewarding if you use as little of these hints as 
-possible; and as always it may help to consult with us, your Python Bytes coaches and teachers. 
+challenge is outlined below. As always it may help to consult with us, your Python Bytes coaches and teachers. 
 
 
 ### Details
