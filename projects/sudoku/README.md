@@ -7,36 +7,95 @@
 ### Overview
 
 
-These project notes are currently under development. You are welcome to read through here but 
-not everything is complete and tested! 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png" alt="drawing" width="300"/>
 
 
-You might also look into other types of puzzles (camping, gardens, spirals) that are similar in
-nature to Sudoku.
+These project notes are currently in development. You are welcome to read through here but 
+not everything is complete and tested! My sudoku program does not work yet, for example.
 
+
+To get started on this we use a strategy called *recursion*. You may want to say to yourself
+'I need to understand recursion' before going further. That way when you run into recursion 
+you will be prepared for the awesomeness. 
+
+
+Incidentally there are a number of styles of puzzle similar to Sudoku; such as Shikaku. 
+If you create a Sudoku solver you have the opportunity to go further.
 
 
 
 ### Details
 
-We proceed in two parts. The first part lays out the basics of how to think about a Sudoku puzzle
-in Python code. The second part gives some very specific hints that will enable you to build a 
-Sudoku solver. We leave it to you to balance doing it on your own versus peeking at the hints!
+We proceed in two parts. First we describe how to think about a Sudoku puzzle
+with a computer programmer's frame of mind. Second we break the program down by hints that 
+show you the path very directly. 
 
 
-#### Part 1: Setting up the Sudoku puzzle
+#### Part 1: A programmer's approach to a Sudoku puzzle
 
 
-One way to do this project is in terms of 'questions' that come up when we break down the problem.
+All Sudoku puzzles have a starting point. The most basic would be an empty puzzle: Simple 9 x 9 
+empty cells. Obviously this has many solutions!
 
 
-The first question is how to represent the puzzle in Python code. Since a Sudoku puzzle is 9 x 9 
-cells we can use a string of 81 characters. Each of these 81 characters corresponds to a different
-cell in the puzzle. The characters 1, 2, 3, 4, 5, 6, 7, 8, 9 represent those 
-numbers; and we are usually given some of them as the starting point of the puzzle. We can use a 
-space character ' ' to represent an un-solved or empty cell. If we write a good solver we could test 
-it by giving it a string of 81 spaces representing a completely empty Sudoko puzzle to solve and 
-it will find a solution. 
+Suppose you come upon a Sudoku puzzle with 21 cells filled in, leaving 60 empty. Each of those
+60 empty cells will have a number from { 1, 2, 3, 4, 5, 6, 7, 8, 9 } in it. The number of 
+possibilities is 9 raised to the 60 power. This is too large a number of possibilities for a
+computer to simply try them all. It is 10 raised to the 57 power or 
+1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000. 
+If you could try one billion possibilities per second it would require...
+
+
+...wait for it...
+
+
+2.3 quadrillion quadrillion ages of the universe to try every possibility.
+
+
+Fortunately we have a time-saving trick that will allow us to solve any Sudoku problem in a couple 
+of seconds. Therefore let us celebrate for a moment: Not only are we capable of imagining such a
+difficult puzzle to solve; we are also able to come up with an efficient way to solve it. 
+
+
+Ok, so how to begin? Let us begin by breaking the challenge (of solving a Sudoku) down into
+smaller challenges. 
+A good programmer learns to recognize useful *questions* that come from this process of 
+breaking down a problem.
+
+
+**How shall we represent a Sudoku puzzle?**
+
+Since a Sudoku puzzle is 9 x 9 or 81 cells we can use a string of 81 characters. 
+However strings are difficult to change... in fact we can only change them by using
+them to build new strings. What is *easy* to change in Python is a list. So let us 
+plan to use a string to describe a puzzle; but then we will convert this string 
+into a list with 81 elements. This list will (we hope) help us solve the Sudoku puzzle. 
+
+
+Here is a string that represents the Sudoku puzzle shown above. I read across from
+left to right, starting at the top and going down (just like reading a page of English
+text like this one). 
+
+```
+**86324** 
+*4*****1*
+5**9*4**6
+8*******5
+6*******4
+1*7***9*2
+4**751**3
+*6*****2*
+**58267**
+```
+
+or -- after connecting everything into one line -- this: 
+
+
+```
+**86324***4*****1*5**9*4**68*******56*******41*7***9*24**751**3*6*****2***58267**
+```
+
+Where I used the asterisk character **\*** for an empty cell.
 
 
 The rules of Sudoku require us to precisely satisfy three conditions on the number in each cell..
