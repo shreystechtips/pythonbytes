@@ -18,6 +18,9 @@ the [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/c
 
 
 - **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
+- **Here a a project that is completely and totally
+[**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
+seriously.**
 - **The worksheets from the PythonBytes club contain challenges, all collected in the
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
 folder.**
@@ -93,6 +96,21 @@ Project Euler brings together your mathematical thinking (to help understand and
 with your growing programming skills. Each project has a user-rating that you can see once you create an
 account and begin to explore. A great feature is that you can submit your answers for evaluation.
 
+
+### Project: Pointless program
+
+
+**You are consumed with writing a Python program that does something completely pointless.**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/pointless.png" alt="drawing" width="280"/>
+
+
+Inspired by Simone Giertz, this project insists that you write a Python program that runs correctly; with 
+no errors. However what does it do??? It does something completely pointless. The challenge is to make that
+pointless thing be really really ridiculous and goofy. Follow the link for some examples on just what we
+mean by
+[pointless](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth).
 
 
 ### Project: Art Concepts
