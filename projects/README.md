@@ -103,7 +103,7 @@ account and begin to explore. A great feature is that you can submit your answer
 **You are consumed with writing a Python program that does something completely pointless.**
 
 
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/pointless.png" alt="drawing" width="280"/>
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/pointless/pointless.png" alt="drawing" width="280"/>
 
 
 Inspired by Simone Giertz, this project insists that you write a Python program that runs correctly; with 
