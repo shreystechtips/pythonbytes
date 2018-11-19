@@ -100,7 +100,7 @@ puzzle = '**86324***4*****1*5**9*4**68*******56*******41*7***9*24**751**3*6*****
 I use the asterisk character **\*** to indicate an empty cell.
 
 
-Suppose we convert at string like the one shown above to a list (since we can modify Python 
+Suppose we convert a string like the one shown above to a list (since we can modify Python 
 lists). How do we do that? It is not too hard. Python has a very simple way:
 
 
@@ -121,7 +121,7 @@ This is fine; and a little later we will convert this very nice listing of singl
 of lists. For now though let's consider this a good start and move on to the actual rules of Sudoku.
 
 
-The rules of Sudoku answer the question 'What numbermust be in each empty cell?':
+The rules of Sudoku answer the question 'What number must be in each empty cell?':
 
 - The number in a cell must not duplicate any other cell in its row
 - The number in a cell must not duplicate any other cell in its column
@@ -129,10 +129,22 @@ The rules of Sudoku answer the question 'What numbermust be in each empty cell?'
 
 
 Therefore cell locations are important for the purpose of comparison with other cells. 
+We can see from above that the list p[] has 81 entries. Some are numbers but most are
+empty cells or asterisks **\***. We would talk about the 8 in the top row as the third
+element of p\[\] or p\[3\]. The last 7 in the bottom row at the right is p\[78\].
+Let's stay focused on this 8 and this 7 in what follows, keeping in mind that 
+Python numbering of lists begins at 0 (not 1). 
 
 
-REWRITE ENDS HERE
+We will now talk about rows and columns for the *8* and the *7* described above.
+What is the row of the 8 at the upper left? It is row 0. 
+What is the column of the 8? It is column 2. 
+What is the row of the 7 at the lower right? It is row 8.
+What is the column of the 7? It is column 6.
+Make sure you understand and agree with how we arrive at these numbers!
 
+
+REWRITE STOPPED HERE
 
 
 The next question is therefore how to convert a puzzle location or index in the string p into a 
