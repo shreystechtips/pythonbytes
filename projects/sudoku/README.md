@@ -40,8 +40,8 @@ empty cells. Obviously this has many solutions!
 
 Suppose you come upon a Sudoku puzzle with 21 cells filled in, leaving 60 empty. Each of those
 60 empty cells will have a number from { 1, 2, 3, 4, 5, 6, 7, 8, 9 } in it. The number of 
-possibilities is 9 raised to the 60 power. This is too large a number of possibilities for a
-computer to simply try them all. It is 10 raised to the 57 power or 
+possibilities is 9 raised to the 60 power. This is too many possibilities for a
+computer to simply try them all: 
 1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000. 
 If you could try one billion possibilities per second it would require...
 
@@ -64,6 +64,7 @@ breaking down a problem.
 
 
 **How shall we represent a Sudoku puzzle?**
+
 
 Since a Sudoku puzzle is 9 x 9 or 81 cells we can use a string of 81 characters. 
 However strings are difficult to change... in fact we can only change them by using
@@ -88,25 +89,52 @@ text like this one).
 **58267**
 ```
 
-or -- after connecting everything into one line -- this: 
+or -- after connecting everything into one line -- this line of Python code assigns a string to a
+variable called ```puzzle```:
 
 
 ```
-**86324***4*****1*5**9*4**68*******56*******41*7***9*24**751**3*6*****2***58267**
+puzzle = '**86324***4*****1*5**9*4**68*******56*******41*7***9*24**751**3*6*****2***58267**'
 ```
 
-Where I used the asterisk character **\*** for an empty cell.
+I use the asterisk character **\*** to indicate an empty cell.
 
 
-The rules of Sudoku require us to precisely satisfy three conditions on the number in each cell..
+Suppose we convert at string like the one shown above to a list (since we can modify Python 
+lists). How do we do that? It is not too hard. Python has a very simple way:
 
 
-- The number must not duplicate any other cell in its row
-- The number must not duplicate any other cell in its column
-- The number must not duplicate any other cell in its 3 x 3 cell block
+```
+p = list(puzzle)
+```
+
+Now if we print the variable ```p``` we will find that it is a list:
 
 
-This suggests that cell locations are important for the purpose of comparison with other cells. 
+```
+print(p)
+
+['*', '*', '8', '6', '3', '2', '4', '*', '*', '*', '4', '*', '*', '*', '*', '*', '1', '*', '5', '*', '*', '9', '*', '4', '*', '*', '6', '8', '*', '*', '*', '*', '*', '*', '*', '5', '6', '*', '*', '*', '*', '*', '*', '*', '4', '1', '*', '7', '*', '*', '*', '9', '*', '2', '4', '*', '*', '7', '5', '1', '*', '*', '3', '*', '6', '*', '*', '*', '*', '*', '2', '*', '*', '*', '5', '8', '2', '6', '7', '*', '*']
+```
+
+This is fine; and a little later we will convert this very nice listing of single characters into a list 
+of lists. For now though let's consider this a good start and move on to the actual rules of Sudoku.
+
+
+The rules of Sudoku answer the question 'What numbermust be in each empty cell?':
+
+- The number in a cell must not duplicate any other cell in its row
+- The number in a cell must not duplicate any other cell in its column
+- The number in a cell must not duplicate any other cell in its 3 x 3 cell block
+
+
+Therefore cell locations are important for the purpose of comparison with other cells. 
+
+
+REWRITE ENDS HERE
+
+
+
 The next question is therefore how to convert a puzzle location or index in the string p into a 
 cell address that can be used for comparisons. Here is an example Sudoku puzzle for reference 
 where only the first six cells are filled, the rest are empty except the last cell:
