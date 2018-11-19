@@ -73,9 +73,35 @@ plan to use a string to describe a puzzle; but then we will convert this string
 into a list with 81 elements. This list will (we hope) help us solve the Sudoku puzzle. 
 
 
-Here is a string that represents the Sudoku puzzle shown above. I read across from
-left to right, starting at the top and going down (just like reading a page of English
-text like this one). 
+Here is the puzzle shown above expressed as a matrix of 9 x 9 cells...
+
+
+```
+   |   | 8 | 6 | 3 | 2 | 4 |   |   |
+ -----------------------------------
+   | 4 |   |   |   |   |   | 1 |   |
+ -----------------------------------
+ 5 |   | 9 |   |   |   | 4 |   | 6 |
+ -----------------------------------
+ 8 |   |   |   |   |   |   |   | 5 |
+ -----------------------------------
+ 6 |   |   |   |   |   |   |   | 4 |
+ -----------------------------------
+ 1 |   | 7 |   |   |   | 9 |   | 2 |
+ -----------------------------------
+ 4 |   |   | 7 | 5 | 1 |   |   | 3 |
+ -----------------------------------
+   | 6 |   |   |   |   |   |   | 2 |
+ -----------------------------------
+   |   | 5 | 8 | 2 | 6 | 7 |   |   |
+```
+
+
+To simplify this: 
+Next is a the same thing as a sort of a string with all the little cell border lines removed. 
+We read it across from left to right, starting at the top and going down just like reading a page of English
+text like this one.
+
 
 ```
 **86324** 
@@ -89,26 +115,27 @@ text like this one).
 **58267**
 ```
 
-or -- after connecting everything into one line -- this line of Python code assigns a string to a
-variable called ```puzzle```:
+And now -- after connecting everything into one line -- the following line of Python code assigns an
+81-character string (our puzzle above) to a string variable called ```puzzle```:
 
 
 ```
 puzzle = '**86324***4*****1*5**9*4**68*******56*******41*7***9*24**751**3*6*****2***58267**'
 ```
 
+
 I use the asterisk character **\*** to indicate an empty cell.
 
 
-Suppose we convert a string like the one shown above to a list (since we can modify Python 
-lists). How do we do that? It is not too hard. Python has a very simple way:
+Now let us convert this string version of the puzzle to a list (since we can modify Python 
+lists easily). How? It is not too hard. Python has a very simple way:
 
 
 ```
 p = list(puzzle)
 ```
 
-Now if we print the variable ```p``` we will find that it is a list:
+Now if we print the variable ```p``` we find it is a list:
 
 
 ```
@@ -117,11 +144,13 @@ print(p)
 ['*', '*', '8', '6', '3', '2', '4', '*', '*', '*', '4', '*', '*', '*', '*', '*', '1', '*', '5', '*', '*', '9', '*', '4', '*', '*', '6', '8', '*', '*', '*', '*', '*', '*', '*', '5', '6', '*', '*', '*', '*', '*', '*', '*', '4', '1', '*', '7', '*', '*', '*', '9', '*', '2', '4', '*', '*', '7', '5', '1', '*', '*', '3', '*', '6', '*', '*', '*', '*', '*', '2', '*', '*', '*', '5', '8', '2', '6', '7', '*', '*']
 ```
 
-This is fine; and a little later we will convert this very nice listing of single characters into a list 
-of lists. For now though let's consider this a good start and move on to the actual rules of Sudoku.
+This is fine; and later we will convert this very nice list of single characters into a list 
+of lists. But one thing at a time. For now though let's consider this a good start and move on 
+to the actual rules of Sudoku.
 
 
-The rules of Sudoku answer the question 'What number must be in each empty cell?':
+The rules of Sudoku answer the question 'What number are permitted in the empty cell?':
+
 
 - The number in a cell must not duplicate any other cell in its row
 - The number in a cell must not duplicate any other cell in its column
@@ -129,10 +158,18 @@ The rules of Sudoku answer the question 'What number must be in each empty cell?
 
 
 Therefore cell locations are important for the purpose of comparison with other cells. 
+We care about what *row* a cell is in, what *column* it is, and what *cell block*
+it is in. Incidentally the Sudoku puzzle can be seen as 9 *cell blocks*, each one
+3 x 3 cells.
+
+
 We can see from above that the list p[] has 81 entries. Some are numbers but most are
-empty cells or asterisks **\***. We would talk about the 8 in the top row as the third
-element of p\[\] or p\[3\]. The last 7 in the bottom row at the right is p\[78\].
-Let's stay focused on this 8 and this 7 in what follows, keeping in mind that 
+empty cells indicated by asterisks **\***. We would talk about the number *8* in the 
+third cell of the top row as occupying the third
+element of the list **p\[\]** which is p\[2\]. 
+The number 7 in the cell in the bottom row at the far right is element 78, or
+in other words it is p\[78\].
+Let's focus on this 8 and this 7 in what follows, keeping in mind that 
 Python numbering of lists begins at 0 (not 1). 
 
 
@@ -144,49 +181,26 @@ What is the column of the 7? It is column 6.
 Make sure you understand and agree with how we arrive at these numbers!
 
 
+We summarize for the 8: Element 2 in the puzzle is at row 0, column 2.
+We summarize for the 7: Element 78 in the puzzle is at row 8, column 6.
+
+
+Below in the second section we present the Python code to convert
+from an index like 2 or 78 to a row and a column. For the moment let us 
+assume it can be done: Any cell's index in the puzzle ```p``` 
+can be converted into a row and a column.
+
+
+The third rule says that we must not repeat within a cell block. 
+Let's imagine these are numbered as rows and columns as well; but
+they run only from 0 to 1 to 2 in both directions.
+
+
 REWRITE STOPPED HERE
 
 
-The next question is therefore how to convert a puzzle location or index in the string p into a 
-cell address that can be used for comparisons. Here is an example Sudoku puzzle for reference 
-where only the first six cells are filled, the rest are empty except the last cell:
 
 
-```
-p = '798512                                                                          3'
-```
-
-That is: p is a string of 81 characters corresponding to the 81 Sudoku cells; and values
-are provided for only 7 of those cells. The rest are empty. 
-
-
-We can index each cell location. For example p[0] = '7', p[1] = '9', p[2] = '8' and so 
-on. Those indexes are 0, 1 and 2. Most of the cells are empty so for example p[43] = ' '. 
-The very last cell (since we begin numbering at 0) has cell index 80, where p[80] = '3'. 
-
-
-Here is the corresponding Sudoku puzzle in its proper format:
-
-
-```
- 7 | 9 | 8 | 5 | 1 | 2 |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   | 3 |
-```
 
 
 If we number the rows from the top down as 0, 1, 2, 3, 4, 5, 6, 7, 8 and the columns from 
