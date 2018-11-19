@@ -19,9 +19,9 @@ To get started on this we use a strategy called *recursion*. You may want to say
 you will be prepared for the awesomeness. 
 
 
-Incidentally there are a number of styles of puzzle similar to Sudoku; such as Shikaku. 
-If you create a Sudoku solver you have the opportunity to go further.
-
+Incidentally there are a number of styles of puzzle similar to Sudoku; such as Shikaku and Nurikabe. 
+If you create a Sudoku solver you have the opportunity to go further into these other games. 
+You are also welcome to read about NP-complete computational tasks.
 
 
 ### Details
@@ -196,19 +196,59 @@ Let's imagine these are numbered as rows and columns as well; but
 they run only from 0 to 1 to 2 in both directions.
 
 
-REWRITE STOPPED HERE
+Now we have a representation of the puzzle as a list and a means of
+describing the un-solved cells in relation to that puzzle. From here
+we will mention briefly the idea of *recursion* before continuing on
+to describe the pieces of the working example program ```example.py```.
 
 
+*Recursion* simply means that a function calls itself. Once it has
+done so: *That* version of the function calls itself. And so on, and so on.
+You can imagine it is like going into an infinite tunnel never to return.
+Therefore like Theseus it is a good idea to bring a ball of string
+along so that at some point the function stops calling itself and 
+finds its way back out again. Fortunately we can call a function 
+81 times without any difficulty, each one being a step closer to
+completing the Sudoku puzzle. 
 
 
+#### Part 2: The pieces of the program
 
+
+##### On cell addresses
 
 If we number the rows from the top down as 0, 1, 2, 3, 4, 5, 6, 7, 8 and the columns from 
 left to right as 0, 1, 2, 3, 4, 5, 6, 7, 8 then each cell has an address given by two 
-numbers. For example the upper left cell containing the '7' is at location (0, 0) and 
-the 2 is at address (0,5). The '3' in the lower right corner is at address (8, 8).  Notice
-that by starting the numbering at 0 instead of 1 we are being *Pythonic*: We are thinking
-like Python programmers.
+numbers. For example the upper left cell containing the '8' is at location (0, 2) and 
+the 7 is at address (8,6). Finally there are cell blocks, each 3 x 3 cells, running
+from (0, 0) to (2, 2). Therefore any cell has an index between 0 and 80 inclusive, a 
+cell address between (0, 0) and (8, 8), and a cell block address between (0, 0) and (2, 2). 
+All of this information must be used to solve the Sudoku puzzle; so let us begin
+by writing Python functions that convert from a cell index to a row, to a column, 
+to a cell block row, and to a cell block column. Since there are four conversions
+let us write four functions:
+
+```
+def CellToRow(c):
+    return 0
+
+def CellToCol(c):
+    return 0
+    
+def CellToCellBlockRow(c):
+    return 0
+    
+def CellToCellBlockCol(c):
+    return 0
+```
+
+These four functions will be at the top of the program before we actually start running any code. They will be 
+used by the logic of the program. As written they always return 0. You can look at the example program to see
+how they are written if you need to; but it is a good exercise to work out how to do it on your own. It will be
+helpful to think about division and modulus.
+
+
+REWRITE ENDS HERE
 
 
 We now have two ways to refer to cell values: In string p using a single index from 0 to 81
