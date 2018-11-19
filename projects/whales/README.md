@@ -46,9 +46,9 @@ Once you have gotten here I will add more information.
 By way of "What's going on?": Notice you are using your web browser to connect to Port Cormorack.  
 Your browser is acting like a window into your very own mini-computer. 
 This mini-computer will run Python programs for you; and it has a number of useful tools for you to use. 
-For starters it will help you connect to underwater recordings of many whale calls.  
-However I am setting you up as if you were a research scientist; so there are some 
-new things for you to learn; starting with the GitHub account described above. 
+For starters it will help you connect to underwater recordings of many whale calls.  However I am setting 
+you up as if you were a research scientist; so there are some new things for you to learn; starting 
+with the GitHub account described above. 
 
 
 
