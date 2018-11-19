@@ -15,9 +15,11 @@ What sort of art might you create? One approach is to look for inspiration in th
 century. You might for example use a search engine to find sources of **abstract art**. I found Piet Mondrian...
 
 
-![Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png "Tableau I, 1921")
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png" alt="drawing" width="350"/>
+
 
 and here is another but who was the artist? 
+
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/abstract.png" alt="drawing" width="350"/>
 

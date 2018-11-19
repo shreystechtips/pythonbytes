@@ -15,7 +15,11 @@ What sort of art might you create? One approach is to look for inspiration in th
 century. You might for example use a search engine to find sources of **abstract art**. I found Piet Mondrian...
 
 
-![Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/mondrian.png "Tableau I, 1921")
+![Piet Mondrian](https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png "Tableau I, 1921")
+
+and here is another but who was the artist? 
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/abstract.png" alt="drawing" width="350"/>
 
 
 What about other Python Bytes projects? Take a look at the 
@@ -25,6 +29,9 @@ The
 and 
 [fractals-II](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
 projects will also produce some interesting images for you to enjoy.
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/julia.png" alt="drawing" width="300"/>
 
 
 ### Details
