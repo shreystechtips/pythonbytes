@@ -18,7 +18,7 @@ the [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/c
 
 
 - **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
-- **Here a a project that is completely and totally
+- **Here is a project that is completely and totally
 [**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
 seriously.**
 - **The worksheets from the PythonBytes club contain challenges, all collected in the
