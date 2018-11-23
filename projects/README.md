@@ -6,15 +6,17 @@
 ### On selecting a project
 
 Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
-The most important thing to remember as you read and think is: Check in with us so we can help make sure 
-you are successful with your project.  To keep your project work from being confusing, impossible and/or 
-discouraging you might look for something 'very easy' first. Often a simple-sounding project can be 
-surprisingly fun and interesting. 
 
 
-Each project idea has a folder with more information and often some example Python code. Look for a file
-called ```example.py```. If you are wondering 'Where are the easy projects?' you should start off with
-the [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
+The most important thing to remember: Check in with club coaches so we can help make sure 
+you are successful with your project.  We suggest that you begin with one that is 'very easy' first. 
+Often a simple-sounding project can be surprisingly fun and interesting. 
+
+
+Each project idea has a folder with more information and sometimes example Python code. If you are wondering 
+'Where are the easy projects?' being with the 
+[**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth).
+You will recognize them from the worksheets.
 
 
 - **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
@@ -325,6 +327,17 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png" alt="drawing" width="280"/>
 
 
+Fractals are geometrical objects that are self-similar: When you look at them up close they resemble themselves from
+far away. 'So what!' I hear you saying. 'I look like myself from any distance!'  This is true; but when your friend looks
+at your eyebrow she does not find that it is made from a hundred little tiny copies of you jumbled together to look like
+an eyebrow. That's how fractals work, though. 
+
+
+There is another project idea above on fractals called **fractals-I**. That is a great place to look first if you
+have not already done so. It presents a simple game called the *Chaos Game* that produces a fractal. Here in **fractals-II**
+we use a modified version of numbers and arithmetic to create a fractal called a Julia Set. 
+
+
 [More on these fractals here](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
 
 
@@ -332,13 +345,16 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 ### Project: Whale calls
 
 
+**You study whales and their calls... perhaps you would like to try and talk to them.**
 
-**You study whales and their calls and you would like to try and talk to them.**
 
+I work with oceanographers who operate a grand observatory that sprawls across hundreds of miles along the floor of 
+the Pacific ocean. They record underwater sounds for years at a time. Sometimes certain whales sing songs
+that are recorded by the scientists' microphones. In this project you will learn to listen to, create pictures of, 
+and identify whale calls. 
 
 
 ![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/whales/humpback_spectrogram.png "whale call")
-
 
 
 [More on whale calls here](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
