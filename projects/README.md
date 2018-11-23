@@ -367,6 +367,9 @@ and identify whale calls.
 **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/minecraft/minecraft.png" alt="drawing" width="400"/>
+
+
 [More on minecraft here](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 
 
