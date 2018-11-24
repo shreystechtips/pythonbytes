@@ -370,7 +370,26 @@ and identify whale calls.
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/minecraft/minecraft.png" alt="drawing" width="400"/>
 
 
-[More on minecraft here](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
+You can see this image is from the Minecraft world. There is a trail of dynamite because I wrote a Python program to track
+a player's movements and mark her locations with TNT blocks. The potential is very great for you to create in the Minecraft
+world. What is required is that you have the game Minecraft installed on a PC or a Mac -- which I think costs about $25 --
+and then you have to go through a few additional steps. Here is a nine-line program that creates chaos in Minecraft.
+
+```
+from mcpi.minecraft import Minecraft
+from random import randint
+
+mc = Minecraft.create()
+p = mc.player.getPos()
+
+for j in range(0, 256, 16):
+    for i in range(0, 64, 16):
+        for k in range(0, 64, 16)
+            (dx, dy, dz, block) = (randint(-4, 4), randint(-8, 8), randint(-4,4), randint(0, 255))
+            mc.setBlock(p.x + i + dx, p.y + j + dy, p.z + k + dz, block)
+```
+
+[Click to see the results of running this Python program...](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 
 
 ### Project: Stargirl
