@@ -135,11 +135,11 @@ number generator.
 #### Project 3
 
 
-Modify your program in ways: 
+Modify your program from Project 2, for example: 
 
-- First Egon may select any number of paint cans to place out in the town square
-- Second Egon may choose a different "percent" of the distance to travel. Up above it was 50%, or half-way to the paint can. No reason this couldn't be 27% or 94% or even 212% or -71%
-- Third the paint cans could be placed evenly like the vertices of a regular polygon... or they could be placed randomly
+- Egon may select any number of paint cans to place out in the town square
+- Egon may choose a different "percent" of the distance to travel. Up above it was 50%, or half-way to the paint can. No reason this couldn't be 27% or 94% or even 212% or -71%
+- The paint cans could be placed evenly like the vertices of a regular polygon... or they could be placed randomly
 
 
 
