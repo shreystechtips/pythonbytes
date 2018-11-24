@@ -382,11 +382,11 @@ from random import randint
 mc = Minecraft.create()
 p = mc.player.getPos()
 
-for j in range(0, 256, 16):
-    for i in range(0, 64, 16):
-        for k in range(0, 64, 16)
-            (dx, dy, dz, block) = (randint(-4, 4), randint(-8, 8), randint(-4,4), randint(0, 255))
-            mc.setBlock(p.x + i + dx, p.y + j + dy, p.z + k + dz, block)
+for j in range(90, 180, 6):
+    for i in range(0, 32, 4):
+        for k in range(0, 32, 4):
+            (dx, dy, dz, block) = (randint(-2, 2), randint(-3, 3), randint(-2,2), randint(0, 255))
+            mc.setBlock(p.x - i + dx, j + dy, p.z + k + dz, block)
 ```
 
 [Click to see the results of running this Python program...](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
