@@ -28,7 +28,13 @@ Soon it solidified into a certain genii who granted you magical powers in Minecr
 
 
 Here is a result of choosing and placing blocks somewhat at random (the code is on the 
-[Projects](https://github.com/robfatland/pythonbytes/tree/master/projects#project-minecraft-landscapes)page):
+[Projects](https://github.com/robfatland/pythonbytes/tree/master/projects#project-minecraft-landscapes) page):
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/minecraft/sparserandom.png" alt="drawing" width="400"/>
+
+
+...and here is a motion tracker that follows the player's flight path...
 
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/minecraft/sparserandom.png" alt="drawing" width="400"/>
