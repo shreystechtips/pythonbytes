@@ -1,7 +1,6 @@
 # This program does not work as intended
-#   The intent is to create a ring in the forward direction that the player can fly through
-#   While this does not work the code still tracks the players motion tracing her path
-#     in the air with blocks
+#   It is supposed to place blocks up ahead in the direction we are
+#   moving but it only does something vaguely like that... needs work
 
 
 from mcpi.minecraft import Minecraft
@@ -9,10 +8,12 @@ from mcpi.vec3 import Vec3
 import numpy as np
 import time
 from random import randint
+
 # import cgkit
 pi = np.pi
 def d2r(d): return pi*d/180.0
 def r2d(r): return 180.0*r/pi
+
 def swap(a, b): c = b; b = a; a = c; return (a, b)
 
 # Try this out to get the highest non-air block y value
@@ -23,14 +24,18 @@ mc = Minecraft.create()
 p = mc.player.getPos()
 v = Vec3(p.x, p.y, p.z)
 
+# I don't think these exist
 # print(mc.player.getRotation())
 # print(mc.player.getPitch())
 # print(mc.player.getDirection())
 
-# Create a line of blocks between positions a and b
+
+# This is a useful function but it is not used at this time...
+# It creates a straight line of blocks between positions a and b
 #   mc is a minecraft object
 #   a and b are mc.player.getPos() positions
 #   block is a tuple (blockType, blockQualifier)
+#   I think 38 is some flowers...
 def LineSegment(mc, a, b, block):
     if a == b: mc.setBlock(a.x, a.y, a.z, 38, block[1])
     else: 
@@ -63,12 +68,13 @@ def LineSegment(mc, a, b, block):
                 x, y = mx * zrel + nx, my * zrel + ny
                 mc.setBlock(x, y, z, 38, randint(0,8))
 
-polling_interval = 0.4
+polling_interval = 0.5
 ahead_distance = 20.
 
 gold = 41
 TNT = 46
 redstone = 152
+flowers = 38
 counter = 0
 while True:
     
@@ -77,17 +83,18 @@ while True:
     p2 = mc.player.getPos()           # p2 is position 2, the current player position
 
     counter += 1
+    v = p2 - p
+    mag_v = np.sqrt(v.x*v.x + v.y*v.y + v.z*v.z)
+
+    # print(v, mag_v)
     
     # Only if the player has moved from the previous fix do we proceed
-    if np.abs(p2.x - p.x) > 2. or np.abs(p2.y-p.y) > 2. or np.abs(p2.z-p.z) > 2.:
+    if mag_v > 2.:
 
         # This draws a trailing line
         # LineSegment(mc, p, p2, (49, 0))
         # p = p2
 
-        # v will be a vector in the direction of motion of length 'ahead_distance'
-        v = p2 - p
-        mag_v = np.sqrt(v.x*v.x + v.y*v.y + v.z*v.z)
         v.x *= ahead_distance/mag_v
         v.y *= ahead_distance/mag_v
         v.z *= ahead_distance/mag_v
@@ -95,14 +102,17 @@ while True:
         # cc is 'circle center': a location forward of the player
         cc = p2 + Vec3(v.x, v.y, v.z)
 
-        for i in range(nArcBlocks):
-            if counter % 10 == 0:
-                mc.setBlock(cc.x, cc.y-1, cc.z, redstone)
-                mc.setBlock(cc.x, cc.y, cc.z, TNT, 1)
-            else:
-                mc.setBlock(cc.x, cc.y, cc.z, gold)
+        if counter % 10 == 0:
+            # Do not place some dynamite to explode
+            # mc.setBlock(cc.x, cc.y-1, cc.z, redstone)
+            # mc.setBlock(cc.x, cc.y, cc.z, TNT, 1)
+            mc.setBlock(cc.x, cc.y, cc.z, gold)
+        else:
+            mc.setBlock(cc.x, cc.y, cc.z, flowers, randint(0, 8))
 
-    if counter > 500: break
+    if counter > 300: break
+
+    p = p2
         
 
     
