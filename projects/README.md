@@ -13,7 +13,7 @@ you are successful with your project.  We suggest that you begin with one that i
 Often a simple-sounding project can be surprisingly fun and interesting. 
 
 
-Each project idea has a folder with more information and sometimes example Python code. If you are wondering 
+Each project idea folder has more information and sometimes example Python code. If you are wondering 
 'Where are the easy projects?' being with the 
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth).
 You will recognize them from the worksheets.
