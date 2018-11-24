@@ -4,8 +4,12 @@
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
 
 
-If you would like to get started on the project ideas (there are three here) just skip down to where it 
-says **Project 1** or **Project 2** or **Project 3**.
+These project ideas require you to have a Python environment where you can do some serious work. You can
+work at cswonders.com if you like; or come and see the coaches about some other ideas.
+
+
+Also before we begin: There is a lot here to read and think about. However if you would like to get started on 
+the projects (there are three here) just skip down to where it says **Project 1** or **Project 2** or **Project 3**.
 
 
 ### Overview
@@ -33,15 +37,15 @@ Now there is a strange thing about mathematics -- the study of patterns -- that 
 together. And this has everything to do with the deep mysteries of the universe that we don't have time to explain 
 here. But I did want to tell you just these few terms { 'chaos', 'dynamical system', 'mathematics', 'fractal' }
 so that you would have little buzzy wires with sparks coming out in your mind
-as you work on this project. If the word 'philosophy' means 'understanding of the universe' then the famous quote 
-related to how we don't learn everything all at once goes like this: 
+as you work on this project. If the word 'philosophy' means 'understanding of the universe' then supposing things 
+are complicated we can't learn everything at once. Hamlet says...
 
 
 > There are more things in heaven and earth, Horatio, than are dreamt of in your philosophy. 
 
 
-If you would like to get started on the project ideas (there are three here) just skip down to where it 
-says **Project 1** or **Project 2** or **Project 3**.
+Again: If you would like to get started on the project ideas (there are three here) just skip down to where it 
+says **Project 1** or **Project 2** or **Project 3**. Or just keep reading. Next it is pirates.
 
 
 ### Randomness and Probability
@@ -142,4 +146,6 @@ Modify your program from Project 2, for example:
 - The paint cans could be placed evenly like the vertices of a regular polygon... or they could be placed randomly
 
 
+Hopefully by the time you have completed these three projects you have improved your Python skills. Did you 
+learn anything interested that relates to the idea of fractals? 
 
