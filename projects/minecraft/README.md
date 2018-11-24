@@ -27,7 +27,8 @@ Soon it solidified into a certain genii who granted you magical powers in Minecr
 - You can place any sort of block: Anywhere
 
 
-Here is a result of choosing and placing blocks somewhat at random (the code is on the main Projects page):
+Here is a result of choosing and placing blocks somewhat at random (the code is on the 
+[Projects](https://github.com/robfatland/pythonbytes/tree/master/projects#project-minecraft-landscapes)page):
 
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/minecraft/sparserandom.png" alt="drawing" width="400"/>
