@@ -37,7 +37,7 @@ Here is a result of choosing and placing blocks somewhat at random (the code is 
 ...and here is a motion tracker that follows the player's flight path...
 
 
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/minecraft/sparserandom.png" alt="drawing" width="400"/>
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/minecraft/minecraft.png" alt="drawing" width="400"/>
 
 
 Now with great power comes great Python programs. Remember you know how to use loops and math. So how would you
