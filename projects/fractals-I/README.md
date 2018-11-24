@@ -4,6 +4,10 @@
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
 
 
+If you would like to get started on the project ideas (there are three here) just skip down to where it 
+says **Project 1** or **Project 2** or **Project 3**.
+
+
 ### Overview
 
 
@@ -40,7 +44,7 @@ If you would like to get started on the project ideas (there are three here) jus
 says **Project 1** or **Project 2** or **Project 3**.
 
 
-### Randomness and Related Ideas
+### Randomness and Probability
 
 
 We begin with a story.
@@ -111,6 +115,7 @@ Egon considers this and finally he hatches a plan.
     - He has now painted two dots
  - He rolls his dice again: It is a **1**
    - He walks half-way *again* to can **A** and paints a dot
+
 
 So you can see that Egon can amuse himself for many many hours, even days, rolling his dice, walking half-way to 
 one of his three paint cans **A**, **B**, or **C** and painting a dot. 
