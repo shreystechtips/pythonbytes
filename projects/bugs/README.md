@@ -1,5 +1,7 @@
 # PythonBytes Project In-Depth
 
+## Four Bugs
+
 
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
 
@@ -16,6 +18,13 @@ B but as B is walking towards C: A will have to adjust her path to the right to 
 
 Eventually all of the bugs meet at the center of the table. When they do: How far will each one have
 walked? 
+
+
+Now you are probably wondering what their real names are. I was too until I looked it up. They are named Alpher, 
+Bethe, Gamow and Dyson. You would think that bug C would be called Camow but there is not a letter 'C' in Greek
+so we make due with 'G' and that is why it is Gamow. You can look up Alpher Bethe and Gamow on Wikipedia but it 
+will not mention Dyson. He came along later to explain everything. So technically the bugs should be abbreviated
+A, B, G and D but that would confuse everyone. Come to think of it this paragraph probably didn't help.
 
 
 This is the basic problem but it has the following conceptual extensions. 
