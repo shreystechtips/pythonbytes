@@ -6,18 +6,23 @@
 ### On selecting a project
 
 Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
-The most important thing to remember as you read and think is: Check in with us so we can help make sure 
-you are successful with your project.  To keep your project work from being confusing, impossible and/or 
-discouraging you might look for something 'very easy' first. Often a simple-sounding project can be 
-surprisingly fun and interesting. 
 
 
-Each project idea has a folder with more information and often some example Python code. Look for a file
-called ```example.py```. If you are wondering 'Where are the easy projects?' you should start off with
-the [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
+The most important thing to remember: Check in with club coaches so we can help make sure 
+you are successful with your project.  We suggest that you begin with one that is 'very easy' first. 
+Often a simple-sounding project can be surprisingly fun and interesting. 
+
+
+Each project idea folder has more information and sometimes example Python code. If you are wondering 
+'Where are the easy projects?' being with the 
+[**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth).
+You will recognize them from the worksheets.
 
 
 - **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
+- **Here is a project that is completely and totally
+[**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
+seriously.**
 - **The worksheets from the PythonBytes club contain challenges, all collected in the
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
 folder.**
@@ -50,28 +55,24 @@ puzzle**
 using a Python package like [pygame](http://pygame.org)**
 - **Use a simple procedure called the 
 [*Chaos Game*](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
-to create a fractal structure with infinite permiter and zero area**
+to create a fractal structure with infinite perimeter and zero area**
 - **Create an interactive 
 [fortune](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
 program: Ask the player some questions; then tell them something interesting**
-- **Create a program that is able to find its way out of a 
-[maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)
-**
-- **Use the rules of complex arithmetic to create one of an infinite number of Julia Set 
-[fractals](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
-**
+- **Create a program able to escape from a 
+[maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)!**
+- **Use complex arithmetic to create an infinite variety of 
+[Julia Set](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
+fractals**
 - **You study 
-[whales](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
-and their calls and you would like to try and talk to them**
-- **Minecraft landscapes: You use four simple functions to build anything you can imagine in 
-[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
-**
-- **
-[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
+[whale](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
+calls and you hope to understand and even talk to them**
+- **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
+landscapes: Four simple functions to build anything you can imagine**
+- **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 : You pilot a Tesla Roadster to escape the Jupiter system**
-- **
-[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-Stack: An advanced project for those who complete some other projects and wish to do more**
+- **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
+Stack: An advanced project**
 
 
 ***Click on the links above to learn more in-depth; or scroll down to read a bit more...***
@@ -97,6 +98,21 @@ Project Euler brings together your mathematical thinking (to help understand and
 with your growing programming skills. Each project has a user-rating that you can see once you create an
 account and begin to explore. A great feature is that you can submit your answers for evaluation.
 
+
+### Project: Pointless program
+
+
+**You are consumed with writing a Python program that does something completely pointless.**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/pointless/pointless.png" alt="drawing" width="280"/>
+
+
+Inspired by Simone Giertz, this project insists that you write a Python program that runs correctly; with 
+no errors. However what does it do??? It does something completely pointless. The challenge is to make that
+pointless thing be really really ridiculous and goofy. Follow the link for some examples on just what we
+mean by
+[pointless](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth).
 
 
 ### Project: Art Concepts
@@ -305,11 +321,21 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 ### Project: Fractals II
 
 
-![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
-
-
 **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals.**
 
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png" alt="drawing" width="280"/>
+
+
+Fractals are geometrical objects that are self-similar: When you look at them up close they resemble themselves from
+far away. 'So what!' I hear you saying. 'I look like myself from any distance!'  This is true; but when your friend looks
+at your eyebrow she does not find that it is made from a hundred little tiny copies of you jumbled together to look like
+an eyebrow. That's how fractals work, though. 
+
+
+There is another project idea above on fractals called **fractals-I**. That is a great place to look first if you
+have not already done so. It presents a simple game called the *Chaos Game* that produces a fractal. Here in **fractals-II**
+we use a modified version of numbers and arithmetic to create a fractal called a Julia Set. 
 
 
 [More on these fractals here](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
@@ -319,13 +345,16 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 ### Project: Whale calls
 
 
+**You study whales and their calls... perhaps you would like to try and talk to them.**
 
-**You study whales and their calls and you would like to try and talk to them.**
 
+I work with oceanographers who operate a grand observatory that sprawls across hundreds of miles along the floor of 
+the Pacific ocean. They record underwater sounds for years at a time. Sometimes certain whales sing songs
+that are recorded by the scientists' microphones. In this project you will learn to listen to, create pictures of, 
+and identify whale calls. 
 
 
 ![humpback whale spectrogram](https://github.com/robfatland/pythonbytes/blob/master/projects/whales/humpback_spectrogram.png "whale call")
-
 
 
 [More on whale calls here](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
@@ -338,13 +367,32 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
 
 
-[More on minecraft here](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/minecraft/minecraft.png" alt="drawing" width="400"/>
+
+
+You can see this image is from the Minecraft world. There is a trail of dynamite because I wrote a Python program to track
+a player's movements and mark her locations with TNT blocks. The potential is very great for you to create in the Minecraft
+world. What is required is that you have the game Minecraft installed on a PC or a Mac -- which I think costs about $25 --
+and then you have to go through a few additional steps. Here is a nine-line program that creates chaos in Minecraft.
+
+```
+from mcpi.minecraft import Minecraft
+from random import randint
+
+mc = Minecraft.create()
+p = mc.player.getPos()
+
+for j in range(90, 180, 6):
+    for i in range(0, 32, 4):
+        for k in range(0, 32, 4):
+            (dx, dy, dz, block) = (randint(-2, 2), randint(-3, 3), randint(-2,2), randint(0, 255))
+            mc.setBlock(p.x - i + dx, j + dy, p.z + k + dz, block)
+```
+
+[Click to see the results of running this Python program...](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 
 
 ### Project: Stargirl
-
-
-![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
 
 
 **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system.**
@@ -370,9 +418,6 @@ gravity you will have some helpful intuition; and we can always give you some fu
 
 
 ### Project: Ditch Day Stack
-
-
-![juliaset](https://github.com/robfatland/pythonbytes/blob/master/projects/fractals-II/juliaset.png "Julia set")
 
 
 **Ditch Day Stack: An advanced project for those who complete some other project and have time to do more.**

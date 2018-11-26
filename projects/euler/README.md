@@ -1,10 +1,19 @@
 # PythonBytes Project In-Depth
 
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
+## Project Euler
+
+
+[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
+
+
+
+[Here is a link to the Project Euler website](https://projecteuler.net)
+
 
 
 ### Overview
+
 
 Farmers like to see bees (particularly honey bees) in their fields and orchards because the bees help pollinate the plants. 
 In this project we imagine that you are such a farmer and you happen to own ten drones that you can send to locations in 

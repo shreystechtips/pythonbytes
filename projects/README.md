@@ -19,7 +19,9 @@ Each project idea folder has more information and sometimes example Python code.
 You will recognize them from the worksheets.
 
 
-- **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
+- **Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
+and [this page](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
+contains our notes on it.**
 - **Here is a project that is completely and totally
 [**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
 seriously.**
