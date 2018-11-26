@@ -11,6 +11,8 @@
 [Here is a link to the Project Euler website](https://projecteuler.net)
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/euler/euler.png" alt="drawing" width="280"/>
+
 
 ### Overview
 
