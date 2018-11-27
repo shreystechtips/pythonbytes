@@ -1,6 +1,9 @@
 # PythonBytes Project In-Depth
 
 
+## Pointless
+
+
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth)
 
 
@@ -8,7 +11,7 @@
 
 
 
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/pointless/pointless.png" alt="drawing" width="250"/>
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/pointless/pointless.png" alt="drawing" width="220"/>
 
 
 Write a program in Python that runs properly but does something completely pointless.  This is a little bit easier than
