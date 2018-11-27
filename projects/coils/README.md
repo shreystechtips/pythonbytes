@@ -1,13 +1,17 @@
 # PythonBytes Project In-Depth
 
 
+## Coils
+
+
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
 
 
 ### Coils
 
-Here we have all of the **Coils** from the PythonBytes worksheets. They are rephrased a little bit with the idea of 
-suggesting projects.
+
+Here are the **Coils** from the PythonBytes worksheets. Please think about them as project suggestions.
+
 
 ### Starter Challenges
 
