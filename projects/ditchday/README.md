@@ -1,7 +1,7 @@
 # PythonBytes Project In-Depth
 
 
-## Ditch Cay
+## Ditch Day
 
 
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/ditchday#pythonbytes-project-in-depth)
