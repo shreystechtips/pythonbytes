@@ -131,7 +131,8 @@ This is an abstract painting by Dutch painter Piet Mondrian.
 
 The idea of this project is to research artists and artistic themes with the idea of creating similar graphical elements 
 using Python. You might begin with Turtle graphics but there are many other ways you can proceed.  There are even 
-[books](https://www.makeartwithpython.com/book/) devoted to making art using Python.
+[books](https://www.makeartwithpython.com/book/) devoted to making art using Python. Read more about this project
+[at this page](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth).
 
 
 ### Project: Bees and Drones
