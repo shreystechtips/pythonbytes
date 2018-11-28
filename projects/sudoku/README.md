@@ -26,9 +26,10 @@ You are also welcome to read about NP-complete computational tasks.
 
 ### Details
 
-We proceed in two parts. First we describe how to think about a Sudoku puzzle
-with a computer programmer's frame of mind. Second we break the program down by hints that 
-show you the path very directly. 
+We proceed in two parts. First we describe all the logic for thinking about and solving 
+Sudoku puzzles.  This sets us up to adopt a computer programmer's frame of mind. 
+In the second part we break the programming task for a Sudoku solver into small steps
+that set up the path to a solution. 
 
 
 #### Part 1: A programmer's approach to a Sudoku puzzle
@@ -38,10 +39,14 @@ All Sudoku puzzles have a starting point. The most basic would be an empty puzzl
 empty cells. Obviously this has many solutions!
 
 
-Suppose you come upon a Sudoku puzzle with 21 cells filled in, leaving 60 empty. Each of those
-60 empty cells will have a number from { 1, 2, 3, 4, 5, 6, 7, 8, 9 } in it. The number of 
-possibilities is 9 raised to the 60 power. This is too many possibilities for a
-computer to simply try them all: 
+Suppose you come upon a Sudoku puzzle with 21 cells filled in, leaving 60 empty. We will use 
+a zero '0' to mark empty cells; or a blank or something like that. So in our case with 21 
+numbers given there remain 60 empty cells. Each of these will contain a number from 
+{ 1, 2, 3, 4, 5, 6, 7, 8, 9 } when the problem is solved.  If you chose a random number
+for each of these cells you would not solve the puzzle (most likely). But it is instructive
+to ask 'How many possible random solutions could I check?' The number of possibilities 
+is 9 raised to the 60 power. This is too many possibilities for a computer to simply try 
+them all. It is about 
 1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000. 
 If you could try one billion possibilities per second it would require...
 
@@ -52,28 +57,29 @@ If you could try one billion possibilities per second it would require...
 2.3 quadrillion quadrillion ages of the universe to try every possibility.
 
 
-Fortunately we have a time-saving trick that will allow us to solve any Sudoku problem in a couple 
-of seconds. Therefore let us celebrate for a moment: Not only are we capable of imagining such a
-difficult puzzle to solve; we are also able to come up with an efficient way to solve it. 
+Fortunately we have a time-saving trick.  We can exclude wrong guesses by simply
+applying the rules of Sudoku to each cell to narrow down what number could be placed
+there.  Therefore let us celebrate for a moment: Not only are we capable of imagining 
+such a difficult puzzle to solve; we are also able to come up with an efficient way 
+to solve it. 
 
 
-Ok, so how to begin? Let us begin by breaking the challenge (of solving a Sudoku) down into
-smaller challenges. 
-A good programmer learns to recognize useful *questions* that come from this process of 
-breaking down a problem.
+##### **How shall we represent a Sudoku puzzle?**
 
 
-**How shall we represent a Sudoku puzzle?**
+A Sudoku puzzle is 9 x 9 cells or 81 cells. Therefore we represent a puzzle using
+a string of 81 characters. You have 280 characters in a tweet so how many Sudoku
+puzzles could you tweet at once?
 
 
-Since a Sudoku puzzle is 9 x 9 or 81 cells we can use a string of 81 characters. 
-However strings are difficult to change... in fact we can only change them by using
-them to build new strings. What is *easy* to change in Python is a list. So let us 
-plan to use a string to describe a puzzle; but then we will convert this string 
-into a list with 81 elements. This list will (we hope) help us solve the Sudoku puzzle. 
+In Python strings are a **type** of variable; but they are difficult to change... 
+We can only change strings building new strings from them which is slow and klunky. 
+The thing in Python that is easy to change is called a **list**.  Therefore let's 
+use a string to describe a Sudoku puzzle; but let's convert this string into a 
+list to solve the puzzle. 
 
 
-Here is the puzzle shown above expressed as a matrix of 9 x 9 cells...
+Here is the puzzle shown above... written using text where empty cells are left blank.
 
 
 ```
@@ -97,34 +103,69 @@ Here is the puzzle shown above expressed as a matrix of 9 x 9 cells...
 ```
 
 
-To simplify this: 
-Next is a the same thing as a sort of a string with all the little cell border lines removed. 
-We read it across from left to right, starting at the top and going down just like reading a page of English
-text like this one.
+Here is the same thing getting rid of all the formatting. 
 
 
 ```
-**86324** 
-*4*****1*
-5**9*4**6
-8*******5
-6*******4
-1*7***9*2
-4**751**3
-*6*****2*
-**58267**
-```
-
-And now -- after connecting everything into one line -- the following line of Python code assigns an
-81-character string (our puzzle above) to a string variable called ```puzzle```:
-
-
-```
-puzzle = '**86324***4*****1*5**9*4**68*******56*******41*7***9*24**751**3*6*****2***58267**'
+  86324                                         008632400
+ 4     1                                        040000010
+5  9 4  6   --------------------------------->  500904006
+8       5                                       800000005
+6       4    Same thing with zeros for blanks   600000004
+1 7   9 2                                       107000902
+4  751  3   --------------------------------->  400751003
+ 6     2                                        060000020
+  58267                                         005826700
 ```
 
 
-I use the asterisk character **\*** to indicate an empty cell.
+And now here is the same thing in one line of 81 characters with zeros for the empty cells...
+
+
+
+```
+spuzzle = '008632400040000010500904006800000005600000004107000902400751003060000020005826700'
+```
+
+
+So there is our first line of Python code. It allows us to assign any Sudoku puzzle to a 
+**string** variable called *spuzzle*. 
+
+
+Now let's continue with the logic. Each of those zeros could be any number from 1 to 9. 
+But not really. Some of those numbers are simply not allowed. For example if there is an
+8 in the same row as a blank cell then that blank cell cannot be set to 8. If there is 
+a 4 in the same column as a blank cell then it can't be a 4. Finally there are the 3 x 3
+cells -- let's call them sub-blocks that make up the Sudoku grid. There are nine of these
+and each must have all the possible digits just once. So there again is away of eliminating
+possibilities from an empty cell.
+
+
+Here is the first key idea of writing a Sudoku solver: Each empty cell of the puzzle is to
+be represented by a list of possibilities for that cell. As our program works on creating
+a solution the empty cells will be filled one by one with numbers. As they do this will 
+affect the remaining empty cells by reducing the number of possibilities for them. 
+
+
+To illustrate this let's do an example from the above puzzle, shown again here:
+
+```
+? 86324
+ 4     1
+5  9 4  6
+8       5
+6       4
+1 7   9 2
+4  751  3
+ 6     2
+  58267
+```
+
+Now the ? cell at the upper left could be any number in this Python **list**: [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ].
+However in the same row are the numbers 8, 6, 3, 2 and 4. So we can reduce this possibility list by eliminating
+those numbers. We are left with [1, 5, 7, 9]. In the same column as the ? we find 5, 8, 6, 1, and 4. This 
+also eliminates 1 and 5 so the possible numbers list for the ? cell is now [7, 9]. 
+
 
 
 Now let us convert this string version of the puzzle to a list (since we can modify Python 

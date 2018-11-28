@@ -1,101 +1,260 @@
 # PythonBytes Project In-Depth
 
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#python-project-in-depth)
+[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 
 
 ### Overview
 
 
-These project notes are currently under development. You are welcome to read through here but 
-not everything is complete and tested! 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png" alt="drawing" width="300"/>
 
 
-You might also look into other types of puzzles (camping, gardens, spirals) that are similar in
-nature to Sudoku.
+These project notes are currently in development. You are welcome to read through here but 
+not everything is complete and tested! My sudoku program does not work yet, for example.
 
 
+To get started on this we use a strategy called *recursion*. You may want to say to yourself
+'I need to understand recursion' before going further. That way when you run into recursion 
+you will be prepared for the awesomeness. 
+
+
+Incidentally there are a number of styles of puzzle similar to Sudoku; such as Shikaku and Nurikabe. 
+If you create a Sudoku solver you have the opportunity to go further into these other games. 
+You are also welcome to read about NP-complete computational tasks.
 
 
 ### Details
 
-We proceed in two parts. The first part lays out the basics of how to think about a Sudoku puzzle
-in Python code. The second part gives some very specific hints that will enable you to build a 
-Sudoku solver. We leave it to you to balance doing it on your own versus peeking at the hints!
+We proceed in two parts. First we describe all the logic for thinking about and solving 
+Sudoku puzzles.  This sets us up to adopt a computer programmer's frame of mind. 
+In the second part we break the programming task for a Sudoku solver into small steps
+that set up the path to a solution. 
 
 
-#### Part 1: Setting up the Sudoku puzzle
+#### Part 1: A programmer's approach to a Sudoku puzzle
 
 
-One way to do this project is in terms of 'questions' that come up when we break down the problem.
+All Sudoku puzzles have a starting point. The most basic would be an empty puzzle: Simple 9 x 9 
+empty cells. Obviously this has many solutions!
 
 
-The first question is how to represent the puzzle in Python code. Since a Sudoku puzzle is 9 x 9 
-cells we can use a string of 81 characters. Each of these 81 characters corresponds to a different
-cell in the puzzle. The characters 1, 2, 3, 4, 5, 6, 7, 8, 9 represent those 
-numbers; and we are usually given some of them as the starting point of the puzzle. We can use a 
-space character ' ' to represent an un-solved or empty cell. If we write a good solver we could test 
-it by giving it a string of 81 spaces representing a completely empty Sudoko puzzle to solve and 
-it will find a solution. 
+Suppose you come upon a Sudoku puzzle with 21 cells filled in, leaving 60 empty. We will use 
+a zero '0' to mark empty cells; or a blank or something like that. So in our case with 21 
+numbers given there remain 60 empty cells. Each of these will contain a number from 
+{ 1, 2, 3, 4, 5, 6, 7, 8, 9 } when the problem is solved.  If you chose a random number
+for each of these cells you would not solve the puzzle (most likely). But it is instructive
+to ask 'How many possible random solutions could I check?' The number of possibilities 
+is 9 raised to the 60 power. This is too many possibilities for a computer to simply try 
+them all. It is about 
+1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000. 
+If you could try one billion possibilities per second it would require...
 
 
-The rules of Sudoku require us to precisely satisfy three conditions on the number in each cell..
+...wait for it...
 
 
-- The number must not duplicate any other cell in its row
-- The number must not duplicate any other cell in its column
-- The number must not duplicate any other cell in its 3 x 3 cell block
+2.3 quadrillion quadrillion ages of the universe to try every possibility.
 
 
-This suggests that cell locations are important for the purpose of comparison with other cells. 
-The next question is therefore how to convert a puzzle location or index in the string p into a 
-cell address that can be used for comparisons. Here is an example Sudoku puzzle for reference 
-where only the first six cells are filled, the rest are empty except the last cell:
+Fortunately we have a time-saving trick.  We can exclude wrong guesses by simply
+applying the rules of Sudoku to each cell to narrow down what number could be placed
+there.  Therefore let us celebrate for a moment: Not only are we capable of imagining 
+such a difficult puzzle to solve; we are also able to come up with an efficient way 
+to solve it. 
+
+
+##### **How shall we represent a Sudoku puzzle?**
+
+
+A Sudoku puzzle is 9 x 9 cells or 81 cells. Therefore we represent a puzzle using
+a string of 81 characters. You have 280 characters in a tweet so how many Sudoku
+puzzles could you tweet at once?
+
+
+In Python strings are a **type** of variable; but they are difficult to change... 
+We can only change strings building new strings from them which is slow and klunky. 
+The thing in Python that is easy to change is called a **list**.  Therefore let's 
+use a string to describe a Sudoku puzzle; but let's convert this string into a 
+list to solve the puzzle. This list will (we hope) help us solve the Sudoku puzzle. 
+
+
+Here is the puzzle shown above expressed as a matrix of 9 x 9 cells...
 
 
 ```
-p = '798512                                                                          3'
+   |   | 8 | 6 | 3 | 2 | 4 |   |   |
+ -----------------------------------
+   | 4 |   |   |   |   |   | 1 |   |
+ -----------------------------------
+ 5 |   |   | 9 |   | 4 |   |   | 6 |
+ -----------------------------------
+ 8 |   |   |   |   |   |   |   | 5 |
+ -----------------------------------
+ 6 |   |   |   |   |   |   |   | 4 |
+ -----------------------------------
+ 1 |   | 7 |   |   |   | 9 |   | 2 |
+ -----------------------------------
+ 4 |   |   | 7 | 5 | 1 |   |   | 3 |
+ -----------------------------------
+   | 6 |   |   |   |   |   | 2 |   |
+ -----------------------------------
+   |   | 5 | 8 | 2 | 6 | 7 |   |   |
 ```
 
-That is: p is a string of 81 characters corresponding to the 81 Sudoku cells; and values
-are provided for only 7 of those cells. The rest are empty. 
 
-
-We can index each cell location. For example p[0] = '7', p[1] = '9', p[2] = '8' and so 
-on. Those indexes are 0, 1 and 2. Most of the cells are empty so for example p[43] = ' '. 
-The very last cell (since we begin numbering at 0) has cell index 80, where p[80] = '3'. 
-
-
-Here is the corresponding Sudoku puzzle in its proper format:
+To simplify this: 
+Next is a the same thing as a sort of a string with all the little cell border lines removed. 
+We read it across from left to right, starting at the top and going down just like reading a page of English
+text like this one.
 
 
 ```
- 7 | 9 | 8 | 5 | 1 | 2 |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   |   |
- -----------------------------------
-   |   |   |   |   |   |   |   | 3 |
+**86324** 
+*4*****1*
+5**9*4**6
+8*******5
+6*******4
+1*7***9*2
+4**751**3
+*6*****2*
+**58267**
 ```
 
+And now -- after connecting everything into one line -- the following line of Python code assigns an
+81-character string (our puzzle above) to a string variable called ```puzzle```:
+
+
+```
+puzzle = '**86324***4*****1*5**9*4**68*******56*******41*7***9*24**751**3*6*****2***58267**'
+```
+
+
+I use the asterisk character **\*** to indicate an empty cell.
+
+
+Now let us convert this string version of the puzzle to a list (since we can modify Python 
+lists easily). How? It is not too hard. Python has a very simple way:
+
+
+```
+p = list(puzzle)
+```
+
+Now if we print the variable ```p``` we find it is a list:
+
+
+```
+print(p)
+
+['*', '*', '8', '6', '3', '2', '4', '*', '*', '*', '4', '*', '*', '*', '*', '*', '1', '*', '5', '*', '*', '9', '*', '4', '*', '*', '6', '8', '*', '*', '*', '*', '*', '*', '*', '5', '6', '*', '*', '*', '*', '*', '*', '*', '4', '1', '*', '7', '*', '*', '*', '9', '*', '2', '4', '*', '*', '7', '5', '1', '*', '*', '3', '*', '6', '*', '*', '*', '*', '*', '2', '*', '*', '*', '5', '8', '2', '6', '7', '*', '*']
+```
+
+This is fine; and later we will convert this very nice list of single characters into a list 
+of lists. But one thing at a time. For now though let's consider this a good start and move on 
+to the actual rules of Sudoku.
+
+
+The rules of Sudoku answer the question 'What number are permitted in the empty cell?':
+
+
+- The number in a cell must not duplicate any other cell in its row
+- The number in a cell must not duplicate any other cell in its column
+- The number in a cell must not duplicate any other cell in its 3 x 3 cell block
+
+
+Therefore cell locations are important for the purpose of comparison with other cells. 
+We care about what *row* a cell is in, what *column* it is, and what *cell block*
+it is in. Incidentally the Sudoku puzzle can be seen as 9 *cell blocks*, each one
+3 x 3 cells.
+
+
+We can see from above that the list p[] has 81 entries. Some are numbers but most are
+empty cells indicated by asterisks **\***. We would talk about the number *8* in the 
+third cell of the top row as occupying the third
+element of the list **p\[\]** which is p\[2\]. 
+The number 7 in the cell in the bottom row at the far right is element 78, or
+in other words it is p\[78\].
+Let's focus on this 8 and this 7 in what follows, keeping in mind that 
+Python numbering of lists begins at 0 (not 1). 
+
+
+We will now talk about rows and columns for the *8* and the *7* described above.
+What is the row of the 8 at the upper left? It is row 0. 
+What is the column of the 8? It is column 2. 
+What is the row of the 7 at the lower right? It is row 8.
+What is the column of the 7? It is column 6.
+Make sure you understand and agree with how we arrive at these numbers!
+
+
+We summarize for the 8: Element 2 in the puzzle is at row 0, column 2.
+We summarize for the 7: Element 78 in the puzzle is at row 8, column 6.
+
+
+Below in the second section we present the Python code to convert
+from an index like 2 or 78 to a row and a column. For the moment let us 
+assume it can be done: Any cell's index in the puzzle ```p``` 
+can be converted into a row and a column.
+
+
+The third rule says that we must not repeat within a cell block. 
+Let's imagine these are numbered as rows and columns as well; but
+they run only from 0 to 1 to 2 in both directions.
+
+
+Now we have a representation of the puzzle as a list and a means of
+describing the un-solved cells in relation to that puzzle. From here
+we will mention briefly the idea of *recursion* before continuing on
+to describe the pieces of the working example program ```example.py```.
+
+
+*Recursion* simply means that a function calls itself. Once it has
+done so: *That* version of the function calls itself. And so on, and so on.
+You can imagine it is like going into an infinite tunnel never to return.
+Therefore like Theseus it is a good idea to bring a ball of string
+along so that at some point the function stops calling itself and 
+finds its way back out again. Fortunately we can call a function 
+81 times without any difficulty, each one being a step closer to
+completing the Sudoku puzzle. 
+
+
+#### Part 2: The pieces of the program
+
+
+##### On cell addresses
 
 If we number the rows from the top down as 0, 1, 2, 3, 4, 5, 6, 7, 8 and the columns from 
 left to right as 0, 1, 2, 3, 4, 5, 6, 7, 8 then each cell has an address given by two 
-numbers. For example the upper left cell containing the '7' is at location (0, 0) and 
-the 2 is at address (0,5). The '3' in the lower right corner is at address (8, 8).  Notice
-that by starting the numbering at 0 instead of 1 we are being *Pythonic*: We are thinking
-like Python programmers.
+numbers. For example the upper left cell containing the '8' is at location (0, 2) and 
+the 7 is at address (8,6). Finally there are cell blocks, each 3 x 3 cells, running
+from (0, 0) to (2, 2). Therefore any cell has an index between 0 and 80 inclusive, a 
+cell address between (0, 0) and (8, 8), and a cell block address between (0, 0) and (2, 2). 
+All of this information must be used to solve the Sudoku puzzle; so let us begin
+by writing Python functions that convert from a cell index to a row, to a column, 
+to a cell block row, and to a cell block column. Since there are four conversions
+let us write four functions:
+
+```
+def CellToRow(c):
+    return 0
+
+def CellToCol(c):
+    return 0
+    
+def CellToCellBlockRow(c):
+    return 0
+    
+def CellToCellBlockCol(c):
+    return 0
+```
+
+These four functions will be at the top of the program before we actually start running any code. They will be 
+used by the logic of the program. As written they always return 0. You can look at the example program to see
+how they are written if you need to; but it is a good exercise to work out how to do it on your own. It will be
+helpful to think about division and modulus.
+
+
+REWRITE ENDS HERE
 
 
 We now have two ways to refer to cell values: In string p using a single index from 0 to 81
