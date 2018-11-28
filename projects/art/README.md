@@ -27,6 +27,12 @@ and here is another but who was the artist?
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/abstract.png" alt="drawing" width="350"/>
 
 
+Could you write a Python program to produce something like this?
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/lines.png" alt="drawing" width="350"/>
+
+
 What about other Python Bytes projects? Take a look at the 
 [Stargirl project page](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 that produces this image...
