@@ -28,7 +28,12 @@ and here is another but who was the artist?
 
 
 What about other Python Bytes projects? Take a look at the 
-[image on the Stargirl project page](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth).
+[Stargirl project page](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
+that produces this image...
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/trajectories.png" alt="drawing" width="400"/>
+
+
 The 
 [fractals-I](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
 and 
