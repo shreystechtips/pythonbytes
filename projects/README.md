@@ -19,7 +19,7 @@ Each project idea folder has more information and sometimes example Python code.
 You will recognize them from the worksheets.
 
 
-- :sparkles: **Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
+- :star: **Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
 and [this page](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
 contains our notes on it.**
 - **Here is a project that is completely and totally
