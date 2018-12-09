@@ -19,25 +19,25 @@ Each project idea folder has more information and sometimes example Python code.
 You will recognize them from the worksheets.
 
 
-- ** ! Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
+- **! Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
 and [this page](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
 contains our notes on it.**
 - **Here is a project that is completely and totally
 [**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
 seriously.**
-- ** ! The worksheets from the PythonBytes club contain challenges, all collected in the
+- **! The worksheets from the PythonBytes club contain challenges, all collected in the
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
 folder.**
-- ** ! You are an 
+- **! You are an 
 [artist](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
  who uses computer graphics to produce graphical themes and patterns: Existing and new**
-- ** ! A farmer uses drones to locate 
+- **! A farmer uses drones to locate 
 [beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 in her orchard so she can cultivate them and have a better harvest**
-- ** ! You are observing some 
+- **! You are observing some 
 [bugs](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
 placed on a table. They follow some rules for motion and your task is to simulate this**
-- ** ! There are many ways to calculate 
+- **! There are many ways to calculate 
 [pi](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
 using a computer; so learn to build and compare them**
 - **You have a chessboard and a 
@@ -46,7 +46,7 @@ placed upon it. Find a path of legal knight moves that visits every square once*
 - **Create a text 
 [adventure](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
 where a player must determine the right series of steps to escape from a locked room**
-- ** ! Create a program that plays a 
+- **! Create a program that plays a 
 [simple game](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
 like tic-tac-toe or Nim against a human**
 - **Create a program that solves a 
@@ -55,7 +55,7 @@ puzzle**
 - **Create an interactive 
 [video game](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
 using a Python package like [pygame](http://pygame.org)**
-- ** ! Use a simple procedure called the 
+- **! Use a simple procedure called the 
 [*Chaos Game*](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
 to create a fractal structure with infinite perimeter and zero area**
 - **Create an interactive 
@@ -71,7 +71,7 @@ fractals**
 calls and you hope to understand and even talk to them**
 - **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 landscapes: Four simple functions to build anything you can imagine**
-- ** ! [Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
+- **! [Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 : You pilot a Tesla Roadster to escape the Jupiter system**
 - **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 Stack: An advanced project**
