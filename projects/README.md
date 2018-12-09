@@ -411,7 +411,7 @@ for j in range(90, 180, 6):
 **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system.**
 
 
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/trajectories.png" alt="drawing" width="280"/>
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/stargirl.png" alt="drawing" width="340"/>
 
 
 You might say 'Python is a bit tricky but it's not Rocket Science!' but indeed how wrong you would be. This project 
@@ -420,7 +420,7 @@ You are approaching the planet Jupiter and must use some controlled burns to sli
 Jupiter itself and the four moons: Callisto, Europa, Io and Ganymede. 
 
 
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/stargirl.png" alt="drawing" width="340"/>
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/stargirl/trajectories.png" alt="drawing" width="280"/>
 
 
 [More on Stargirl here...](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
