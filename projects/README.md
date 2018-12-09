@@ -81,7 +81,7 @@ Stack: An advanced project**
 
 
 
-### Project: Project Euler! 
+### :star: Project: Project Euler! 
 
 
 **Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
@@ -117,7 +117,17 @@ mean by
 [pointless](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth).
 
 
-### Project: Art Concepts
+### :star: Project: Coils
+
+
+**The coils of the Python gradually squeeze programming challenges until they are solved.**
+
+We began the club with some worksheets that included some challenges. This project simply reminds you what they
+were. You are invited to 
+[revisit them](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth),
+solve them and take them further.
+
+### :star: Project: Art Concepts
 
 
 **You are an artist who uses computer graphics to produce graphical themes and patterns: Existing and new**
@@ -135,7 +145,7 @@ using Python. You might begin with Turtle graphics but there are many other ways
 [at this page](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth).
 
 
-### Project: Bees and Drones
+### :star: Project: Bees and Drones
 
 
 **A farmer wishes to use drones to locate some beehives on her orchard so she can cultivate them and have a better harvest.**
@@ -166,7 +176,7 @@ If you understand this joke please explain it to your parents.)
 [More on the bees project here](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 
 
-### Project: Converging Bugs
+### :star: Project: Converging Bugs
 
 
 **You are observing some bugs placed on a table. They follow some rules for motion and your task is to simulate this.**
@@ -184,7 +194,7 @@ Because this project is a lot of fun we encourage you to
 [read more about it here!](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 
 
-### Project: Pi from Py
+### :star: Project: Pi from Py
 
 
 **There are many ways to calculate pi using a computer; so learn to build and compare them**
@@ -238,7 +248,7 @@ solving a maze which is one of our other project ideas.
 [More on adventure here...](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
 
 
-### Project: Game Player
+### :star: Project: Game Player
 
 
 **Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
@@ -287,7 +297,7 @@ This is a fairly advanced project. You can
 [More on video games here](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
 
 
-### Project: Fractals I
+### :star: Project: Fractals I
 
 
 **Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
