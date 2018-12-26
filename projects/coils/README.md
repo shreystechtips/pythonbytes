@@ -125,7 +125,7 @@ information that we can look at using Python. If you want to explore any of thes
 
 ### cswonders projects: Python I (see cswonders.com for complete instructions)
 
-* print out some **ascii art** using the ```print(\`\`\`)``` idea
+* print out some **ascii art**
 * use turtle graphics and an input statement to create a birthday card for someone
 * use turtle graphics to create colorful spirals
 * use turtle graphics to create some snowflakes
@@ -136,10 +136,28 @@ information that we can look at using Python. If you want to explore any of thes
 * Guess the Number
   * First write the Chooser program that picks the number; and then responds 'Higher' or 'Lower' or 'Correct' to guesses 
   * Second then write the Guesser program where you are the Chooser and the program must zero in on your number with a guessing strategy
-* Make a game. I suggest the game of Nim is a good one to begin with
+* Make a game. The game of Nim is a good one to begin with
   * Nim uses either one or two or three piles of stones
   * Players take turns removing one or two or three stones from any single pile
   * The player who takes the last stone (having no choice) loses that game
 
 ### cswonders projects: Python II (see cswonders.com for complete instructions)
 
+* Password generator
+* Joke generator
+* Magic 8 Ball
+* Pico Fermi Bagels (a variant of the popular game Mastermind)
+* Pictograph: This is a very challenging and interesting project where you could use turtle graphics combined with text
+* Scrabble score
+* Password protection
+* Hangman
+* Ninja Turtle
+* Donut Clock
+* Yahtzee: This is an excellent 'advanced' game project for three reasons
+  * First you must accurately deal with the management of rolling the dice on each turn
+  * Second you must accurately track all of the scoring details
+  * Third if you are a crazy good programmer you could try to make the computer program one of the players
+     * You would need to give it the ability to choose what to try for based on its initial roll of the dice
+     * This is the sort of thing that is easy for humans to do but challenging to program
+* Serpienski Triangles: This project is explored further in the **Fractals I** project here at pythonbytes
+* Fractal Art: This project you may wish to speak with the coaches or with me to get going in a good productive direction
