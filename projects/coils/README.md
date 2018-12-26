@@ -10,7 +10,10 @@
 ### Coils
 
 
-Here are the **Coils** from the PythonBytes worksheets. Please think about them as project suggestions.
+If you 
+are looking for project work that helps you to reinforce your learning of the basics building blocks of Python this
+is the place for you. Coils are things made by Pythons. Here they mean 'simple challenges' and we have two supplies. First there are the
+**Projects** listed at cswonders.com. Second there are the **coils** from the PythonBytes worksheets 1 -- 6. 
 
 
 ### Starter Challenges
@@ -119,4 +122,24 @@ These are more involved challenges that start to investigate the idea of data. F
 information that we can look at using Python. If you want to explore any of these further: Maybe check in with the coaches.
 
 * You are given a variable n that contains a very very long string of letters. Only four letters were used: A, C, G and T. They are in any order; for example the string begins n = ‘ACGGTATACCATGCT…’ and it continues for 10,000 letters. You also have a variable s = ‘ACAGTATAGTTT’, a shorter string of 12 letters. The question is “Where can this little string s be found in the big string n? 
+
+### cswonders projects: Python I (see cswonders.com for complete instructions)
+
+* print out some **ascii art** using the ```print(\`\`\`)``` idea
+* use turtle graphics and an input statement to create a birthday card for someone
+* use turtle graphics to create colorful spirals
+* use turtle graphics to create some snowflakes
+* savings calculator: Watch your fortune grow
+* MacArthur's math trick (this is a good basic project that everyone should do)
+* Caesar Cipher (another good basic project that makes use of the modulus operator **%**)
+* Pig Latin (manipulating strings with vowels and consonants)
+* Guess the Number
+  * First write the Chooser program that picks the number; and then responds 'Higher' or 'Lower' or 'Correct' to guesses 
+  * Second then write the Guesser program where you are the Chooser and the program must zero in on your number with a guessing strategy
+* Make a game. I suggest the game of Nim is a good one to begin with
+  * Nim uses either one or two or three piles of stones
+  * Players take turns removing one or two or three stones from any single pile
+  * The player who takes the last stone (having no choice) loses that game
+
+### cswonders projects: Python II (see cswonders.com for complete instructions)
 
