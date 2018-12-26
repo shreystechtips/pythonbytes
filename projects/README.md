@@ -25,9 +25,9 @@ contains our notes on it.**
 - **Here is a project that is completely and totally
 [**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
 seriously.**
-- :star: **The worksheets from the PythonBytes club contain challenges, all collected in the
+- :star: **The Pythonbytes worksheets contain challenges; and cswonders.com has projects: All listed for you on the
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
-folder.**
+page.**
 - :star:**You are an 
 [artist](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
  who uses computer graphics to produce graphical themes and patterns: Existing and new**
