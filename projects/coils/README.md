@@ -12,8 +12,11 @@
 
 If you 
 are looking for project work that helps you to reinforce your learning of the basics building blocks of Python this
-is the place for you. Coils are things made by Pythons. Here they mean 'simple challenges' and we have two supplies. First there are the
+is the place for you. Coils are 'simple challenges' here although some of them are perhaps not totally simple. 
+We have two sources or supplies of coil projects. First there are the
 **Projects** listed at cswonders.com. Second there are the **coils** from the PythonBytes worksheets 1 -- 6. 
+We want you to think of coils as Python programs that you write from scratch, from a blank editor page, 
+that run and do something interesting.
 
 
 ### Starter Challenges
