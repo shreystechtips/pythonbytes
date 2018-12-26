@@ -10,8 +10,9 @@ TNT = 46
 
 while True:
     p = mc.player.getPos()
-    mc.setBlock(p.x - 10, p.y - 1, p.z + 10, redstone)
-    mc.setBlock(p.x - 10, p.y, p.z + 10, TNT, 1)
-    sleep(10)
+    for i in range(5):
+        mc.setBlock(p.x, p.y - 2*i - 4, p.z, redstone)
+        mc.setBlock(p.x, p.y - 2*i - 3,     p.z, TNT, 1)
+    sleep(5)
 
 
