@@ -7,7 +7,7 @@
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
 
 
-### What are Coils? Something Pythons make quite easily...
+### What are Coils? Something Pythons make quite easily... that often include loops
 
 
 If you 
