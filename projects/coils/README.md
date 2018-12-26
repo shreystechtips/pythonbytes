@@ -37,14 +37,13 @@ print(randint(1,6)+randint(1,6))
 * You have a set of n objects, all different, placed in a row before you. You decide to count how many subsets of this set there are by placing either a black or a white pawn next to each object. A black pawn means the object is in the subset and a white pawn means that the object is not in the subset. Now two questions:
   * Does this suggest an easy way of calculating the total number of subsets?
   * What if anything does this have to do with previous challenges? 
-* Write a computer program that guesses a number that you choose between 1 and 100
-* Write a computer program that plays Nim. (You may have to look up Nim!)
 * Add up all the integers from 1 to 9,472
 * What is the difference between range(20), range(4,20), and range(4,20,7)? 
-* Here is a more complex challenge in three parts...
+* Write program to play both sides of the number guessing game (this project is mentioend below in the cswonders section also)
   * **Chooser** picks a number from 1 to 100; and **Guesser** tries to guess it by saying a number. **Chooser** reponds by saying 'Higher!' or 'Lower!' or 'Got it!' and if you wish to keep score you count how many guesses were needed. The two players take turns being **Chooser** and **Guesser**. So the first challenge is to write a program that acts as **Chooser**.
-  * You guessed it: Write a program that plays the game as **Guesser**. Try and make it as skillful as you are. 
+  * You guessed it: Next write a program that plays the game as **Guesser**. Try and make it as skillful as you are. 
   * Now take both programs and combine them into a larger program. The human player first decides whether they want to be **Chooser** or **Guesser** and the program continues from there. 
+* Write a computer program that plays Nim. This is described below in the cswonders section.
 
 
 ### Turtle Graphics
