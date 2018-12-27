@@ -19,6 +19,11 @@ square of the 8 x 8 chessboard once in 63 moves; and the answer is 'Yes!'... but
 This project is an opportunity to explore recursive functions; which are functions that call themselves. 
 
 
+Here are the first ten squares of a knight tour across an 8 by 8 chessboard.
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/knight/tour10.png" alt="drawing" width="280"/>
+
 
 ### Details
 
