@@ -37,7 +37,8 @@ while True:
     action = input('What do you do?')
     action_list = action.split()
     if 'light' in action_list and 'fire' in action_list: 
-        print('Finding some matches nearby you light a fire in the fireplace. A terrified cat leaps out and runs across the room.')
+        print('Finding matches and wood nearby you light a fire in the fireplace.')
+        print('As you do so a terrified cat leaps out of the fireplace and runs across the room.')
     else: 
         print('That doesn't seem to help much.')
 ```
