@@ -10,8 +10,8 @@ Here is an adventure program, complete:
 
 
 ```
-print('You are outside an ancient castle filled with monsters. The entrance is just wide enough for you to squeeze in.')
-print('The wind is whistling and there is a cold rain. Inside you can see a fire... but you also hear scary shrieks.')
+print('You are outside a castle full of monsters. The entrance is just wide enough for you to squeeze in.')
+print('The wind whistles and cold rain is soaking you. Inside you see a fire... but you hear scary shrieks.')
 
 action = input('What do you do? ')
 if action == 'run away':
