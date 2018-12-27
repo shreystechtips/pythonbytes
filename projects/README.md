@@ -81,15 +81,22 @@ Stack: An advanced project**
 
 ### How To Begin
 
-For any project
-* know how to find and use example.py
-* register in the registry
-* know how to track yourself
+For any project you decide to try (spend more than half an hour on)
+* Read the description page to be sure the project makes sense to you
+* Decide if you are working alone or with a team of your fellow students
+* Find a coach and **register** yourself in the *Project Registry*
+  * Tell the coach which Project
+  * Explain if it is you or you-and-your-colleagues
+  * Make sure to get the correct environment set up for everyone involved
+  * Register your 'help' process: Who is going to help you if you get stuck?
+* Prepare yourself to monitor your progress
+  * You absolutely must ask for help if you get stuck; and this is what the coaches are for
 
+
+### Longer Project Descriptions
 
 
 ***Click on the links above to learn more in-depth; or scroll down to read a bit more...***
-
 
 
 ### :star: Project: Project Euler! 
