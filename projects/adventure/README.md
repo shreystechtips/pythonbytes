@@ -60,3 +60,6 @@ Now let's see what happens when we run this code.
  * Both expressions return True and the **and** makes the whole if evalution True...
    * ...so I see the success message and I move onwards in the adventure
  
+
+Often these text adventures require you to pick up useful items. You can keep these in a separate list called
+**inventory** and only permit players to do certain things if they have the key item in their inventory list.
