@@ -61,8 +61,11 @@ This program will print out **28** and the logic of how it runs is instructive.
           * recursion(3) returns ```3 + recursion(2)```
             * recursion(2) returns ```2 + recursion(1)```
               * recursion(1) returns ```1 + recursion(0)```
-                * Finally since a **is** 0 at last recursion(0) finally returns just 0 without calling another recursion
-              * So the zero is picked up and recursion(1) returns 1
+                * Since **a** equals 0 at long last recursion(0) returns 0 without calling recursion()
+                  * ...so all the earlier versions of recursion() will start getting answers back...
+                  * ...so that they too may return
+              * So now the zero is returned to recursion(1)...
+                * and recursion(1) returns 1 + 0, in other words it returns 1
             * So recursion(2) returns 2 + 1 or 3
           * So recursion(3) returns 3 + 3 or 6
         * So recursion(4) returns 4 + 6 or 10
