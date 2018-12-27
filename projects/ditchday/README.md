@@ -13,7 +13,12 @@
 ### Overview
 
 
+The ditch day project is pretty cool but you have to do some other projects first. Let us (the club coaches) know how you are 
+doing and 'unlock' this project with your success and hard work!
 
 
 ### Details
 
+
+'Ditch day' is a tradition at my undergraduate alma matter: Where seniors create puzzles for underclassmen to solve... and then
+leave to spend the day at the beach. 
