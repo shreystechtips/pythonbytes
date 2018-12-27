@@ -78,7 +78,7 @@ On cswonders our drawing canvas is 400 x 400 pixels with coordinates going from 
 the turtles -- where we placed them -- are pretty far out there but they are still visible on the canvas. 
 
 
-Now on the canvas or table-top there is an angle from turtle a to turtle b. We can determine this angle
+Now on the canvas or table-top there is an angle from turtle **a** to turtle **b**. We can determine this angle
 using the towards method:
 
 
@@ -88,23 +88,24 @@ angle_a_to_b = a.towards(b)
 
 Notice that angle_a_to_b is a variable and its value will be -90.0 because the angles are measured in degrees. 
 What would be the angle if we did ```b.towards(a)```? I'll give you a moment to consider and give the answer below.
-The key is that the positive x axis is at angle 0. relative to the origin.
+The key is that the positive x axis is at angle zero degrees relative to the origin.
 
 
-Now how do we point turtle a towards turtle b (or bug a towards bug b if you like)? We use another method called
-```setheading()```. By the way the answer to the above question is -90.0. 
+Now how do we point turtle **a** towards turtle **b** (or bug **a** towards bug **b** if you like)? We use another method called
+```setheading()```. By the way the answer to the above question is -90.0 degrees. 
 
 
 ```
 a.setheading(angle_a_to_b)
 ```
 
-Now bug **a** is facing towards bug **b**. We can tell bug **a** to take a step forward by one pixel using
+Now that we have done this we know bug **a** is facing towards bug **b**. 
+We can tell bug **a** to take a step forward by one pixel using
 the ```forward()``` method. In so doing the **a** bug will be a little bit closer to the **b** bug.
 
 
 ```
-a.forward(1)
+a.forward(1.0)
 ```
 
 Notice since bug **a** is already pointed in the proper direction the 'forward' command does what we want: Pursuit.
@@ -119,14 +120,20 @@ How do we know that all of the bugs have come together? Here we can use the turt
 distance_a_to_b = a.distance(b)
 
 
+At the start (up above) after we placed **a** and **b** this distance would be 300.0. This is the length
+of the side or edge of the table **s**. 
+
+
 Now you could put an if-statement testing whether this distance is less than say 2 pixels. If it is then we 
 presume that the bugs are very close together and have reached the end of their journey. Then it remains to 
-report how far each one walked. 
+report how far each one walked... so don't forget to keep track of that! 
 
 
 ### Making the problem more complicated
 
+
 This problem can be extended, for example...
+
 
 - Suppose two diagonals are drawn on the square table. It is possible that in its path 
 each bug may cross over this diagonal. Perhaps even more than once. We ask: 
