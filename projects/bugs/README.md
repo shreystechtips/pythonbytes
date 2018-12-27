@@ -18,6 +18,9 @@ B but as B is walking towards C: A will have to adjust her path to the right to 
 Eventually all of the bugs meet at the center of the table. When they do: How far has each walked? 
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/bugs/bugpaths.png" alt="drawing" width="400"/>
+
+
 Now you are probably wondering what their real names are. I was too until I looked it up. They are named Alpher, 
 Bethe, Gamow and Dyson. You would think that bug C would be called Camow but there is not a letter 'C' in Greek
 so we make due with 'G' and that is why it is Gamow. You can look up Alpher Bethe and Gamow on Wikipedia but it 
