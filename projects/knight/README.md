@@ -28,7 +28,7 @@ Here are the first ten squares of a knight tour across an 8 by 8 chessboard.
 That is: The knight has started at the upper left square and made nine hops so far. 
 
 
-### Details
+### Recursion
 
 
 Both this project -- the knight's tour -- and the Sudoku project can make excellent use of the principle of *recursion*.
@@ -74,3 +74,38 @@ This program will print out **28** and the logic of how it runs is instructive.
 Notice that at its peak we had 8 different version of the ```recursion()``` function running. Each one was 
 separate from the others. When ```recursion(7)``` called ```recursion(6)``` it created a totally new version
 of the function in addition to itself. 
+
+
+To get some practice with recursion try writing a factorial program that multiplies numbers together. 
+```1 x 2 x 3 x 4 x 5``` is 5-factorial, also written **5!**.
+
+
+### Recursion in the knight's tour problem
+
+
+The knight's tour problem is really a fairly difficult challenge. The reason is that it is easy to get stuck.
+The knight can at first hop to just about any square because the board is empty. However as the squares are 
+visited they become no longer available; and the knight has fewer and fewer options. 
+
+
+You can imagine using a recursive function that calls itself to try and make the next hop in the sequence.
+The difficulty comes when the knight lands on a square with no moves available. The knight must back up
+to an earlier point in the tour and take a different path. It is rather like running a maze where you are
+putting up the obstacles of the maze as you go... and sometimes in running a maze it is necessary to backtrack. 
+
+
+In the Sudoku project the challenge is similar: You can proceed to guess values for the Sudoku cells until
+you either come to the end of the puzzle (yay you solved it!) or until there are no available options for
+a cell that is still empty. The rules forbid all nine choices; and so as with the knights you must back up
+and try another option. 
+
+
+Because these projects are quite challenging we encourage you to discuss them with the coaches; and to try out
+simpler problems first. Below is a list of recursion problems.
+
+* Adding up integers
+* Multiplying integers (factorial)
+* Adding up prime numbers below 1000
+* Solving a gallon puzzle (see the coaches for how this works)
+
+
