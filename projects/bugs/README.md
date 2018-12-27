@@ -63,7 +63,9 @@ a = Turtle()
 b = Turtle()
 ```
 
-Now you can set their pen colors and their positions:
+Sometimes I call **a** and **b** turtles... and sometimes I call them bugs. 
+
+Now we can set their pen colors and their positions:
 
 ```
 a.pencolor(255, 0, 0)
