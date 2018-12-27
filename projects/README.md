@@ -84,13 +84,11 @@ Stack: An advanced project**
 For any project you decide to try (spend more than half an hour on)
 * Read the description page to be sure the project makes sense to you
 * Decide if you are working alone or with a team of your fellow students
-* Find a coach and **register** yourself in the *Project Registry*
-  * Tell the coach which Project
-  * Explain if it is you or you-and-your-colleagues
-  * Make sure to get the correct environment set up for everyone involved
-  * Register your 'help' process: Who is going to help you if you get stuck?
+* Find a coach and **register** in the *Project Registry*
+  * The coach will talk you through the five-or-so steps
+    * Who - what - environment - time frame - help path 
 * Prepare yourself to monitor your progress
-  * You absolutely must ask for help if you get stuck; and this is what the coaches are for
+  * You absolutely must ask for help if you get stuck; this is what the coaches are for
 
 
 ### Longer Project Descriptions
