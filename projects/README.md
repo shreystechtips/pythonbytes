@@ -5,12 +5,14 @@
 
 ### On selecting a project
 
-Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
+Before you read any further: Please remember this important idea!!!! Just below the list of projects is a section
+called **How To Begin** and you absolutely must read and understand that section. Without doing that you will end
+up wasting a lot of your time and energy doing the wrong thing! So please enjoy the list of projects that follows
+and then *make absolutely certain* that you read **How To Begin**.
 
 
-The most important thing to remember: Check in with club coaches so we can help make sure 
-you are successful with your project.  We suggest that you begin with one that is 'very easy' first. 
-Often a simple-sounding project can be surprisingly fun and interesting. 
+Now: Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
+It's as easy as that **provided you follow the instructions on How To Begin**.
 
 
 Each project idea folder has more information and sometimes example Python code. If you are wondering 
@@ -75,6 +77,15 @@ landscapes: Four simple functions to build anything you can imagine**
 : You pilot a Tesla Roadster to escape the Jupiter system**
 - **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 Stack: An advanced project**
+
+
+### How To Begin
+
+For any project
+* know how to find and use example.py
+* register in the registry
+* know how to track yourself
+
 
 
 ***Click on the links above to learn more in-depth; or scroll down to read a bit more...***
