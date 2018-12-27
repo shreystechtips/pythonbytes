@@ -25,7 +25,52 @@ Here are the first ten squares of a knight tour across an 8 by 8 chessboard.
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/knight/tour10.png" alt="drawing" width="400"/>
 
 
+That is: The knight has started at the upper left square and made nine hops so far. 
+
+
 ### Details
 
 
+Both this project -- the knight's tour -- and the Sudoku project can make excellent use of the principle of *recursion*.
 
+
+To illustrate how recursion works let's think about a simple program. Read the code and try to decide in your mind what it does...
+
+
+```
+# What will this program print out? 
+def recursion(a): 
+    if a == 0: return a
+    return a + recursion(a-1)
+    
+answer = recursion(7)
+print(answer)
+```
+
+This program will print out **28** and the logic of how it runs is instructive. 
+
+* ```def recursion(a):``` defines a function (but does not run it yet)
+* ```answer = recursion(7)``` will run the recursion() function and the next line prints out that answer
+* Let's track what happens when ```recursion(7)``` runs...
+  * ```recursion(7)``` evaluates **a** is not zero so it returns (instead) the value **7 + recursion(6)**
+    * Before this value can be returned: recursion(6) must execute...
+    * ```recursion(6)``` evaluates **a** (now 6) is not zero and so it returns **6 + recursion(5)**
+    * As before ```recursion(5)``` must run before ```recursion(6)``` can return
+      * recursion(5) returns ```5 + recursion(4)```
+        * recursion(4) returns ```4 + recursion(3)```
+          * recursion(3) returns ```3 + recursion(2)```
+            * recursion(2) returns ```2 + recursion(1)```
+              * recursion(1) returns ```1 + recursion(0)```
+                * Finally since a **is** 0 at last recursion(0) finally returns just 0 without calling another recursion
+              * So the zero is picked up and recursion(1) returns 1
+            * So recursion(2) returns 2 + 1 or 3
+          * So recursion(3) returns 3 + 3 or 6
+        * So recursion(4) returns 4 + 6 or 10
+      * So recursion(5) returns 5 + 10 or 15
+    * So recursion(6) returns 6 + 15 or 21
+  * So recursion(7) returns 7 + 21 or 28
+  * And at last this value of 28 is assigned to **answer** and we are done
+  
+Notice that at its peak we had 8 different version of the ```recursion()``` function running. Each one was 
+separate from the others. When ```recursion(7)``` called ```recursion(6)``` it created a totally new version
+of the function in addition to itself. 
