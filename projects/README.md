@@ -105,6 +105,9 @@ have a pythonbytes *details* page on this topic
 [here](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth).**
 
 
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/euler/euler.png" alt="drawing" width="280"/>
+
+
 The **Project Euler** website has dozens of interesting programming challenges with mathematical themes. 
 For example (Problem number 63): 
 
