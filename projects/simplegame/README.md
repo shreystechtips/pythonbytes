@@ -4,17 +4,24 @@
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
 
 
-![Simple game of tic tac toe](https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png "tic tac toe game in progress")
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png" alt="drawing" width="400"/>
+
+### Overview 
 
 
-  * Here are five game challenges of increasing difficulty (no graphics necessary)
-    * Guess a number from 1 to 100: Computer is the Chooser and responds **higher** / **lower** / **got it!**
-    * Guess a number from 1 to 100: Computer is the Guesser and you (the player) are the Chooser
-    * Nim: Set a pile of stones; the program and the human take turns removing 1 to 3 stones; the last one to remove a stone loses
-    * Nim: Same as above but with three piles, for example with 9, 11, 13 stones
-    * [Old Gold](https://nrich.maths.org/1209): Click on the link to learn how to play this game
+We describe (under the **Coils** project) creating simple games where the human plays one side and your Python program plays
+the other. Here we will add some graphics to the process to make your games more visually interesting, as in the above 
+tic tac toe board. To review: Here are five game challenges of increasing difficulty (no graphics necessary) to get started:
 
-### Overview
+
+* Guess a number from 1 to 100: Computer is the Chooser and responds **higher** / **lower** / **got it!**
+* Guess a number from 1 to 100: Computer is the Guesser and you (the player) are the Chooser
+* Nim: Set a pile of stones; the program and the human take turns removing 1 to 3 stones; the last one to remove a stone loses
+* Nim: Same as above but with three piles, for example with 9, 11, 13 stones
+* [Old Gold](https://nrich.maths.org/1209): Click on the link to learn how to play this game
+
+
+### Adding Graphics
 
 
 The easiest way of creating a simple visual game that I know of uses the 'pygame' package. In order to
