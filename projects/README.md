@@ -21,12 +21,6 @@ Each project idea folder has more information and sometimes example Python code.
 You will recognize them from the worksheets.
 
 
-- :star: **Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
-and [this page](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
-contains our notes on it.**
-- :star: **Here is a project that is completely and totally
-[**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
-seriously.**
 - :star: **The Pythonbytes worksheets contain challenges; and cswonders.com has projects: All listed for you on the
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
 page.**
@@ -42,12 +36,18 @@ placed on a table. They follow some rules for motion and your task is to simulat
 - :star:**There are many ways to calculate 
 [pi](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
 using a computer; so learn to build and compare them**
+- :star: **Here is a project that is completely and totally
+[**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
+seriously.**
 - :star: **Create a text 
 [adventure](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
 where a player must determine the right series of steps to escape from a locked room**
 - :star:**Create a program that plays a 
 [simple game](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
 like tic-tac-toe or Nim against a human: With graphics!**
+- :star: **Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
+and [this page](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
+contains our notes on it.**
 - **Create a program that solves a 
 [Sudoku](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 puzzle**
@@ -95,47 +95,6 @@ For any project you decide to try (spend more than half an hour on)
 
 
 ***Click on the links above to learn more in-depth; or scroll down to read a bit more...***
-
-
-### :star: Project: Project Euler! 
-
-
-**Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/). We also 
-have a pythonbytes *details* page on this topic
-[here](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth).**
-
-
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/euler/euler.png" alt="drawing" width="280"/>
-
-
-The **Project Euler** website has dozens of interesting programming challenges with mathematical themes. 
-For example (Problem number 63): 
-
-> The 5-digit number 16807 is also a fifth power: Seven raised to the fifth power. 
-> Similarly, the 9-digit number 134217728 is also eight raised to the ninth power.
->
-> How many n-digit positive integers exist which are also an n-th power?
-
-
-Project Euler brings together your mathematical thinking (to help understand and evaluate the challenges) 
-with your growing programming skills. Each project has a user-rating that you can see once you create an
-account and begin to explore. A great feature is that you can submit your answers for evaluation.
-
-
-### :star: Project: Pointless program
-
-
-**You are consumed with writing a Python program that does something completely pointless.**
-
-
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/pointless/pointless.png" alt="drawing" width="280"/>
-
-
-Inspired by Simone Giertz, this project insists that you write a Python program that runs correctly; with 
-no errors. However what does it do??? It does something completely pointless. The challenge is to make that
-pointless thing be really really ridiculous and goofy. Follow the link for some examples on just what we
-mean by
-[pointless](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth).
 
 
 ### :star: Project: Coils
@@ -234,6 +193,22 @@ This is an excellent starter project. You can
 [read more about Pi from Py here.](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
 
 
+### :star: Project: Pointless program
+
+
+**You are consumed with writing a Python program that does something completely pointless.**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/pointless/pointless.png" alt="drawing" width="280"/>
+
+
+Inspired by Simone Giertz, this project insists that you write a Python program that runs correctly; with 
+no errors. However what does it do??? It does something completely pointless. The challenge is to make that
+pointless thing be really really ridiculous and goofy. Follow the link for some examples on just what we
+mean by
+[pointless](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth).
+
+
 ### :star: Project: Adventure (Room Escape)
 
 
@@ -269,6 +244,31 @@ build up your skills:
 
 
 [More on simple games and adding graphics here...](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
+
+
+### :star: Project: Project Euler! 
+
+
+**Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/). We also 
+have a pythonbytes *details* page on this topic
+[here](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth).**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/euler/euler.png" alt="drawing" width="280"/>
+
+
+The **Project Euler** website has dozens of interesting programming challenges with mathematical themes. 
+For example (Problem number 63): 
+
+> The 5-digit number 16807 is also a fifth power: Seven raised to the fifth power. 
+> Similarly, the 9-digit number 134217728 is also eight raised to the ninth power.
+>
+> How many n-digit positive integers exist which are also an n-th power?
+
+
+Project Euler brings together your mathematical thinking (to help understand and evaluate the challenges) 
+with your growing programming skills. Each project has a user-rating that you can see once you create an
+account and begin to explore. A great feature is that you can submit your answers for evaluation.
 
 
 ### Project: Solve a Sudoku puzzle
