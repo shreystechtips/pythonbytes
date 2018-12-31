@@ -6,7 +6,7 @@
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png" alt="drawing" width="400"/>
 
-### Overview 
+### Overview: Games with graphics
 
 
 We describe (under the **Coils** project) creating simple games where the human plays one side and your Python program plays
