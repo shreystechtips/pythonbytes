@@ -47,7 +47,7 @@ using a computer; so learn to build and compare them**
 where a player must determine the right series of steps to escape from a locked room**
 - :star:**Create a program that plays a 
 [simple game](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
-like tic-tac-toe or Nim against a human**
+like tic-tac-toe or Nim against a human: With graphics!**
 - **Create a program that solves a 
 [Sudoku](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 puzzle**
@@ -238,19 +238,23 @@ This is an excellent starter project. You can
 [More on adventure here...](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
 
 
-### :star: Project: Game Player
+### :star: Project: Simple game player with graphics
 
 
-**Create a program that plays a simple game like tic-tac-toe or Nim against a human.**
+**Create a program that plays a simple game like tic-tac-toe or Nim against a human with graphics**
 
 
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/simplegame/tictactoe.png" alt="drawing" width="280"/>
 
 
 Creating simple computer games where the computer takes one side is a time-tested way of improving your programming 
-skills. First you must create code that properly conducts the game; and then you must add some form of intelligence
-so it plays well enough for the game to be interesting to the human player. Tic-tac-toe and Nim are two examples
-of games but there are dozens more. Here are the ones we recommend in order, to begin with:
+skills. This project idea has three parts: First create code that properly conducts the game. Second add some form of 
+intelligence for your program so the game is interesting to the human player. Third add some graphics to make it more
+interesting still!
+
+
+Tic-tac-toe and Nim are two examples of games but there are dozens more. Here are the ones we recommend in order to 
+build up your skills:
 
 * Guess a number from 1 to 100: Computer is the Chooser and responds **higher** / **lower** / **got it!**
 * Guess a number from 1 to 100: Computer is the Guesser and you (the player) are the Chooser
@@ -259,7 +263,7 @@ of games but there are dozens more. Here are the ones we recommend in order, to 
 * [Old Gold](https://nrich.maths.org/1209): Click on the link to learn how to play this game
 
 
-[More on simple games here...](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
+[More on simple games and adding graphics here...](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
 
 
 ### Project: Solve a Sudoku puzzle
