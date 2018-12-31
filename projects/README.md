@@ -24,7 +24,7 @@ You will recognize them from the worksheets.
 - :star: **Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
 and [this page](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
 contains our notes on it.**
-- **Here is a project that is completely and totally
+- :star: **Here is a project that is completely and totally
 [**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
 seriously.**
 - :star: **The Pythonbytes worksheets contain challenges; and cswonders.com has projects: All listed for you on the
@@ -42,10 +42,7 @@ placed on a table. They follow some rules for motion and your task is to simulat
 - :star:**There are many ways to calculate 
 [pi](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
 using a computer; so learn to build and compare them**
-- **You have a chessboard and a 
-[knight](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
-placed upon it. Find a path of legal knight moves that visits every square once**
-- **Create a text 
+- :star: **Create a text 
 [adventure](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
 where a player must determine the right series of steps to escape from a locked room**
 - :star:**Create a program that plays a 
@@ -54,10 +51,13 @@ like tic-tac-toe or Nim against a human**
 - **Create a program that solves a 
 [Sudoku](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 puzzle**
+- **You have a chessboard and a 
+[knight](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
+placed upon it. Find a path of legal knight moves that visits every square once**
 - **Create an interactive 
 [video game](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
 using a Python package like [pygame](http://pygame.org)**
-- :star:**Use a simple procedure called the 
+- **Use a simple procedure called the 
 [*Chaos Game*](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
 to create a fractal structure with infinite perimeter and zero area**
 - **Create an interactive 
@@ -117,7 +117,7 @@ with your growing programming skills. Each project has a user-rating that you ca
 account and begin to explore. A great feature is that you can submit your answers for evaluation.
 
 
-### Project: Pointless program
+### :star: Project: Pointless program
 
 
 **You are consumed with writing a Python program that does something completely pointless.**
@@ -142,6 +142,7 @@ We began the club with some worksheets that included some challenges. This proje
 were. You are invited to 
 [revisit them](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth),
 solve them and take them further.
+
 
 ### :star: Project: Art Concepts
 
@@ -228,34 +229,7 @@ This is an excellent starter project. You can
 [read more about Pi from Py here.](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
 
 
-### Project: Knight's Tour
-
-
-**You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
-
-
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/knight/knight.png" alt="drawing" width="280"/>
-
-
-This is another famous problem that can be solved with a good choice of algorithm. It also usually takes the 
-form of a recursion problem; so here is a note on recursion. Suppose you want to add 2 + 2 + 2 + 2 + 2 + 2 + 2.
-One way to do this is to write a Python function that can call itself. This is a topic you will definitely
-want to talk to Python Bytes coaches about.
-
-
-You can play this game with a pencil and paper if you like. Simply draw an 8 x 8 chess board and write the number
-1 in a corner square. Then proceed to write 2, 3, 4, ... on squares as you move about in the manner of a chess 
-knight. If you get to the last empty square and write 64 you have solved the problem. 
-
-
-Writing a Python program to solve this problem requires some careful thought and code-writing. It is much like
-solving a maze which is one of our other project ideas.
-
-
-[More on the knight's tour here...](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
-
-
-### Project: Room Escape 
+### :star: Project: Adventure (Room Escape)
 
 
 **Create a text adventure where a player must determine the right series of steps to escape from a locked room.**
@@ -276,7 +250,13 @@ solving a maze which is one of our other project ideas.
 Creating simple computer games where the computer takes one side is a time-tested way of improving your programming 
 skills. First you must create code that properly conducts the game; and then you must add some form of intelligence
 so it plays well enough for the game to be interesting to the human player. Tic-tac-toe and Nim are two examples
-of games but there are dozens more.
+of games but there are dozens more. Here are the ones we recommend in order, to begin with:
+
+* Guess a number from 1 to 100: Computer is the Chooser and responds **higher** / **lower** / **got it!**
+* Guess a number from 1 to 100: Computer is the Guesser and you (the player) are the Chooser
+* Nim: Set a pile of stones; the program and the human take turns removing 1 to 3 stones; the last one to remove a stone loses
+* Nim: Same as above but with three piles, for example with 9, 11, 13 stones
+* [Old Gold](https://nrich.maths.org/1209): Click on the link to learn how to play this game
 
 
 [More on simple games here...](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
@@ -302,6 +282,33 @@ This is a fairly advanced project. You can
 [read more about Sudoku solvers here.](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 
 
+
+
+### Project: Knight's Tour
+
+
+**You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
+
+
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/knight/knight.png" alt="drawing" width="280"/>
+
+
+This is another famous problem that can be solved with a good choice of algorithm. It also usually takes the 
+form of a recursion problem; so here is a note on recursion. Suppose you want to add 2 + 2 + 2 + 2 + 2 + 2 + 2.
+One way to do this is to write a Python function that can call itself. This is a topic you will definitely
+want to talk to Python Bytes coaches about.
+
+
+You can play this game with a pencil and paper if you like. Simply draw an 8 x 8 chess board and write the number
+1 in a corner square. Then proceed to write 2, 3, 4, ... on squares as you move about in the manner of a chess 
+knight. If you get to the last empty square and write 64 you have solved the problem. 
+
+
+Writing a Python program to solve this problem requires some careful thought and code-writing. It is much like
+solving a maze which is one of our other project ideas.
+
+
+[More on the knight's tour here...](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
 
 
 ### Project: Video game
