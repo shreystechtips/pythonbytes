@@ -100,7 +100,9 @@ For any project you decide to try (spend more than half an hour on)
 ### :star: Project: Project Euler! 
 
 
-**Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/)**
+**Many interesting project ideas can be found at [Project Euler](https://projecteuler.net/). We also 
+have a pythonbytes *details* page on this topic
+[here](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth).**
 
 
 The **Project Euler** website has dozens of interesting programming challenges with mathematical themes. 
