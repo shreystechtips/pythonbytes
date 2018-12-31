@@ -44,6 +44,12 @@ print(randint(1,6)+randint(1,6))
   * You guessed it: Next write a program that plays the game as **Guesser**. Try and make it as skillful as you are. 
   * Now take both programs and combine them into a larger program. The human player first decides whether they want to be **Chooser** or **Guesser** and the program continues from there. 
 * Write a computer program that plays Nim. This is described below in the cswonders section.
+  * Here are five game challenges of increasing difficulty (no graphics necessary)
+    * Guess a number from 1 to 100: Computer is the Chooser and responds **higher** / **lower** / **got it!**
+    * Guess a number from 1 to 100: Computer is the Guesser and you (the player) are the Chooser
+    * Nim: Set a pile of stones; the program and the human take turns removing 1 to 3 stones; the last one to remove a stone loses
+    * Nim: Same as above but with three piles, for example with 9, 11, 13 stones
+    * [Old Gold](https://nrich.maths.org/1209): Click on the link to learn how to play this game
 
 
 ### Turtle Graphics
@@ -142,7 +148,13 @@ information that we can look at using Python. If you want to explore any of thes
   * Nim uses either one or two or three piles of stones
   * Players take turns removing one or two or three stones from any single pile
   * The player who takes the last stone (having no choice) loses that game
-
+  * Here are five game challenges of increasing difficulty (no graphics necessary)
+    * Guess a number from 1 to 100: Computer is the Chooser and responds **higher** / **lower** / **got it!**
+    * Guess a number from 1 to 100: Computer is the Guesser and you (the player) are the Chooser
+    * Nim: Set a pile of stones; the program and the human take turns removing 1 to 3 stones; the last one to remove a stone loses
+    * Nim: Same as above but with three piles, for example with 9, 11, 13 stones
+    * [Old Gold](https://nrich.maths.org/1209): Click on the link to learn how to play this game
+    
 ### cswonders projects: Python II (see cswonders.com for complete instructions)
 
 * Password generator
