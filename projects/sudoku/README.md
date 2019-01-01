@@ -7,7 +7,7 @@
 ### Overview
 
 
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png" alt="drawing" width="300"/>
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku2.png" alt="drawing" width="300"/>
 
 
 These project notes are currently in development. You are welcome to read through here but 
@@ -28,26 +28,40 @@ If you create a Sudoku solver you have the opportunity to go further into these 
 
 ### Details
 
-We proceed in three parts here. First we refer you to the notes on *recursion* to be found
-on the knight's tour project page. 
-
-describe all the logic for thinking about and solving 
-Sudoku puzzles.  This sets us up to adopt a computer programmer's frame of mind. 
-In the second part we break the programming task for a Sudoku solver into small steps
-that set up the path to a solution. 
+We proceed in three parts here. First read the notes on *recursion* at the 
+[knight's tour project page](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#recursion).
+This gives some simple exercises for you to try that use recursion.
 
 
-#### Part 1: A programmer's approach to a Sudoku puzzle
+Second we describe Sudoku here on this page from a Python programmer's perspective. 
+This sets us up with a computer programmer's frame of mind. We break the Sudoku solver into 
+small steps on the path to success.
+
+
+Third we will go from our thinking framework to a code framework that will result in a Sudoku solver. 
+
+
+#### Part 1: Understanding recursion
+
+
+Go to [this link](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#recursion)
+and learn about recursion. Don't forget to do the exercises!
+
+
+#### Part 2: A programmer's approach to a Sudoku puzzle
 
 
 All Sudoku puzzles have a starting point. The most basic would be an empty puzzle: Simple 9 x 9 
-empty cells. Obviously this has many solutions!
+empty **cells**. This has many solutions! But all the Sudoku puzzles you will find (say in the newspaper)
+have some numbers filled in. With 81 cells in the puzzle we can
+write it out as 81 **characters** where we use a zero **0** for the empty cells.
+For example this puzzle: 
 
 
-Suppose you come upon a Sudoku puzzle with 21 cells filled in, leaving 60 empty. We will use 
-a zero '0' to mark empty cells; or a blank or something like that. So in our case with 21 
-numbers given there remain 60 empty cells. Each of these will contain a number from 
-{ 1, 2, 3, 4, 5, 6, 7, 8, 9 } when the problem is solved.  If you chose a random number
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku2.png" alt="drawing" width="300"/>
+
+
+If you chose a random number
 for each of these cells you would not solve the puzzle (most likely). But it is instructive
 to ask 'How many possible random solutions could I check?' The number of possibilities 
 is 9 raised to the 60 power. This is too many possibilities for a computer to simply try 
