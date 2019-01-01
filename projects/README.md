@@ -13,7 +13,7 @@ and then *make absolutely certain* that you read and follow **How To Begin**.
 
 
 Now: Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
-It's as easy as that **provided you follow the instructions on How To Begin**.
+It's as easy as that **provided you follow the instructions on How To Begin** (did we mention?).
 
 
 Each project idea folder has more information and sometimes example Python code. If you are wondering 
