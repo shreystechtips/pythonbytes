@@ -79,8 +79,9 @@ separate from the others. When ```recursion(7)``` called ```recursion(6)``` it c
 of the function in addition to itself. 
 
 
-To get some practice with recursion try writing a factorial program that multiplies numbers together. 
+* To get some practice with recursion try writing a factorial program that multiplies numbers together. 
 ```1 x 2 x 3 x 4 x 5``` is 5-factorial, also written **5!**.
+* Write another recursion program that tells you what the 10th prime number is. 
 
 
 ### Recursion in the knight's tour problem
