@@ -20,13 +20,9 @@ Each project idea folder has more information and sometimes example Python code.
 'Where are the easy projects?' being with 
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth).
 You will recognize them from the worksheets. The first few projects with :star: stars are starting-out
-projects. The ones with little green :snake: pythons are more challenging. 
+projects. The ones with little green :snake: pythons are more challenging. Mountain :mountain: projects 
+are super-challenging!
 
-:ice:
-
-:iceberg:
-
-:mountain:
 
 
 - :star: **The Pythonbytes worksheets contain challenges; and cswonders.com has projects: All listed for you on the
@@ -81,9 +77,9 @@ fractals**
 calls and you hope to understand and even talk to them**
 - :snake: **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 landscapes: Four simple functions to build anything you can imagine**
-- :snake: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
+- :mountain: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 : You pilot a Tesla Roadster to escape the Jupiter system**
-- :snake: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
+- :mountain: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 Stack: An advanced project**
 
 
@@ -280,7 +276,7 @@ with your growing programming skills. Each project has a user-rating that you ca
 account and begin to explore. A great feature is that you can submit your answers for evaluation.
 
 
-### Project: Solve a Sudoku puzzle
+### :snake: Project: Solve a Sudoku puzzle
 
 
 **Create a program that solves a Sudoku puzzle**
@@ -302,7 +298,7 @@ This is a fairly advanced project. You can
 
 
 
-### Project: Knight's Tour
+### :snake: Project: Knight's Tour
 
 
 **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
@@ -329,7 +325,7 @@ solving a maze which is one of our other project ideas.
 [More on the knight's tour here...](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
 
 
-### Project: Video game
+### :snake: Project: Video game
 
 
 **Create an interactive video game using a Python package like [pygame](http://pygame.org)**
@@ -338,7 +334,7 @@ solving a maze which is one of our other project ideas.
 [More on video games here](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
 
 
-### :star: Project: Fractals I
+### :snake: Project: Fractals I
 
 
 **Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
@@ -353,7 +349,7 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 [More on these fractals here](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
 
 
-### Project: Fortune Teller
+### :snake: Project: Fortune Teller
 
 
 **Create an interactive program: Ask the player some questions; then tell them something interesting.**
@@ -362,7 +358,7 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 [More on fortune programs here](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
 
 
-### Project: Maze Solver
+### :snake: Project: Maze Solver
 
 
 **Create a program that is able to find its way out of a maze.**
@@ -372,7 +368,7 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 
 
 
-### Project: Fractals II
+### :snake: Project: Fractals II
 
 
 **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals.**
@@ -396,7 +392,7 @@ we use a modified version of numbers and arithmetic to create a fractal called a
 
 
 
-### Project: Whale calls
+### :snake: Project: Whale calls
 
 
 **You study whales and their calls... perhaps you would like to try and talk to them.**
@@ -415,7 +411,7 @@ and identify whale calls.
 
 
 
-### Project: Minecraft landscapes
+### :snake: Project: Minecraft landscapes
 
 
 **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
@@ -446,7 +442,7 @@ for j in range(90, 180, 6):
 [Click to see the results of running this Python program...](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 
 
-### Project: Stargirl
+### :mountain: Poject: Stargirl
 
 
 **Stargirl: You pilot a Tesla Roadster to escape the Jupiter system.**
@@ -471,7 +467,7 @@ This project would be quite challenging if you are new to gravity. If you have a
 gravity you will have some helpful intuition; and we can always give you some further help; come see us!
 
 
-### Project: Ditch Day Stack
+### :mountain: Project: Ditch Day Stack
 
 
 **Ditch Day Stack: An advanced project for those who complete some other project and have time to do more.**
