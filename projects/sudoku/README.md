@@ -106,28 +106,11 @@ p1 = '06000000820180050090500200000070460230009000550460800000090030100700590610
 Here just to check our skill a little further is another puzzle.
 
 
-```
-   |   | 8 | 6 | 3 | 2 | 4 |   |   |
- -----------------------------------
-   | 4 |   |   |   |   |   | 1 |   |
- -----------------------------------
- 5 |   |   | 9 |   | 4 |   |   | 6 |
- -----------------------------------
- 8 |   |   |   |   |   |   |   | 5 |
- -----------------------------------
- 6 |   |   |   |   |   |   |   | 4 |
- -----------------------------------
- 1 |   | 7 |   |   |   | 9 |   | 2 |
- -----------------------------------
- 4 |   |   | 7 | 5 | 1 |   |   | 3 |
- -----------------------------------
-   | 6 |   |   |   |   |   | 2 |   |
- -----------------------------------
-   |   | 5 | 8 | 2 | 6 | 7 |   |   |
-```
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku.png" alt="drawing" width="300"/>
 
 
-Here is the same thing getting rid of all the formatting. 
+
+Here is the same thing in written characters and spaces...
 
 
 ```
@@ -135,7 +118,7 @@ Here is the same thing getting rid of all the formatting.
  4     1                                        040000010
 5  9 4  6   --------------------------------->  500904006
 8       5                                       800000005
-6       4    Same thing with zeros for blanks   600000004
+6       4            zeros for blanks           600000004
 1 7   9 2                                       107000902
 4  751  3   --------------------------------->  400751003
  6     2                                        060000020
@@ -143,26 +126,24 @@ Here is the same thing getting rid of all the formatting.
 ```
 
 
-And now here we have it as a string
-
-
+And now as a string
 
 ```
 p2 = '008632400040000010500904006800000005600000004107000902400751003060000020005826700'
 ```
 
 
-So there is our first line of Python code. It allows us to assign any Sudoku puzzle to a 
-**string** variable called *spuzzle*. 
+#### Sudoku rules
+
+Each zero in the puzzle string must be converted to a number from 1 to 9 according to
+the three rules of Sudoku
+
+* No number may repeat on any row
+* No number may repeat on any column
+* No number may repeat in any cell block
 
 
-Now let's continue with the logic. Each of those zeros could be any number from 1 to 9. 
-But not really. Some of those numbers are simply not allowed. For example if there is an
-8 in the same row as a blank cell then that blank cell cannot be set to 8. If there is 
-a 4 in the same column as a blank cell then it can't be a 4. Finally there are the 3 x 3
-cells -- let's call them sub-blocks that make up the Sudoku grid. There are nine of these
-and each must have all the possible digits just once. So there again is away of eliminating
-possibilities from an empty cell.
+There are 9 **3 x 3** cell blocks as you can see in the above puzzle images.
 
 
 Here is the first key idea of writing a Sudoku solver: Each empty cell of the puzzle is to
