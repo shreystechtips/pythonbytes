@@ -6,9 +6,10 @@
 ### On selecting a project
 
 Before you read any further: Please remember this important idea!!!! Just below the list of projects is a section
-called **How To Begin** and you absolutely must read and understand that section. Without doing that you will end
-up wasting a lot of your time and energy doing the wrong thing! So please enjoy the list of projects that follows
-and then *make absolutely certain* that you read **How To Begin**.
+called **How To Begin** and you absolutely must read and understand that section. (Hint: It's easy!) 
+Without doing the **How To Begin** you will end
+up wasting your time and energy for no reason! So please enjoy the list of projects that follows
+and then *make absolutely certain* that you read and follow **How To Begin**.
 
 
 Now: Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
@@ -16,9 +17,18 @@ It's as easy as that **provided you follow the instructions on How To Begin**.
 
 
 Each project idea folder has more information and sometimes example Python code. If you are wondering 
-'Where are the easy projects?' being with the 
+'Where are the easy projects?' being with 
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth).
-You will recognize them from the worksheets.
+You will recognize them from the worksheets. The first few projects with :star: stars are starting-out
+projects. 
+
+:snake:
+
+:skill:
+
+:monster:
+
+:python:
 
 
 - :star: **The Pythonbytes worksheets contain challenges; and cswonders.com has projects: All listed for you on the
@@ -80,6 +90,7 @@ Stack: An advanced project**
 
 
 ### How To Begin
+
 
 For any project you decide to try (spend more than half an hour on)
 * Read the description page to be sure the project makes sense to you
