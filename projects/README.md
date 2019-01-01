@@ -25,7 +25,7 @@ are super-challenging!
 
 
 
-- :star: **The Pythonbytes worksheets and cswonders.com are all listed for your convenience
+- :star: **The Pythonbytes worksheets and cswonders.com mini-projects are all listed for your convenience
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
 page.**
 - :star:**You are an 
