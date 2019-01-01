@@ -16,17 +16,22 @@ not everything is complete and tested! My sudoku program does not work yet, for 
 
 To get started on this we use a strategy called *recursion*. You may want to say to yourself
 'I need to understand recursion' before going further. That way when you run into recursion 
-you will be prepared for the awesomeness. 
+you will be prepared for the awesomeness. Also you can look up recursion in the dictionary:
+
+
+> recursion (noun): See *recursion*
 
 
 Incidentally there are a number of styles of puzzle similar to Sudoku; such as Shikaku and Nurikabe. 
 If you create a Sudoku solver you have the opportunity to go further into these other games. 
-You are also welcome to read about NP-complete computational tasks.
 
 
 ### Details
 
-We proceed in two parts. First we describe all the logic for thinking about and solving 
+We proceed in three parts here. First we refer you to the notes on *recursion* to be found
+on the knight's tour project page. 
+
+describe all the logic for thinking about and solving 
 Sudoku puzzles.  This sets us up to adopt a computer programmer's frame of mind. 
 In the second part we break the programming task for a Sudoku solver into small steps
 that set up the path to a solution. 
