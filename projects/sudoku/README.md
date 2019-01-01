@@ -143,28 +143,46 @@ the three rules of Sudoku
 * No number may repeat in any cell block
 
 
-There are 9 **3 x 3** cell blocks as you can see in the above puzzle images.
+There are 9 **3 x 3** cell blocks as you can see in both of the above puzzle images.
 
 
-Here is the first key idea of writing a Sudoku solver: Each empty cell of the puzzle is to
-be represented by a list of possibilities for that cell. As our program works on creating
-a solution the empty cells will be filled one by one with numbers. As they do this will 
-affect the remaining empty cells by reducing the number of possibilities for them. 
+#### First key idea of writing a Sudoku solver
 
 
-To illustrate this let's do an example from the above puzzle, shown again here:
+The cells can be numbered in Python fashion from 0 to 80 (as there are 81 of them). 
+However each cell has a unique (row, column) address. The upper left cell is (0, 0)
+and the lower right cell is (8, 8). The center cell is (4, 4). 
 
-```
-? 86324
- 4     1
-5  9 4  6
-8       5
-6       4
-1 7   9 2
-4  751  3
- 6     2
-  58267
-```
+
+#### Second key idea of writing a Sudoku solver
+
+
+An empty cell in the puzzle string is a '0' zero character. This is fine to start but
+it is not very much information. So when we get to the business of solving the puzzle
+let us instead represent an empty cell of the puzzle as a **list** of possible numbers that could
+be written in that cell according to the three Sudoku rules. 
+
+
+For example cell (0, 0) of the first puzzle **p1** could have any of the nine digits so we make this list:
+
+
+```['1', '2', '3', '4', '5', '6', '7', '8', '9']```
+
+
+However the rules of Sudoku tell us some of these are forbidden: 
+* 1, 2, 5, 6, 9 from the cell block numbers in the puzzle
+* 1, 2, 3, 5, 9 from the column
+* 6, 8 from the row
+
+
+The correct list of possible values is therefore: 
+
+
+```['4', '7', '8']```
+
+
+**left off here**
+
 
 Now the ? cell at the upper left could be any number in this Python **list**: [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ].
 However in the same row are the numbers 8, 6, 3, 2 and 4. So we can reduce this possibility list by eliminating
