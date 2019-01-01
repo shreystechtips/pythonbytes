@@ -20,15 +20,13 @@ Each project idea folder has more information and sometimes example Python code.
 'Where are the easy projects?' being with 
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth).
 You will recognize them from the worksheets. The first few projects with :star: stars are starting-out
-projects. 
+projects. The ones with little green :snake: pythons are more challenging. 
 
-:snake:
+:ice:
 
-:skill:
+:iceberg:
 
-:monster:
-
-:python:
+:mountain:
 
 
 - :star: **The Pythonbytes worksheets contain challenges; and cswonders.com has projects: All listed for you on the
@@ -58,34 +56,34 @@ like tic-tac-toe or Nim against a human: With graphics!**
 - :star: **Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
 and [this page](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
 contains our notes on it.**
-- **Create a program that solves a 
+- :snake: **Create a program that solves a 
 [Sudoku](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 puzzle**
-- **You have a chessboard and a 
+- :snake: **You have a chessboard and a 
 [knight](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
 placed upon it. Find a path of legal knight moves that visits every square once**
-- **Create an interactive 
+- :snake: **Create an interactive 
 [video game](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
 using a Python package like [pygame](http://pygame.org)**
-- **Use a simple procedure called the 
+- :snake: **Use a simple procedure called the 
 [*Chaos Game*](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
 to create a fractal structure with infinite perimeter and zero area**
-- **Create an interactive 
+- :snake: **Create an interactive 
 [fortune](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
 program: Ask the player some questions; then tell them something interesting**
-- **Create a program able to escape from a 
+- :snake: **Create a program able to escape from a 
 [maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)!**
-- **Use complex arithmetic to create an infinite variety of 
+- :snake: **Use complex arithmetic to create an infinite variety of 
 [Julia Set](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
 fractals**
-- **You study 
+- :snake: **You study 
 [whale](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
 calls and you hope to understand and even talk to them**
-- **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
+- :snake: **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 landscapes: Four simple functions to build anything you can imagine**
-- **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
+- :snake: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 : You pilot a Tesla Roadster to escape the Jupiter system**
-- **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
+- :snake: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 Stack: An advanced project**
 
 
