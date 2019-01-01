@@ -51,6 +51,11 @@ and learn about recursion. Don't forget to do the exercises!
 #### Part 2: A programmer's approach to a Sudoku puzzle
 
 
+Attribution: This description follows closely the ideas of Jake VanderPlas' 
+[article on Sudoku solvers](http://jakevdp.github.io/blog/2013/04/15/code-golf-in-python-sudoku/).
+Jake uses Python **sets** but we will stick to using **lists**. 
+
+
 All Sudoku puzzles have a starting point. The most basic would be an empty puzzle: Simple 9 x 9 
 empty **cells**. This has many solutions! But all the Sudoku puzzles you will find (say in the newspaper)
 have some numbers filled in. With 81 cells in the puzzle we can
@@ -61,44 +66,44 @@ For example this puzzle:
 <img src="https://github.com/robfatland/pythonbytes/blob/master/projects/sudoku/sudoku2.png" alt="drawing" width="300"/>
 
 
-If you chose a random number
-for each of these cells you would not solve the puzzle (most likely). But it is instructive
-to ask 'How many possible random solutions could I check?' The number of possibilities 
-is 9 raised to the 60 power. This is too many possibilities for a computer to simply try 
-them all. It is about 
-1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000. 
-If you could try one billion possibilities per second it would require...
+Translates to these characters ```060000008201800500905002000000704602300090005504608000000900301007005906100000050```.
+I made this by reading from top to bottom, left to right for each row, writing a zero for empty cells. However as you
+will read below we will not use a *string* type for this in our Python program. Strings are too static, too difficult
+to modify; so we will use something more flexible.
 
 
-...wait for it...
+Guessing answers to the entire puzzle would prove... time consuming. Instead we describe here an approach
+of just guessing one cell at a time. The rules of Sudoku permit us to make a series of guesses from only
+the possible numbers; and either we will be correct or we will get stuck with a bad solution. When that 
+happens we simply back up and try some different guesses. 
 
 
-2.3 quadrillion quadrillion ages of the universe to try every possibility.
-
-
-Fortunately we have a time-saving trick.  We can exclude wrong guesses by simply
-applying the rules of Sudoku to each cell to narrow down what number could be placed
-there.  Therefore let us celebrate for a moment: Not only are we capable of imagining 
-such a difficult puzzle to solve; we are also able to come up with an efficient way 
+The nice thing about this is that we let the Python program keep track of everything.
+Therefore let us celebrate for a moment: Not only are we capable of imagining 
+such a difficult puzzle to solve; we can also come up with an efficient way 
 to solve it. 
 
 
-##### **How shall we represent a Sudoku puzzle?**
+##### **Representing the Sudoku puzzle**
 
 
-A Sudoku puzzle is 9 x 9 cells or 81 cells. Therefore we represent a puzzle using
-a string of 81 characters. You have 280 characters in a tweet so how many Sudoku
-puzzles could you tweet at once?
-
-
-In Python strings are a **type** of variable; but they are difficult to change... 
-We can only change strings building new strings from them which is slow and klunky. 
+A Sudoku puzzle is 9 x 9 cells or 81 cells. Therefore we could represent a puzzle using
+a string of 81 characters. In Python strings are a **type** of variable; but they are difficult 
+to change... 
+We can only change strings by building new strings from them which is slow and klunky. 
 The thing in Python that is easy to change is called a **list**.  Therefore let's 
-use a string to describe a Sudoku puzzle; but let's convert this string into a 
-list to solve the puzzle. 
+use a string to describe the Sudoku puzzle at the start; and then let's convert this string into lists that we 
+can work with. 
+
+Our first puzzle we have as a string already:
 
 
-Here is the puzzle shown above... written using text where empty cells are left blank.
+```
+p1 = '060000008201800500905002000000704602300090005504608000000900301007005906100000050'
+```
+
+
+Here just to check our skill a little further is another puzzle.
 
 
 ```
@@ -138,12 +143,12 @@ Here is the same thing getting rid of all the formatting.
 ```
 
 
-And now here is the same thing in one line of 81 characters with zeros for the empty cells...
+And now here we have it as a string
 
 
 
 ```
-spuzzle = '008632400040000010500904006800000005600000004107000902400751003060000020005826700'
+p2 = '008632400040000010500904006800000005600000004107000902400751003060000020005826700'
 ```
 
 
