@@ -38,7 +38,7 @@ This sets us up with a computer programmer's frame of mind. We break the Sudoku 
 small steps on the path to success.
 
 
-Third we will go from our thinking framework to a code framework that will result in a Sudoku solver. 
+Third we will go from our thinking framework to code that solves a Sudoku puzzle. 
 
 
 #### Part 1: Understanding recursion
@@ -73,15 +73,20 @@ to modify; so we will use something more flexible.
 
 
 Guessing answers to the entire puzzle would prove... time consuming. Instead we describe here an approach
-of just guessing one cell at a time. The rules of Sudoku permit us to make a series of guesses from only
-the possible numbers; and either we will be correct or we will get stuck with a bad solution. When that 
-happens we simply back up and try some different guesses. 
+of just guessing one cell at a time to sneak up on the solution. This will be much like solving a maze where
+you take only one step at a time... and if you discover you have gone down a blind alley you back up and choose
+a  new path.
 
 
-The nice thing about this is that we let the Python program keep track of everything.
-Therefore let us celebrate for a moment: Not only are we capable of imagining 
+An open cell can have any of nine values in the solution; but in fact some of these are eliminated by the rules. 
+That is: The rules of Sudoku permit us to make these guesses for each cell for only *allowed* choices. 
+
+
+The nice thing about using Python is that the program keeps track of everything.
+Therefore for a celebratory moment: Not only are we capable of imagining 
 such a difficult puzzle to solve; we can also come up with an efficient way 
-to solve it. 
+to solve it and use the structure of the computer to do the tedious work...
+very quickly.
 
 
 ##### **Representing the Sudoku puzzle**
@@ -110,33 +115,37 @@ Here just to check our skill a little further is another puzzle.
 
 
 
-Here is the same thing in written characters and spaces...
+Here is the same thing in written characters with periods ```.``` for empty cells; and these become zero characters ```0```.
 
 
 ```
-  86324                                         008632400
- 4     1                                        040000010
-5  9 4  6   --------------------------------->  500904006
-8       5                                       800000005
-6       4            zeros for blanks           600000004
-1 7   9 2                                       107000902
-4  751  3   --------------------------------->  400751003
- 6     2                                        060000020
-  58267                                         005826700
+..86324..                                       008632400
+.4.....1.                                       040000010
+5..9.4..6   --------------------------------->  500904006
+8.......5                                       800000005
+6.......4            zeros for blanks           600000004
+1.7...9.2                                       107000902
+4..751..3   --------------------------------->  400751003
+.6.....2.                                       060000020
+..58267..                                       005826700
 ```
 
 
-And now as a string
+And we connect them all together in a single string to represent the Sudoku puzzle:
 
 ```
 p2 = '008632400040000010500904006800000005600000004107000902400751003060000020005826700'
 ```
 
+To start with we just refer to the first puzzle, written above as string ```p1```.
+
 
 #### Sudoku rules
 
+
 Each zero in the puzzle string must be converted to a number from 1 to 9 according to
 the three rules of Sudoku
+
 
 * No number may repeat on any row
 * No number may repeat on any column
@@ -157,9 +166,10 @@ and the lower right cell is (8, 8). The center cell is (4, 4).
 #### Second key idea of writing a Sudoku solver
 
 
-An empty cell in the puzzle string is a '0' zero character. This is fine to start but
-it is not very much information. So when we get to the business of solving the puzzle
-let us instead represent an empty cell of the puzzle as a **list** of possible numbers that could
+An empty cell in the puzzle string is a '0' zero character. This is fine but
+it does not give us information about what *could* be written in that cell. 
+So when we get to the business of solving the puzzle let us instead represent an empty 
+cell of the puzzle as a **list** of possible numbers that could
 be written in that cell according to the three Sudoku rules. 
 
 
@@ -179,6 +189,16 @@ The correct list of possible values is therefore:
 
 
 ```['4', '7', '8']```
+
+
+#### Third key idea of writing a Sudoku solver
+
+
+This is the last bit of bookkeeping: Every cell has its own set of *related* cells per
+the rules. These are the cells in the same *row* as that cell, in the same *column* as 
+that cell, and in the same *block* as that cell. 
+
+
 
 
 **left off here**
