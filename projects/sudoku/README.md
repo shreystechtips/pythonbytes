@@ -149,18 +149,21 @@ the three rules of Sudoku
 
 * No number may repeat on any row
 * No number may repeat on any column
-* No number may repeat in any cell block
+* No number may repeat in any block
 
 
-There are 9 **3 x 3** cell blocks as you can see in both of the above puzzle images.
+There are nine **3 x 3** blocks as you can see in both of the above puzzle images. Each block is **3 x 3** cells.
 
 
 #### First key idea of writing a Sudoku solver
 
 
 The cells can be numbered in Python fashion from 0 to 80 (as there are 81 of them). 
-However each cell has a unique (row, column) address. The upper left cell is (0, 0)
-and the lower right cell is (8, 8). The center cell is (4, 4). 
+However each cell has a unique (row, column) address. 
+The upper left cell is (0, 0) and has index 0.
+The lower right cell is (8, 8) and has index 80. 
+The center cell is (4, 4) and has index 40.
+The lower left cell is (0, 8) and has index 72.
 
 
 #### Second key idea of writing a Sudoku solver
