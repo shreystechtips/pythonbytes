@@ -1,19 +1,15 @@
 # PythonBytes Project In-Depth
 
 
-## Bees and Drones
+## From Py to Pi
 
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
+[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
 
 
 ### Overview
 
-Farmers like to see bees (particularly honey bees) in their fields and orchards because the bees help pollinate the plants. 
-In this project we imagine that you are such a farmer and you happen to own ten drones that you can send to locations in 
-your orchard. By measuring the local buzzing your drones are able to tell you how many bees there are at that location. 
-You goal is to determine places where the bees are clustering (these are called hives) so that you can visit those locations
-in early summer and hopefully capture a swarm. 
+The number $\pi$ is...
 
 
 Now what is a swarm? And why do bees do this behavior? And why would a farmer wish to *capture* it? (It sounds rather
