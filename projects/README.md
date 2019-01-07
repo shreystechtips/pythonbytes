@@ -73,7 +73,7 @@ calls and you hope to understand and even talk to them**
 - :snake: **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 landscapes: Four simple functions to build anything you can imagine**
 - :mountain: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
-: You pilot a Tesla Roadster to escape the Jupiter system**
+: You pilot a Tesla Roadster and hope to escape the Jupiter system**
 - :mountain: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 Stack: An advanced project**
 
