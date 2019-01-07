@@ -52,7 +52,7 @@ contains our notes on it.**
 puzzle**
 - :snake: **You have a chessboard and a 
 [knight](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
-placed upon it. Find a path of legal knight moves that visits every square once**
+placed upon it. Visits every square in 63 moves.**
 - :snake: **Create an interactive 
 [video game](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
 using a Python package like [pygame](http://pygame.org)**
