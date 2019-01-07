@@ -3,26 +3,21 @@
 
 [Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects#pythonbytes-project-ideas)
 
-### On selecting a project
+### How To Begin
 
-Before you read any further: Please remember this important idea!!!! Just below the list of projects is a section
-called **How To Begin** and you absolutely must read and understand that section. (Hint: It's easy!) 
-Without doing the **How To Begin** you will end
-up wasting your time and energy for no reason! So please enjoy the list of projects that follows
-and then *make absolutely certain* that you read and follow **How To Begin**.
-
-
-Now: Below is a list of project ideas. Choose one to try out; modify it if you like; or make up one of your own.
-It's as easy as that **provided you follow the instructions on How To Begin** (did we mention?).
+* Read the descriptions to decide on a project. Remember that each one has its own page; use the link.
+* Decide if you are working alone or with a team of your fellow students
+* Find a coach and **register** in the *Project Registry*
+  * The coach will talk you through the steps
+    * Who - what - environment - time frame - help path 
+* Remember that you will monitor your progress
+  * You absolutely **must** ask for help if you get stuck; this is what the coaches are for
 
 
-Each project idea folder has more information and sometimes example Python code. If you are wondering 
-'Where are the easy projects?' being with 
-[**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth).
-You will recognize them from the worksheets. The first few projects with :star: stars are starting-out
-projects. The ones with little green :snake: pythons are more challenging. Mountain :mountain: projects 
-are super-challenging!
-
+We ask you to follow these steps to avoid wasting your time; we want you to be successful!
+Now please scroll down to enjoy the list of projects that follow. Easier projects -- the ones
+to start with -- have little :star: star markers. Medium projects have :snake: Python markers
+and difficult projects have :mountain: mountain markers. 
 
 
 - :star: **The Pythonbytes worksheets and cswonders.com mini-projects are all listed for your convenience
@@ -82,18 +77,6 @@ landscapes: Four simple functions to build anything you can imagine**
 - :mountain: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 Stack: An advanced project**
 
-
-### How To Begin
-
-
-For any project you decide to try (spend more than half an hour on)
-* Read the description page to be sure the project makes sense to you
-* Decide if you are working alone or with a team of your fellow students
-* Find a coach and **register** in the *Project Registry*
-  * The coach will talk you through the five-or-so steps
-    * Who - what - environment - time frame - help path 
-* Prepare yourself to monitor your progress
-  * You absolutely must ask for help if you get stuck; this is what the coaches are for
 
 
 ### Longer Project Descriptions
