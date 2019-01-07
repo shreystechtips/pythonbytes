@@ -29,9 +29,9 @@ page.**
 - :star:**A farmer uses drones to locate 
 [beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 in her orchard so she can cultivate them and have a better harvest**
-- :star: **You are observing some 
+- :star: **You observe some 
 [bugs](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
-placed on a table. They follow some rules for motion and your task is to simulate this**
+placed on a table. They walk about using a simple rule; how far do they go?**
 - :star:**There are many ways to calculate 
 [pi](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
 using a computer; so learn to build and compare them**
