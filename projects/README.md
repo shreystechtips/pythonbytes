@@ -80,8 +80,8 @@ Stack: An advanced project**
 ### Environments
 
 * :sparkles: [cswonders](http://cswonders.com)
-* :ribbon: [jdoodle (REPL)](http://jdoodle.com)
-* :dog: [REPL.it] as introduced by Wei Lu
+* :coffee: [jdoodle (REPL)](http://jdoodle.com)
+* :milky_way: [REPL.it] as introduced by Wei Lu
 * :cat: [REPL the other one]
 * :snake: Anaconda on your own computer (not on your school laptop)
 * :octocat: Jupyter Notebooks; Requires a GitHub account with your sponsor's permission
