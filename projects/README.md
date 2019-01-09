@@ -79,12 +79,12 @@ Stack: An advanced project**
 
 ### Environments
 
-* :fireworks: [cswonders](http://cswonders.com)
-* :doodle: [jdoodle (REPL)](http://jdoodle.com)
+* :sun: [cswonders](http://cswonders.com)
+* :ribbon: [jdoodle (REPL)](http://jdoodle.com)
 * :dog: [REPL]
 * :cat: [REPL the other one]
-* :anaconda: Anaconda on your own computer (not school laptop)
-* :planet: Jupyter Notebooks: Requires a GitHub account
+* :dragon: Anaconda on your own computer (not school laptop)
+* :soccer: Jupyter Notebooks: Requires a GitHub account
 
 ### Longer Project Descriptions
 
