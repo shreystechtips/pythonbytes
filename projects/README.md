@@ -64,27 +64,27 @@ to create a fractal structure with infinite perimeter and zero area**
 program: Ask the player some questions; then tell them something interesting**
 - :dragon: **Create a program able to escape from a 
 [maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)!**
-- :dragon: **Use complex arithmetic to create an infinite variety of 
+- :dragon: **Use complex arithmetic to create 
 [Julia Set](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
-fractals**
+fractals :sparkles: :snake: :octocat:**
 - :dragon: **You study 
 [whale](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
-calls and you hope to understand and even talk to them**
+calls and you hope to understand and even talk to them :octocat:**
 - :dragon: **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
-landscapes: Four simple functions to build anything you can imagine**
+landscapes: Four simple functions to build anything you can imagine** :snake: You must have or purchase a Minecraft license ($25)
 - :mountain: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
-: You pilot a Tesla Roadster and hope to escape the Jupiter system**
+: You pilot a Tesla Roadster and hope to escape the Jupiter system :sparkles: :snake: (turtle graphics)**
 - :mountain: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-Stack: An advanced project**
+Stack: An advanced project  :octocat: :snake:**
 
 ### Environments
 
-* :sparkles: [cswonders](http://cswonders.com)
-* :coffee: [jdoodle (REPL)](http://jdoodle.com)
-* :milky_way: [REPL.it] as introduced by Wei Lu
-* :cat: [REPL the other one]
-* :snake: Anaconda on your own computer (not on your school laptop)
-* :octocat: Jupyter Notebooks; Requires a GitHub account with your sponsor's permission
+* :sparkles: [cswonders](http://cswonders.com) includes CodePad where you can save a project
+* :coffee: [jdoodle (REPL)](http://jdoodle.com) easy to get to on your school laptop browser; no sign-in required
+* :milky_way: [REPL.it](http://REPL.it) as introduced by Wei Lu. Free to use but you have to set up an account.
+* :snake: Install Python/Anaconda on your **own** computer (not on your school laptop). Good for pygame and Minecraft.
+* :octocat: Jupyter Notebooks; Requires a GitHub account with your sponsor's permission. Good for whales and data science.
+* :question: [python.org](http://python.org) is a Python-only website with a terminal... un-tested
 
 
 ### Longer Project Descriptions
