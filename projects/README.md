@@ -25,7 +25,7 @@ and difficult projects have :mountain: mountain markers.
 page.**
 - :star:**You are an 
 [artist](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
- to create famous and original artwork**
+ using Python to create famous and original artwork**
 - :star:**A farmer uses drones to locate 
 [beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 in her orchard so she can cultivate them and have a better harvest**
