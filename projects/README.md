@@ -16,7 +16,7 @@
 
 We ask you to follow these steps to avoid wasting your time; we want you to be successful!
 Now please scroll down to enjoy the list of projects that follow. Easier projects -- the ones
-to start with -- have little :star: star markers. Medium projects have :snake: Python markers
+to start with -- have little :star: star markers. Medium projects have :dragon: markers
 and difficult projects have :mountain: mountain markers. 
 
 
@@ -47,30 +47,30 @@ like tic-tac-toe or Nim against a human: With graphics!**
 - :star: **Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
 and [this page](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
 contains our notes on it.**
-- :snake: **Create a program that solves a 
+- :dragon: **Create a program that solves a 
 [Sudoku](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 puzzle**
-- :snake: **You have a chessboard and a 
+- :dragon: **You have a chessboard and a 
 [knight](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
 placed upon it. Visits every square in 63 moves.**
-- :snake: **Create an interactive 
+- :dragon: **Create an interactive 
 [video game](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
 using a Python package like [pygame](http://pygame.org)**
-- :snake: **Use a simple procedure called the 
+- :dragon: **Use a simple procedure called the 
 [*Chaos Game*](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
 to create a fractal structure with infinite perimeter and zero area**
-- :snake: **Create an interactive 
+- :dragon: **Create an interactive 
 [fortune](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
 program: Ask the player some questions; then tell them something interesting**
-- :snake: **Create a program able to escape from a 
+- :dragon: **Create a program able to escape from a 
 [maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)!**
-- :snake: **Use complex arithmetic to create an infinite variety of 
+- :dragon: **Use complex arithmetic to create an infinite variety of 
 [Julia Set](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
 fractals**
-- :snake: **You study 
+- :dragon: **You study 
 [whale](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
 calls and you hope to understand and even talk to them**
-- :snake: **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
+- :dragon: **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
 landscapes: Four simple functions to build anything you can imagine**
 - :mountain: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 : You pilot a Tesla Roadster and hope to escape the Jupiter system**
@@ -79,11 +79,11 @@ Stack: An advanced project**
 
 ### Environments
 
-* :sun_with_face: [cswonders](http://cswonders.com)
+* :sparkles: [cswonders](http://cswonders.com)
 * :ribbon: [jdoodle (REPL)](http://jdoodle.com)
 * :dog: [REPL.it] as introduced by Wei Lu
 * :cat: [REPL the other one]
-* :dragon: Anaconda on your own computer (not on your school laptop)
+* :snake: Anaconda on your own computer (not on your school laptop)
 * :octocat: Jupyter Notebooks; Requires a GitHub account with your sponsor's permission
 
 
@@ -267,7 +267,7 @@ with your growing programming skills. Each project has a user-rating that you ca
 account and begin to explore. A great feature is that you can submit your answers for evaluation.
 
 
-### :snake: Project: Solve a Sudoku puzzle
+### :dragon: Project: Solve a Sudoku puzzle
 
 
 **Create a program that solves a Sudoku puzzle**
@@ -289,7 +289,7 @@ This is a fairly advanced project. You can
 
 
 
-### :snake: Project: Knight's Tour
+### :dragon: Project: Knight's Tour
 
 
 **You have a chessboard and a knight placed upon it. Find a path of legal knight moves that visits every square once.**
@@ -316,7 +316,7 @@ solving a maze which is one of our other project ideas.
 [More on the knight's tour here...](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
 
 
-### :snake: Project: Video game
+### :dragon: Project: Video game
 
 
 **Create an interactive video game using a Python package like [pygame](http://pygame.org)**
@@ -325,7 +325,7 @@ solving a maze which is one of our other project ideas.
 [More on video games here](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
 
 
-### :snake: Project: Fractals I
+### :dragon: Project: Fractals I
 
 
 **Use a simple procedure called the *Chaos Game* to create a fractal structure with infinite permiter and zero area**
@@ -340,7 +340,7 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 [More on these fractals here](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
 
 
-### :snake: Project: Fortune Teller
+### :dragon: Project: Fortune Teller
 
 
 **Create an interactive program: Ask the player some questions; then tell them something interesting.**
@@ -349,7 +349,7 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 [More on fortune programs here](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
 
 
-### :snake: Project: Maze Solver
+### :dragon: Project: Maze Solver
 
 
 **Create a program that is able to find its way out of a maze.**
@@ -359,7 +359,7 @@ may choose to play the Chaos Game in three dimensions, for example in the world 
 
 
 
-### :snake: Project: Fractals II
+### :dragon: Project: Fractals II
 
 
 **Use the rules of complex arithmetic to create one of an infinite number of Julia Set fractals.**
@@ -383,7 +383,7 @@ we use a modified version of numbers and arithmetic to create a fractal called a
 
 
 
-### :snake: Project: Whale calls
+### :dragon: Project: Whale calls
 
 
 **You study whales and their calls... perhaps you would like to try and talk to them.**
@@ -402,7 +402,7 @@ and identify whale calls.
 
 
 
-### :snake: Project: Minecraft landscapes
+### :dragon: Project: Minecraft landscapes
 
 
 **Minecraft landscapes: You use four simple functions to build anything you can imagine in Minecraft** 
