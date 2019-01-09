@@ -77,7 +77,14 @@ landscapes: Four simple functions to build anything you can imagine**
 - :mountain: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
 Stack: An advanced project**
 
+### Environments
 
+* :fireworks: [cswonders](http://cswonders.com)
+* :doodle: [jdoodle (REPL)](http://jdoodle.com)
+* :dog: [REPL]
+* :cat: [REPL the other one]
+* :anaconda: Anaconda on your own computer (not school laptop)
+* :planet: Jupyter Notebooks: Requires a GitHub account
 
 ### Longer Project Descriptions
 
