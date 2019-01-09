@@ -79,12 +79,12 @@ Stack: An advanced project**
 
 ### Environments
 
-* :sun: [cswonders](http://cswonders.com)
+* :sun_with_face: [cswonders](http://cswonders.com)
 * :ribbon: [jdoodle (REPL)](http://jdoodle.com)
 * :dog: [REPL]
 * :cat: [REPL the other one]
 * :dragon: Anaconda on your own computer (not school laptop)
-* :soccer: Jupyter Notebooks: Requires a GitHub account
+* :octocat: Jupyter Notebooks: Requires a GitHub account
 
 ### Longer Project Descriptions
 
