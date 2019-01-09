@@ -81,10 +81,11 @@ Stack: An advanced project**
 
 * :sun_with_face: [cswonders](http://cswonders.com)
 * :ribbon: [jdoodle (REPL)](http://jdoodle.com)
-* :dog: [REPL]
+* :dog: [REPL.it] as introduced by Wei Lu
 * :cat: [REPL the other one]
-* :dragon: Anaconda on your own computer (not school laptop)
-* :octocat: Jupyter Notebooks: Requires a GitHub account
+* :dragon: Anaconda on your own computer (not on your school laptop)
+* :octocat: Jupyter Notebooks; Requires a GitHub account with your sponsor's permission
+
 
 ### Longer Project Descriptions
 
