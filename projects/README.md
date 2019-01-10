@@ -20,7 +20,7 @@ Now please scroll down to enjoy the list of projects that follow. :star: is easy
 
 - :star: **Worksheets and cswonders.com mini-projects all listed together: 
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
-page. **
+page**
 - :star:**You are an 
 [artist](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
  using Python to create famous and original artwork**
