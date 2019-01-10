@@ -79,7 +79,7 @@ Stack: An advanced project  :octocat: :snake:**
 
 ### Environments
 
-* :sparkles: [cswonders](http://cswonders.com) includes CodePad where you can save a project
+* :sparkles: [cswonders](http://cswonders.com) includes CodePad where you can save a project; and turtle graphics
 * :coffee: [jdoodle (REPL)](http://jdoodle.com) easy to get to on your school laptop browser; no sign-in required
 * :milky_way: [REPL.it](http://REPL.it) as introduced by Wei Lu. Free to use but you have to set up an account.
 * :snake: Install Python/Anaconda on your **own** computer (not on your school laptop). Good for pygame and Minecraft.
