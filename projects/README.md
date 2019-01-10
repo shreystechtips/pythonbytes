@@ -41,7 +41,7 @@ and give us a good laugh**
 for your friends to puzzle out**
 - :star:**Create a program that plays a 
 [simple game](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
-like tic-tac-toe or Nim; and add graphics! **
+like tic-tac-toe or Nim; and add graphics!**
 - :star: **Interesting projects at [Project Euler](https://projecteuler.net/) await you...
 [learn more](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)**
 - :dragon: **Create a program that solves a 
@@ -63,7 +63,7 @@ program: Ask the player some questions; then tell them something interesting**
 [maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)!**
 - :dragon: **Use complex arithmetic to create 
 [Julia Set](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
-fractals **
+fractals**
 - :dragon: **You study 
 [whale](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
 calls and you hope to understand and even talk to them**
