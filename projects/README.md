@@ -80,7 +80,7 @@ Stack: An advanced project**
 * :sparkles: [cswonders](http://cswonders.com) includes CodePad where you can save a project; and turtle graphics
 * :coffee: [jdoodle](http://jdoodle.com) easy to get to on your school laptop browser; no sign-in required
 * :milky_way: [REPL.it](http://REPL.it) as introduced by Wei Lu. Free to use but you have to set up an account.
-* :snake: Install Python/Anaconda on your **own** computer (not on your school laptop). Good for pygame and Minecraft.
+* :snake: [Anaconda for Python 3.7](https://www.anaconda.com/download/) installed on your **own** computer (not on the school laptop). Great for pygame and Minecraft projects.
 * :octocat: Jupyter Notebooks; Requires a GitHub account with your sponsor's permission. Good for whales and data science.
 * :question: [python.org](http://python.org) is a Python-only website with a terminal... un-tested
 
