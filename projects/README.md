@@ -15,70 +15,70 @@
 
 We ask you to *register* because we want you to be successful!
 Now please scroll down to enjoy the list of projects that follow. :star: is easy, :dragon: is harder, 
-:mountain: is very challenging. Environments that work are the emojis at the end of each description (see below). 
+:mountain: is very challenging. 
 
 
 - :star: **Worksheets and cswonders.com mini-projects all listed together: 
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
-page. :sparkles: :coffee: :milky_way: :snake: :octocat:**
+page. **
 - :star:**You are an 
 [artist](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
- using Python to create famous and original artwork :sparkles: :snake: :octocat:**
+ using Python to create famous and original artwork**
 - :star:**A farmer uses drones to locate 
 [beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-in her orchard so she can cultivate them and have a better harvest :sparkles:? :snake: :octocat:**
+in her orchard so she can cultivate them and have a better harvest**
 - :star: **You observe some 
 [bugs](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
-placed on a table. They walk about... but how far do they go? :sparkles: :snake: :octocat:**
+placed on a table. They walk about... but how far do they go?**
 - :star:**There are many ways to calculate 
 [pi](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
-using a computer; so learn to build and compare them :sparkles: :coffee: :milky_way: :snake: :octocat:**
+using a computer; so learn to build and compare them**
 - :star: **Be completely and totally
 [**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
-and give us a good laugh :sparkles: :coffee: :milky_way: :snake: :octocat:**
+and give us a good laugh**
 - :star: **Create a text 
 [adventure](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
-for your friends to puzzle out :sparkles: :coffee: :milky_way: :snake: :octocat:**
+for your friends to puzzle out**
 - :star:**Create a program that plays a 
 [simple game](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
-like tic-tac-toe or Nim; and add graphics! :sparkles: :snake: :octocat:**
+like tic-tac-toe or Nim; and add graphics! **
 - :star: **Interesting projects at [Project Euler](https://projecteuler.net/) await you...
-[learn more](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
-:sparkles: :coffee: :milky_way: :snake: :octocat:**
+[learn more](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)**
 - :dragon: **Create a program that solves a 
 [Sudoku](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
-puzzle :sparkles: :coffee: :milky_way: :snake: :octocat:**
+puzzle**
 - :dragon: **You have a chessboard and one 
 [knight](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth):
-Visit every square in 63 moves :sparkles: :coffee: :milky_way: :snake: :octocat:**
+Visit every square in 63 moves**
 - :dragon: **Create an interactive 
 [video game](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
-using a Python package like [pygame](http://pygame.org) :snake:**
+using a Python package like [pygame](http://pygame.org)**
 - :dragon: **Use a simple procedure called the 
 [*Chaos Game*](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
-to create a fractal structure with infinite perimeter and zero area :sparkles: :snake: :octocat:**
+to create a fractal structure with infinite perimeter and zero area**
 - :dragon: **Create an interactive 
 [fortune](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
-program: Ask the player some questions; then tell them something interesting :sparkles: :coffee: :milky_way: :snake: :octocat:**
+program: Ask the player some questions; then tell them something interesting**
 - :dragon: **Create a program able to escape from a 
-[maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)! :snake:**
+[maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)!**
 - :dragon: **Use complex arithmetic to create 
 [Julia Set](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
-fractals :sparkles: :snake: :octocat:**
+fractals **
 - :dragon: **You study 
 [whale](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
-calls and you hope to understand and even talk to them :octocat:**
+calls and you hope to understand and even talk to them**
 - :dragon: **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
-landscapes: Build anything you can imagine** :snake: (must have or purchase Minecraft license ($25))
+landscapes: Build anything you can imagine** (Can't do on the school laptop; you must have your own computer to work on; and you must own or purchase a Minecraft license ($25))
 - :mountain: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
-: You pilot a Tesla Roadster and hope to escape the Jupiter system :sparkles: :snake: (turtle graphics)**
+: You pilot a Tesla Roadster and hope to escape the Jupiter system**
 - :mountain: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-Stack: An advanced project  :octocat: :snake:**
+Stack: An advanced project**
+
 
 ### Environments
 
 * :sparkles: [cswonders](http://cswonders.com) includes CodePad where you can save a project; and turtle graphics
-* :coffee: [jdoodle (REPL)](http://jdoodle.com) easy to get to on your school laptop browser; no sign-in required
+* :coffee: [jdoodle](http://jdoodle.com) easy to get to on your school laptop browser; no sign-in required
 * :milky_way: [REPL.it](http://REPL.it) as introduced by Wei Lu. Free to use but you have to set up an account.
 * :snake: Install Python/Anaconda on your **own** computer (not on your school laptop). Good for pygame and Minecraft.
 * :octocat: Jupyter Notebooks; Requires a GitHub account with your sponsor's permission. Good for whales and data science.
