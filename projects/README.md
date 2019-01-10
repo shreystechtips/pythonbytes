@@ -7,17 +7,15 @@
 
 * Read the descriptions to decide on a project. Remember that each one has its own page; use the link.
 * Decide if you are working alone or with a team of your fellow students
-* Find a coach and **register** in the *Project Registry*
-  * The coach will talk you through the steps
-    * Who - what - environment - time frame - help path 
-* Remember that you will monitor your progress
-  * You absolutely **must** ask for help if you get stuck; this is what the coaches are for
+* Find a coach and talk to them to **register** your project
+    * Who, what, how (environment), how long, how to get help 
+* Monitor your progress
+    * Stuck? Coaches!!
 
 
-We ask you to follow these steps to avoid wasting your time; we want you to be successful!
-Now please scroll down to enjoy the list of projects that follow. Easier projects -- the ones
-to start with -- have little :star: star markers. Medium projects have :dragon: markers
-and difficult projects have :mountain: mountain markers. 
+We ask you to *register* because we want you to be successful!
+Now please scroll down to enjoy the list of projects that follow. :star: is easy, :dragon: is harder, 
+:mountain: is very challenging. Environments that work are the emojis at the end of each description (see below). 
 
 
 - :star: **Worksheets and cswonders.com mini-projects all listed together: 
