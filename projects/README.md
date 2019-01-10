@@ -22,48 +22,48 @@ and difficult projects have :mountain: mountain markers.
 
 - :star: **Worksheets and cswonders.com mini-projects all listed together: 
 [**coils**](https://github.com/robfatland/pythonbytes/tree/master/projects/coils#pythonbytes-project-in-depth)
-page.**
+page. :sparkles: :coffee: :milky_way: :snake: :octocat:**
 - :star:**You are an 
 [artist](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
- using Python to create famous and original artwork**
+ using Python to create famous and original artwork :sparkles: :snake: :octocat:**
 - :star:**A farmer uses drones to locate 
 [beehives](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
-in her orchard so she can cultivate them and have a better harvest**
+in her orchard so she can cultivate them and have a better harvest :sparkles:? :snake: :octocat:**
 - :star: **You observe some 
 [bugs](https://github.com/robfatland/pythonbytes/tree/master/projects/bugs#pythonbytes-project-in-depth)
-placed on a table. They walk about using a simple rule; how far do they go?**
+placed on a table. They walk about... but how far do they go? :sparkles: :snake: :octocat:**
 - :star:**There are many ways to calculate 
 [pi](https://github.com/robfatland/pythonbytes/tree/master/projects/pi#pythonbytes-project-in-depth)
-using a computer; so learn to build and compare them**
-- :star: **Here is a project that is completely and totally
+using a computer; so learn to build and compare them :sparkles: :coffee: :milky_way: :snake: :octocat:**
+- :star: **Be completely and totally
 [**pointless**](https://github.com/robfatland/pythonbytes/tree/master/projects/pointless#pythonbytes-project-in-depth),
-seriously.**
+and give us a good laugh :sparkles: :coffee: :milky_way: :snake: :octocat:**
 - :star: **Create a text 
 [adventure](https://github.com/robfatland/pythonbytes/tree/master/projects/adventure#pythonbytes-project-in-depth)
-where a player must determine the right series of steps to escape from a locked room**
+for your friends to puzzle out :sparkles: :coffee: :milky_way: :snake: :octocat:**
 - :star:**Create a program that plays a 
 [simple game](https://github.com/robfatland/pythonbytes/tree/master/projects/simplegame#pythonbytes-project-in-depth)
-like tic-tac-toe or Nim against a human: With graphics!**
-- :star: **Interesting projects may be found at the (external) [Project Euler](https://projecteuler.net/) website;
-and [this page](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
-contains our notes on it.**
+like tic-tac-toe or Nim; and add graphics! :sparkles: :snake: :octocat:**
+- :star: **Interesting projects at [Project Euler](https://projecteuler.net/) await you...
+[learn more](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)
+:sparkles: :coffee: :milky_way: :snake: :octocat:**
 - :dragon: **Create a program that solves a 
 [Sudoku](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
-puzzle**
-- :dragon: **You have a chessboard and a 
-[knight](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth)
-placed upon it. Visits every square in 63 moves.**
+puzzle :sparkles: :coffee: :milky_way: :snake: :octocat:**
+- :dragon: **You have a chessboard and one 
+[knight](https://github.com/robfatland/pythonbytes/tree/master/projects/knight#pythonbytes-project-in-depth):
+Visit every square in 63 moves :sparkles: :coffee: :milky_way: :snake: :octocat:**
 - :dragon: **Create an interactive 
 [video game](https://github.com/robfatland/pythonbytes/tree/master/projects/videogame#pythonbytes-project-in-depth)
-using a Python package like [pygame](http://pygame.org)**
+using a Python package like [pygame](http://pygame.org) :snake:**
 - :dragon: **Use a simple procedure called the 
 [*Chaos Game*](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
-to create a fractal structure with infinite perimeter and zero area**
+to create a fractal structure with infinite perimeter and zero area :sparkles: :snake: :octocat:**
 - :dragon: **Create an interactive 
 [fortune](https://github.com/robfatland/pythonbytes/tree/master/projects/fortune#pythonbytes-project-in-depth)
-program: Ask the player some questions; then tell them something interesting**
+program: Ask the player some questions; then tell them something interesting :sparkles: :coffee: :milky_way: :snake: :octocat:**
 - :dragon: **Create a program able to escape from a 
-[maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)!**
+[maze](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)! :snake:**
 - :dragon: **Use complex arithmetic to create 
 [Julia Set](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
 fractals :sparkles: :snake: :octocat:**
@@ -71,7 +71,7 @@ fractals :sparkles: :snake: :octocat:**
 [whale](https://github.com/robfatland/pythonbytes/tree/master/projects/whales#pythonbytes-project-in-depth)
 calls and you hope to understand and even talk to them :octocat:**
 - :dragon: **[Minecraft](https://github.com/robfatland/pythonbytes/tree/master/projects/minecraft#pythonbytes-project-in-depth)
-landscapes: Four simple functions to build anything you can imagine** :snake: You must have or purchase a Minecraft license ($25)
+landscapes: Build anything you can imagine** :snake: (must have or purchase Minecraft license ($25))
 - :mountain: **[Stargirl](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth)
 : You pilot a Tesla Roadster and hope to escape the Jupiter system :sparkles: :snake: (turtle graphics)**
 - :mountain: **[Ditch Day](https://github.com/robfatland/pythonbytes/tree/master/projects/bees#pythonbytes-project-in-depth)
