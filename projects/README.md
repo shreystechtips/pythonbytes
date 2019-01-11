@@ -44,6 +44,10 @@ for your friends to puzzle out**
 like tic-tac-toe or Nim; and add graphics!**
 - :star: **Interesting projects at [Project Euler](https://projecteuler.net/) await you...
 [learn more](https://github.com/robfatland/pythonbytes/tree/master/projects/euler#pythonbytes-project-in-depth)**
+- :star: [**idunno**](https://github.com/robfatland/pythonbytes/tree/master/projects/idunno#pythonbytes-project-in-depth) 
+is the project for you if you don't know what project to do!
+- :star: [**shrug**](https://github.com/robfatland/pythonbytes/tree/master/projects/shrug#pythonbytes-project-in-depth)
+is the project for you if you can't decide what project to do!
 - :dragon: **Create a program that solves a 
 [Sudoku](https://github.com/robfatland/pythonbytes/tree/master/projects/sudoku#pythonbytes-project-in-depth)
 puzzle**
