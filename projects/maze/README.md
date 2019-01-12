@@ -1,49 +1,70 @@
 # PythonBytes Project In-Depth
 
 
-## Art
+## Maze
 
 
-[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/art#pythonbytes-project-in-depth)
+[Here is a link to this page.](https://github.com/robfatland/pythonbytes/tree/master/projects/maze#pythonbytes-project-in-depth)
 
 
 ### Overview
 
 
-A number of Python Bytes students expressed an interest in art and design via computer. Often artists use special
-creative Apps but here we are learning to program in Python; so you are the person creating (and using) the App. 
+Let us define a maze. It will consist of one entrance and one exit. Once you enter you follow a hallway to a room with one
+or more hallways leaving from it. From each room there will be a maximum of six hallways (including the one you 
+just came in on). From one of the rooms -- you do not know which one -- there is a hallway leading to the exit. Once 
+you go down that hallway you leave the maze and win the game. 
 
 
-What sort of art might you create? One approach is to look for inspiration in the paintings of the 20th and 21st
-century. You might for example use a search engine to find sources of **abstract art**. I found Piet Mondrian...
+<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/maze/maze.png" alt="drawing" width="350"/>
 
 
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/mondrian.png" alt="drawing" width="350"/>
+Here is a pretty easy maze. If instead of 10 rooms if it had 1000 rooms it might be harder to solve. Notice it includes a loop
+so if your algorithm was simply 'take the first hallway to the left' you would never escape.
 
 
-and here is another but who was the artist? 
+This is a fun programming challenge because it has three parts to solve? First how do we define the problem in terms of 
+programming, in terms of Python code? Second how do we watch it play out on the screen? Third how do we debug or improve 
+the escape algorithm?
 
 
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/abstract.png" alt="drawing" width="350"/>
+As to the first part: We will begin by providing you with a maze to work with; actually with four of them. They
+get progressively more difficult. 
 
 
-What about other Python Bytes projects? Take a look at the 
-[image on the Stargirl project page](https://github.com/robfatland/pythonbytes/tree/master/projects/stargirl#pythonbytes-project-in-depth).
-The 
-[fractals-I](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-I#pythonbytes-project-in-depth)
-and 
-[fractals-II](https://github.com/robfatland/pythonbytes/tree/master/projects/fractals-II#pythonbytes-project-in-depth)
-projects will also produce some interesting images for you to enjoy.
+As to the second part: We will describe a simple turtle graphics method for tracking your progress. 
 
 
-<img src="https://github.com/robfatland/pythonbytes/blob/master/projects/art/julia.png" alt="drawing" width="300"/>
+As to the third part: Let's see how the first two parts go first!
 
 
 ### Details
 
 
-Let's take a moment to recreate the Mondrian piece shown above using the pygame package.
-If it is not here yet please remind me to write the code. If it is done it will be 
-called 'example.py'.
+We will save complicated mazes for later. For right now we will say that the maze consists of 25 rooms layed out in a 
+5 x 5 grid. Some rooms may be connected, others might not be (so they are not part of the maze). Let's number the 
+rooms 1 through 25.
+
+```
+0 --  1     2     3     4     5 
+      |
+      6 --  7     8     9    10 
+            |                          A very simple maze...
+     11    12    13    14    15 
+            |
+     16    17    18    19    20 
+            |
+     21    22 -- 23 -- 24 -- 25 -- 26 
+```
+
+The starting location will be room 0 which has one hallway leading to room 1 on the corner of the maze.
+Room 25 on the opposite corner will feature a hallway that goes to room 26, the exit. 
+
+
+So you start out in room 0. How do you go to another room of the maze? You call a Python function called ```mazemove(r, x)```. 
+Notice you are passing two arguments to the function mazemove(): ```r``` and ```x```. This function will return a result which
+will be the results of your move. 
+
+
 
 
