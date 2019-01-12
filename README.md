@@ -1,4 +1,4 @@
-# PythonBytes Intermediate Programming Course
+# PythonBytes Programming Course
 
 For 2018 2019, Tyee Middle School
 
