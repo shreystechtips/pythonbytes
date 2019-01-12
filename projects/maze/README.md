@@ -28,8 +28,8 @@ programming, in terms of Python code? Second how do we watch it play out on the 
 the escape algorithm?
 
 
-As to the first part: We will begin by providing you with a maze to work with; actually with four of them. They
-get progressively more difficult. 
+As to the first part: We will begin by providing you with four test mazes. They
+get progressively more difficult. The code you write to navigate them we will call the **Solver**.
 
 
 As to the second part: We will describe a simple turtle graphics method for tracking your progress. 
@@ -49,7 +49,7 @@ rooms 1 through 25.
 0 --  1     2     3     4     5 
       |
       6 --  7     8     9    10 
-            |                          A very simple maze...
+            |                          A very simple maze... as an initial test of a solver
      11    12    13    14    15 
             |
      16    17    18    19    20 
@@ -66,5 +66,36 @@ Notice you are passing two arguments to the function mazemove(): ```r``` and ```
 will be the results of your move. 
 
 
+
+Here is the second test maze which makes sure your solver can go in all possible directions (still very easy).
+
+
+```
+0 --  1     2 --  3 --  4 --  5 
+      |     |              /
+      6 --  7     8     9    10 
+               /     \     \           A slightly more complicated simple test. Room sequence
+     11 -- 12    13    14 -- 15        is 0 1 6 7 2 3 4 5 9 15 14 8 12 11 16 21 17 18 19 25 26
+      |                                Notice there are no branching choices. 
+     16    17 -- 18 -- 19    20 
+      |  /                 \
+     21    22    23    24    25 -- 26 
+```
+
+
+The third test maze features some branching, a loop, and some dead ends.
+
+
+```
+0 --  1 --  2 --  3 --  4 --  5 
+                           /  |
+      6 --  7 --  8 --  9    10 
+            |           |     |        A more difficult test. Room 5 features the option to go to room 9...
+     11 -- 12    13    14    15        Solution is 0 1 2 3 4 5 10 15 20 25 26. If you go to room 9 you have
+      |     |           |     |          a loop and some dead ends to escape from... you need to get back to
+     16    17 -- 18 -- 19    20          room 5 to make further progress.
+      |     |                 |
+     21    22 -- 23 -- 24    25 -- 26 
+```
 
 
