@@ -22,5 +22,9 @@ right; and that's why we're here doing this project!
 First we want to create a world. Let's have it be 400 x 400 locations, a grid of locations. One way to do this 
 is with a list of rows. Each row is a list of columns. Let us call it ```ocean```.
 
+```
+zero_row = [0]*400
+ocean = [zero_row]*400
+```
 
 
