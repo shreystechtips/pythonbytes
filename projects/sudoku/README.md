@@ -5,7 +5,11 @@
 
 
 This page tells you how to do this project. You do not have to read it! You can simply start working on the
-project according to your thoughts. 
+project according to your thoughts.  
+
+
+If you would like to see a program that already works: See sudoku_jake.py. This code was written by Jake VanderPlas
+and it has been modified a bit for pythonbytes.
 
 
 ## Overview
@@ -211,6 +215,15 @@ that cell, and in the same *block* as that cell.
 
 * add guess g to cell index n in puzzle p by creating a new string pn = p[:n] + g + p[n+1:]
   * check this with code!
+  
+* proceed one cell at a time
+  * Find the possible guesses
+    * make one guess
+      * find the new possible guesses
+        * make one guess...
+          * and so on: Repeat this until all the cells are filled in
+  * But if the program makes an incorrect guess...
+    * It must be able to back up and try a different guess
 
 
 
